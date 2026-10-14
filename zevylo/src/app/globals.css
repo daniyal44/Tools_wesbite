@@ -135,3 +135,30 @@ nextjs-portal,
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+/* Neutralize and hide Netlify injected badge and collaborative feedback drawer */
+#netlify-badge,
+.netlify-badge,
+[data-netlify-badge],
+iframe[src*="netlify.com"],
+iframe[src*="netlify.app"],
+netlify-drawer,
+#netlify-drawer,
+[data-netlify-drawer],
+div[class*="netlify-badge"],
+a[href*="netlify.com"][class*="badge"],
+[id^="netlify-"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  max-width: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+

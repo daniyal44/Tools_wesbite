@@ -245,6 +245,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(globalGraphSchema) }}
         />
+        {/* Netlify Injected Badge & Drawer Neutralizer */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){function r(){var s=['#netlify-badge','.netlify-badge','[data-netlify-badge]','netlify-drawer','#netlify-drawer','[data-netlify-drawer]','iframe[src*="netlify.com"]','iframe[src*="netlify.app"]','a[href*="netlify.com"][class*="badge"]'];s.forEach(function(sel){try{document.querySelectorAll(sel).forEach(function(el){el.remove();});}catch(e){}});}if(typeof window!=='undefined'){r();window.addEventListener('DOMContentLoaded',r);window.addEventListener('load',r);if(typeof MutationObserver!=='undefined'){new MutationObserver(r).observe(document.documentElement,{childList:true,subtree:true});}}})();`,
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col bg-[var(--color-bg)] text-[var(--color-text)]">
         <ThemeProvider>
