@@ -5876,8 +5876,8 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/ai-writing" />
   </url>
 
-          <!-- ========================================================================== -->
-  <!-- 5. AI TOOLS DATABASE (286 CURATED AI TOOLS)                                -->
+                <!-- ========================================================================== -->
+  <!-- 5. AI TOOLS DATABASE (302 CURATED AI TOOLS)                                -->
   <!-- ========================================================================== -->
 
   <url>
@@ -6523,6 +6523,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/capcut-ai" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/capcut-ai" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/capcut-ai" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Cartesia Sonic Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Cartesia Sonic.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/cartesia-sonic" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/casetext-cocounsel</loc>
@@ -7629,6 +7652,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/eraser-ai" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/exa-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Exa AI Search Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Exa AI Search.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/exa-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/exa-search</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -7836,6 +7882,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/finchat-io" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Firecrawl Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Firecrawl.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/firecrawl-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/fireflies-ai</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -7857,6 +7926,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/fireflies-ai" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/fireflies-ai" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/fireflies-ai" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/fish-audio</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Fish Audio Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Fish Audio.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/fish-audio" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/fliki-ai</loc>
@@ -8135,6 +8227,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/gamma-app" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Gemini 2.0 Flash Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Gemini 2.0 Flash.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/gemini-2-flash" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/genspark</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -8388,6 +8503,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/groq-cloud" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/hailuo-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Hailuo AI (MiniMax) Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Hailuo AI (MiniMax).</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/hailuo-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/haiper-ai</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -8547,6 +8685,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/hyperclova-x" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/hyperclova-x" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/hyperclova-x" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/ibm-granite</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>IBM Granite 3.0 Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for IBM Granite 3.0.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/ibm-granite" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/ideogram-ai</loc>
@@ -9124,6 +9285,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/langchain" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/langfuse-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Langfuse Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Langfuse.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/langfuse-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/leonardo-ai</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -9377,6 +9561,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/make-integromat" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/manus-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Manus AI Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Manus AI.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/manus-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/marblism</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -9536,6 +9743,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/meta-llama" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/meta-llama" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/meta-llama" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Microsoft Phi-4 Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Microsoft Phi-4.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/microsoft-phi-4" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/midjourney</loc>
@@ -9791,6 +10021,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/nomi-ai" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/notebooklm</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Google NotebookLM Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Google NotebookLM.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/notebooklm" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/notebooklm-google</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -9929,6 +10182,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/ollama" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/ollama-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Ollama Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Ollama.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/ollama-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/open-claw</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -9996,6 +10272,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/openai-codex" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/openai-codex" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/openai-codex" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/openai-operator</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>OpenAI Operator Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for OpenAI Operator.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/openai-operator" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/openrouter</loc>
@@ -10111,6 +10410,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-ai" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-ai" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-ai" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Perplexity Deep Research Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Perplexity Deep Research.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/perplexity-deep-research" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/phind</loc>
@@ -11447,6 +11769,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/surfer-seo" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/swe-agent</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>SWE-Agent Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for SWE-Agent.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/swe-agent" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/synthesia</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -11629,6 +11974,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/topaz-video-ai" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/topaz-video-ai" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/topaz-video-ai" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/tool/trae-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Trae AI Review, Pricing &amp; Features — Zevylo AI Directory</image:title>
+      <image:caption>Complete verified review, pricing, user rating, and alternatives for Trae AI.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/tool/trae-ai" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/tool/trevor-ai</loc>
@@ -17202,8 +17570,8 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/articles/zalgo-glitch-text-generator" />
   </url>
 
-      <!-- ========================================================================== -->
-  <!-- 7. DEDICATED AI TECHNICAL ARTICLES & DEEP REVIEWS (286 AI ARTICLES)          -->
+            <!-- ========================================================================== -->
+  <!-- 7. DEDICATED AI TECHNICAL ARTICLES & DEEP REVIEWS (302 AI ARTICLES)          -->
   <!-- ========================================================================== -->
 
   <url>
@@ -17849,6 +18217,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/capcut-ai" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/capcut-ai" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/capcut-ai" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/cartesia-sonic</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Cartesia Sonic In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Cartesia Sonic.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/cartesia-sonic" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/casetext-cocounsel</loc>
@@ -18955,6 +19346,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/eraser-ai" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/exa-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Exa AI Search In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Exa AI Search.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/exa-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/exa-search</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -19162,6 +19576,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/finchat-io" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/firecrawl-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Firecrawl In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Firecrawl.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/firecrawl-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/fireflies-ai</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -19183,6 +19620,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/fireflies-ai" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/fireflies-ai" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/fireflies-ai" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/fish-audio</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Fish Audio In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Fish Audio.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/fish-audio" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/fliki-ai</loc>
@@ -19461,6 +19921,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/gamma-app" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/gemini-2-flash</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Gemini 2.0 Flash In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Gemini 2.0 Flash.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/gemini-2-flash" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/genspark</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -19714,6 +20197,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/groq-cloud" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/hailuo-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Hailuo AI (MiniMax) In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Hailuo AI (MiniMax).</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/hailuo-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/haiper-ai</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -19873,6 +20379,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/hyperclova-x" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/hyperclova-x" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/hyperclova-x" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/ibm-granite</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>IBM Granite 3.0 In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for IBM Granite 3.0.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/ibm-granite" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/ideogram-ai</loc>
@@ -20450,6 +20979,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/langchain" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/langfuse-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Langfuse In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Langfuse.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/langfuse-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/leonardo-ai</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -20703,6 +21255,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/make-integromat" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/manus-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Manus AI In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Manus AI.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/manus-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/marblism</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -20862,6 +21437,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/meta-llama" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/meta-llama" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/meta-llama" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Microsoft Phi-4 In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Microsoft Phi-4.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/microsoft-phi-4" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/midjourney</loc>
@@ -21117,6 +21715,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/nomi-ai" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/notebooklm</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Google NotebookLM In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Google NotebookLM.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/notebooklm" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/notebooklm-google</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -21255,6 +21876,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/ollama" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/ollama-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Ollama In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Ollama.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/ollama-ai" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/open-claw</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -21322,6 +21966,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/openai-codex" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/openai-codex" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/openai-codex" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/openai-operator</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>OpenAI Operator In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for OpenAI Operator.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/openai-operator" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/openrouter</loc>
@@ -21437,6 +22104,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/perplexity-ai" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/perplexity-ai" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/perplexity-ai" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Perplexity Deep Research In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Perplexity Deep Research.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/perplexity-deep-research" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/phind</loc>
@@ -22773,6 +23463,29 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/surfer-seo" />
   </url>
   <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/swe-agent</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>SWE-Agent In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for SWE-Agent.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/swe-agent" />
+  </url>
+  <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/synthesia</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -22955,6 +23668,29 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/topaz-video-ai" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/topaz-video-ai" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/topaz-video-ai" />
+  </url>
+  <url>
+    <loc>https://zevylo.netlify.app/ai-tools/article/trae-ai</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zevylo.netlify.app/images/Zevylo_logo.png</image:loc>
+      <image:title>Trae AI In-Depth Technical Review, Benchmark &amp; Architecture Guide | Zevylo AI</image:title>
+      <image:caption>Complete engineering review, benchmarks, API pricing, workflow guide, and release roadmap for Trae AI.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://zevylo.netlify.app/ai-tools/article/trae-ai" />
   </url>
   <url>
     <loc>https://zevylo.netlify.app/ai-tools/article/trevor-ai</loc>

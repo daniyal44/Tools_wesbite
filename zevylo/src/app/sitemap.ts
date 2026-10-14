@@ -180,7 +180,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: createLanguageAlternates(`/tools/${tool.category}/${tool.slug}`),
   }));
 
-  // 5. Curated AI Tools Profiles (286 Tools)
+  // 5. Curated AI Tools Profiles (302+ Tools)
   const sortedAiTools = [...AI_TOOLS_DATABASE].sort((a, b) => a.slug.localeCompare(b.slug));
   const aiToolPages: MetadataRoute.Sitemap = sortedAiTools.map((tool) => ({
     url: `${baseUrl}/ai-tools/tool/${tool.slug}`,
@@ -190,7 +190,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: createLanguageAlternates(`/ai-tools/tool/${tool.slug}`),
   }));
 
-  // 6. Dedicated AI Technical Articles (286 Articles)
+  // 6. Dedicated AI Technical Articles (302+ Articles)
   const aiArticlePages: MetadataRoute.Sitemap = sortedAiTools.map((tool) => ({
     url: `${baseUrl}/ai-tools/article/${tool.slug}`,
     lastModified: now,

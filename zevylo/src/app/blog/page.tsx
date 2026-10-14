@@ -32,6 +32,28 @@ export const metadata: Metadata = {
 
 const FEATURED_POSTS = [
   {
+    title: 'Manus AI: Inside the Autonomous Agent Executing Real-World Workflows in Sandboxes',
+    slug: 'manus-ai',
+    category: 'Autonomous Agents',
+    date: 'October 15, 2026',
+    readTime: '13 min read',
+    excerpt:
+      'How Manus AI is redefining AI automation: spinning up isolated Linux containers, browsing dynamic web applications, solving CAPTCHAs, generating deployable codebases, and executing multi-step tasks from natural language prompts.',
+    tag: 'Breakthrough',
+    link: '/ai-tools/article/manus-ai',
+  },
+  {
+    title: 'Trae AI vs Cursor AI: ByteDance’s Free Claude 3.5 IDE with Adaptive Builder Mode',
+    slug: 'trae-ai',
+    category: 'AI Coding Tools',
+    date: 'October 15, 2026',
+    readTime: '11 min read',
+    excerpt:
+      'ByteDance has entered the AI editor wars with Trae AI. We benchmark its Builder Agent mode against Cursor Composer, evaluating multi-file generation, terminal execution, and context indexing.',
+    tag: 'IDE Review',
+    link: '/ai-tools/article/trae-ai',
+  },
+  {
     title: 'Claude 3.7 Opus vs. GPT-5 Orion: Frontier Reasoning & Architecture Breakdown',
     slug: 'claude-3-7-opus',
     category: 'Frontier AI Research',

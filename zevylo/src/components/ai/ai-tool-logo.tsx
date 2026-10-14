@@ -571,6 +571,89 @@ function renderOfficialSVG(rawSlug: string, pixelSize: number): React.ReactNode 
     );
   }
 
+  // 35. Manus AI (Autonomous Agent)
+  if (slug.includes('manus')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#090D16" />
+        <path
+          d="M14 34V18L24 28L34 18V34"
+          stroke="#00F0FF"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle cx="24" cy="14" r="3.5" fill="#10B981" />
+      </svg>
+    );
+  }
+
+  // 36. Trae AI (ByteDance Adaptive IDE)
+  if (slug.includes('trae')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="trae-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#00E599" />
+            <stop offset="100%" stopColor="#0099FF" />
+          </linearGradient>
+        </defs>
+        <rect width="48" height="48" rx="14" fill="#0C1017" />
+        <path
+          d="M14 16H34M24 16V34M16 26L24 34L32 26"
+          stroke="url(#trae-grad)"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+
+  // 37. Google NotebookLM
+  if (slug.includes('notebooklm')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#F0FDF4" stroke="#DCFCE7" strokeWidth="1" />
+        <rect x="14" y="10" width="20" height="28" rx="4" fill="#0D9488" />
+        <path d="M19 18H29M19 24H29M19 30H25" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" />
+        <circle cx="34" cy="14" r="4" fill="#3B82F6" />
+      </svg>
+    );
+  }
+
+  // 38. Ollama
+  if (slug.includes('ollama')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#000000" />
+        <path
+          d="M20 12V20M28 12V20M17 20H31V28C31 32 28 35 24 35C20 35 17 32 17 28V20ZM14 26H17M31 26H34"
+          stroke="#FFFFFF"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle cx="21" cy="24" r="1.5" fill="#FFFFFF" />
+        <circle cx="27" cy="24" r="1.5" fill="#FFFFFF" />
+      </svg>
+    );
+  }
+
+  // 39. Recraft AI
+  if (slug.includes('recraft')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#FF4338" />
+        <path
+          d="M16 14H28C32 14 34 16.5 34 20C34 23.5 31.5 25.5 28 25.5H22V34H16V14ZM22 21H27C28.5 21 29.5 20.2 29.5 19C29.5 17.8 28.5 17 27 17H22V21Z"
+          fill="#FFFFFF"
+        />
+        <path d="M26 25.5L34 34H28.5L22 25.5H26Z" fill="#FFFFFF" />
+      </svg>
+    );
+  }
+
   return null;
 }
 

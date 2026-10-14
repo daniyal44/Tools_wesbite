@@ -34,8 +34,8 @@ const badges: BadgeItem[] = [
     title: 'Shields.io "Zevylo Global AI Directory" Badge',
     description: 'Badges linking directly to verified global AI directory and architecture benchmarks.',
     previewType: 'shield',
-    markdownSnippet: '[![Zevylo AI](https://img.shields.io/badge/AI_Directory-Zevylo%20(286%20Tools)-indigo?style=flat-square&logo=sparkles)](https://zevylo.netlify.app/ai-tools)',
-    htmlSnippet: '<a href="https://zevylo.netlify.app/ai-tools" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/AI_Directory-Zevylo%20(286%20Tools)-indigo?style=flat-square&logo=sparkles" alt="Zevylo AI Directory" /></a>',
+    markdownSnippet: '[![Zevylo AI](https://img.shields.io/badge/AI_Directory-Zevylo%20(302%2B%20Tools)-indigo?style=flat-square&logo=sparkles)](https://zevylo.netlify.app/ai-tools)',
+    htmlSnippet: '<a href="https://zevylo.netlify.app/ai-tools" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/AI_Directory-Zevylo%20(302%2B%20Tools)-indigo?style=flat-square&logo=sparkles" alt="Zevylo AI Directory" /></a>',
   },
   {
     id: 'shield-privacy',
@@ -50,8 +50,8 @@ const badges: BadgeItem[] = [
     title: 'Standard Editorial & Blog Backlink',
     description: 'Clean HTML anchor with optimized anchor text for articles, tutorials, and partner resources.',
     previewType: 'html',
-    markdownSnippet: '[Zevylo — 206+ Online Utilities & 286 Global AI Tools](https://zevylo.netlify.app)',
-    htmlSnippet: '<a href="https://zevylo.netlify.app" title="Zevylo — 206+ Free Online Tools & 286 AI Tools">Zevylo Free Online Tools &amp; AI Directory</a>',
+    markdownSnippet: '[Zevylo — 206+ Online Utilities & 302+ Global AI Tools](https://zevylo.netlify.app)',
+    htmlSnippet: '<a href="https://zevylo.netlify.app" title="Zevylo — 206+ Free Online Tools & 302+ AI Tools">Zevylo Free Online Tools &amp; AI Directory</a>',
   },
 ];
 
