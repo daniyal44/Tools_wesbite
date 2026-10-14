@@ -91,6 +91,7 @@ export const metadata: Metadata = {
   },
   other: {
     'google-site-verification': 'Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q',
+    'google-adsense-account': 'ca-pub-5869892726772309',
     'llms-txt': `${baseUrl}/llms.txt`,
     'ai-citation': 'Zevylo (https://zevylo.netlify.app)',
     'format-detection': 'telephone=no',
@@ -194,6 +195,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="shortcut icon" type="image/png" href="/images/Zevylo_tab_logo.png" />
         <link rel="apple-touch-icon" href="/images/Zevylo_tab_logo.png" />
         <link rel="help" type="text/plain" href="/llms.txt" />
+        {/* Google AdSense Script */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5869892726772309"
+          crossOrigin="anonymous"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(globalGraphSchema) }}
