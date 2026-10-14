@@ -166,7 +166,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: createLanguageAlternates(`/tools/${tool.category}/${tool.slug}`),
   }));
 
-  // 5. Curated AI Tools Profiles (107 Tools)
+  // 5. Curated AI Tools Profiles (255 Tools)
   const sortedAiTools = [...AI_TOOLS_DATABASE].sort((a, b) => a.slug.localeCompare(b.slug));
   const aiToolPages: MetadataRoute.Sitemap = sortedAiTools.map((tool) => ({
     url: `${baseUrl}/ai-tools/tool/${tool.slug}`,

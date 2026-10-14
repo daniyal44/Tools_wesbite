@@ -22,6 +22,7 @@ import {
 } from 'lucide-react';
 import { AI_TOOLS_DATABASE, getAIToolBySlug, getRelatedAITools } from '@/lib/ai-directory/database';
 import { AIPricing } from '@/lib/ai-directory/types';
+import { AIToolLogo } from '@/components/ai/ai-tool-logo';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -155,9 +156,13 @@ export default async function AIToolDetailPage({ params }: PageProps) {
       <div className="rounded-3xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 sm:p-10 shadow-lg space-y-6">
         <div className="flex items-start justify-between gap-6 flex-wrap sm:flex-nowrap">
           <div className="flex items-start gap-4 sm:gap-6">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-3xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white font-black text-3xl sm:text-4xl flex items-center justify-center shrink-0 shadow-md">
-              {tool.name.charAt(0)}
-            </div>
+            <AIToolLogo
+              name={tool.name}
+              slug={tool.slug}
+              url={tool.url}
+              logoUrl={tool.logoUrl}
+              size="xl"
+            />
             <div className="space-y-2">
               <div className="flex items-center gap-2 flex-wrap">
                 <h1 className="text-2xl sm:text-4xl font-black text-gray-900 dark:text-gray-100">
@@ -398,9 +403,18 @@ export default async function AIToolDetailPage({ params }: PageProps) {
                     className="p-3.5 rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50/70 dark:bg-gray-800/50 hover:border-blue-500 hover:shadow-xs transition-all block group"
                   >
                     <div className="flex items-center justify-between">
-                      <h4 className="font-bold text-xs text-gray-900 dark:text-gray-100 group-hover:text-blue-600 transition-colors">
-                        {rel.name}
-                      </h4>
+                      <div className="flex items-center gap-2">
+                        <AIToolLogo
+                          name={rel.name}
+                          slug={rel.slug}
+                          url={rel.url}
+                          logoUrl={rel.logoUrl}
+                          size="sm"
+                        />
+                        <h4 className="font-bold text-xs text-gray-900 dark:text-gray-100 group-hover:text-blue-600 transition-colors">
+                          {rel.name}
+                        </h4>
+                      </div>
                       <span className="text-[10px] font-bold text-amber-500 flex items-center gap-0.5">
                         <Star className="w-3 h-3 fill-amber-400" />
                         {rel.rating}

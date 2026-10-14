@@ -297,10 +297,10 @@ export default function HomePage() {
                   <span>The AI Revolution Directory • Powered by Zevylo</span>
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-                  Explore 100+ World-Class AI Tools from A to Z
+                  Explore 250+ World-Class AI Tools from A to Z
                 </h2>
                 <p className="text-sm sm:text-base text-blue-100 leading-relaxed">
-                  Discover top artificial intelligence software across 18 specialized categories, verified traffic stats, pricing filters, or run our 11 built-in browser AI tools with 100% client-side privacy.
+                  Discover top artificial intelligence software across 23 specialized categories, verified traffic stats, pricing filters, or run our 11 built-in browser AI tools with 100% client-side privacy.
                 </p>
               </div>
 
@@ -316,7 +316,7 @@ export default function HomePage() {
                   href="/ai-tools/categories"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-indigo-800/80 hover:bg-indigo-700 text-white font-semibold text-sm transition-colors border border-white/20"
                 >
-                  <span>18 AI Categories</span>
+                  <span>23 AI Categories</span>
                 </Link>
               </div>
             </div>

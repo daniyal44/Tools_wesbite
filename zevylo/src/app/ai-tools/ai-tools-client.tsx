@@ -24,6 +24,7 @@ import {
 import { AITool, AICategory, AIPricing } from '@/lib/ai-directory/types';
 import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
 import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
+import { AIToolLogo } from '@/components/ai/ai-tool-logo';
 
 interface AIToolsClientProps {
   initialTools: AITool[];
@@ -188,7 +189,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
             Discover the Best AI Tools &amp; Utilities from A to Z
           </h1>
           <p className="text-sm sm:text-base text-blue-100 leading-relaxed max-w-2xl">
-            Explore 100+ curated AI powerhouses across 18 specialized categories, or run our 11 built-in browser AI tools with 100% client-side privacy.
+            Explore 250+ curated AI powerhouses across 23 specialized categories, or run our 11 built-in browser AI tools with 100% client-side privacy.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -200,8 +201,8 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
               <span>Submit an AI Tool</span>
             </button>
             <div className="flex items-center gap-4 text-xs text-blue-200 pl-2">
-              <span>✓ 100+ Curated Tools</span>
-              <span>✓ 18 AI Categories</span>
+              <span>✓ 250+ Curated Tools</span>
+              <span>✓ 23 AI Categories</span>
               <span>✓ Verified Traffic &amp; Pricing</span>
             </div>
           </div>
@@ -461,9 +462,13 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
                       {/* Top Header */}
                       <div className="flex items-start justify-between gap-3">
                         <Link href={`/ai-tools/tool/${tool.slug}`} className="flex items-center gap-3">
-                          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500/10 to-indigo-500/10 dark:from-blue-500/20 dark:to-indigo-500/20 border border-blue-200 dark:border-blue-900/60 flex items-center justify-center font-black text-lg text-blue-600 dark:text-blue-400 shrink-0 group-hover:scale-105 transition-transform">
-                            {tool.name.charAt(0)}
-                          </div>
+                          <AIToolLogo
+                            name={tool.name}
+                            slug={tool.slug}
+                            url={tool.url}
+                            logoUrl={tool.logoUrl}
+                            size="md"
+                          />
                           <div>
                             <div className="flex items-center gap-1.5">
                               <h3 className="font-bold text-base text-gray-900 dark:text-gray-100 group-hover:text-blue-600 transition-colors">
@@ -583,9 +588,13 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
             </button>
 
             <div className="flex items-start gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-2xl font-black shrink-0">
-                {previewTool.name.charAt(0)}
-              </div>
+              <AIToolLogo
+                name={previewTool.name}
+                slug={previewTool.slug}
+                url={previewTool.url}
+                logoUrl={previewTool.logoUrl}
+                size="lg"
+              />
               <div className="space-y-1">
                 <div className="flex items-center gap-2">
                   <h3 className="text-2xl font-black text-gray-900 dark:text-gray-100">

@@ -18,6 +18,7 @@ import {
 import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
 import { AI_TOOLS_DATABASE, getAIToolsByCategory } from '@/lib/ai-directory/database';
 import { AIPricing } from '@/lib/ai-directory/types';
+import { AIToolLogo } from '@/components/ai/ai-tool-logo';
 
 interface PageProps {
   params: Promise<{ category: string }>;
@@ -188,9 +189,13 @@ export default async function AICategoryPage({ params }: PageProps) {
                     {/* Header */}
                     <div className="flex items-start justify-between gap-3">
                       <Link href={`/ai-tools/tool/${tool.slug}`} className="flex items-center gap-3">
-                        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500/10 to-indigo-500/10 dark:from-blue-500/20 dark:to-indigo-500/20 border border-blue-200 dark:border-blue-900/60 flex items-center justify-center font-black text-lg text-blue-600 dark:text-blue-400 shrink-0 group-hover:scale-105 transition-transform">
-                          {tool.name.charAt(0)}
-                        </div>
+                        <AIToolLogo
+                          name={tool.name}
+                          slug={tool.slug}
+                          url={tool.url}
+                          logoUrl={tool.logoUrl}
+                          size="md"
+                        />
                         <div>
                           <div className="flex items-center gap-1.5">
                             <h3 className="font-bold text-base text-gray-900 dark:text-gray-100 group-hover:text-blue-600 transition-colors">

@@ -36,6 +36,7 @@ export interface AITool {
   cons: string[];
   alternatives: string[];
   launchYear: number;
+  logoUrl?: string;
 }
 
 export interface AISearchFilters {

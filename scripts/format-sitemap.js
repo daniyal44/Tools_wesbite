@@ -103,7 +103,7 @@ function getImageForUrl(loc) {
     caption = 'Catalog of 206+ free online client-side web tools and utilities.';
   } else if (urlPath === '/ai-tools') {
     title = 'Zevylo AI Tools Directory';
-    caption = 'Explore 100+ best artificial intelligence tools and free in-browser AI utilities.';
+    caption = 'Explore 250+ best artificial intelligence tools and free in-browser AI utilities.';
   } else if (urlPath.startsWith('/tools/')) {
     const parts = urlPath.split('/').filter(Boolean);
     if (parts.length === 2) {
