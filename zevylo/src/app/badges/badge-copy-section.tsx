@@ -26,8 +26,16 @@ const badges: BadgeItem[] = [
     title: 'Shields.io "Free Tools: Zevylo" Badge',
     description: 'Standard flat badge compatible with all open-source developer repositories.',
     previewType: 'shield',
-    markdownSnippet: '[![Zevylo Tools](https://img.shields.io/badge/Tools-Zevylo%20(157%2B)-blue?style=flat-square&logo=speedtest)](https://zevylo.netlify.app)',
-    htmlSnippet: '<a href="https://zevylo.netlify.app" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Tools-Zevylo%20(157%2B)-blue?style=flat-square&logo=speedtest" alt="Zevylo Tools" /></a>',
+    markdownSnippet: '[![Zevylo Tools](https://img.shields.io/badge/Tools-Zevylo%20(206%2B)-blue?style=flat-square&logo=speedtest)](https://zevylo.netlify.app)',
+    htmlSnippet: '<a href="https://zevylo.netlify.app" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Tools-Zevylo%20(206%2B)-blue?style=flat-square&logo=speedtest" alt="Zevylo Tools" /></a>',
+  },
+  {
+    id: 'shield-ai',
+    title: 'Shields.io "Zevylo Global AI Directory" Badge',
+    description: 'Badges linking directly to verified global AI directory and architecture benchmarks.',
+    previewType: 'shield',
+    markdownSnippet: '[![Zevylo AI](https://img.shields.io/badge/AI_Directory-Zevylo%20(286%20Tools)-indigo?style=flat-square&logo=sparkles)](https://zevylo.netlify.app/ai-tools)',
+    htmlSnippet: '<a href="https://zevylo.netlify.app/ai-tools" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/AI_Directory-Zevylo%20(286%20Tools)-indigo?style=flat-square&logo=sparkles" alt="Zevylo AI Directory" /></a>',
   },
   {
     id: 'shield-privacy',
@@ -42,8 +50,8 @@ const badges: BadgeItem[] = [
     title: 'Standard Editorial & Blog Backlink',
     description: 'Clean HTML anchor with optimized anchor text for articles, tutorials, and partner resources.',
     previewType: 'html',
-    markdownSnippet: '[Zevylo — Free Online Utilities & Privacy-First Tools](https://zevylo.netlify.app)',
-    htmlSnippet: '<a href="https://zevylo.netlify.app" title="Zevylo — 157+ Free Online Tools">Zevylo Free Online Tools</a>',
+    markdownSnippet: '[Zevylo — 206+ Online Utilities & 286 Global AI Tools](https://zevylo.netlify.app)',
+    htmlSnippet: '<a href="https://zevylo.netlify.app" title="Zevylo — 206+ Free Online Tools & 286 AI Tools">Zevylo Free Online Tools &amp; AI Directory</a>',
   },
 ];
 

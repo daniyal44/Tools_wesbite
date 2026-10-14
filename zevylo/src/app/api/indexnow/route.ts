@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import '@/tools';
 import { getAllTools } from '@/lib/tools/registry';
 import { categoryList } from '@/lib/tools/categories';
+import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
+import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
 import { INDEXNOW_KEY } from '@/app/indexnow.txt/route';
 
 export async function POST() {
@@ -13,6 +15,9 @@ export async function POST() {
     `${baseUrl}/tools`,
     `${baseUrl}/categories`,
     `${baseUrl}/articles`,
+    `${baseUrl}/blog`,
+    `${baseUrl}/ai-tools`,
+    `${baseUrl}/ai-tools/article`,
     `${baseUrl}/sitemap`,
     `${baseUrl}/badges`,
     `${baseUrl}/resources`,
@@ -20,6 +25,9 @@ export async function POST() {
     ...categoryList.map((c) => `${baseUrl}/tools/${c.slug}`),
     ...tools.map((t) => `${baseUrl}/tools/${t.category}/${t.slug}`),
     ...tools.map((t) => `${baseUrl}/articles/${t.slug}`),
+    ...AI_CATEGORIES.map((c) => `${baseUrl}/ai-tools/${c.slug}`),
+    ...AI_TOOLS_DATABASE.map((t) => `${baseUrl}/ai-tools/tool/${t.slug}`),
+    ...AI_TOOLS_DATABASE.map((t) => `${baseUrl}/ai-tools/article/${t.slug}`),
   ];
 
   const payload = {
