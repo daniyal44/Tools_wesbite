@@ -1,5 +1,8 @@
 # ⚙️ Zevylo — Client-Side Functions & Processing Engines
 
+> **Live Production Website**: [https://zevylo.netlify.app/](https://zevylo.netlify.app/)  
+> **Source Repository**: [https://github.com/daniyal44/Tools_wesbite](https://github.com/daniyal44/Tools_wesbite)
+
 This document provides a technical reference for the core client-side algorithms, WebAssembly pipelines, Canvas math, and utility functions powering **Zevylo**.
 
 ---

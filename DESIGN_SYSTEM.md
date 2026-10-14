@@ -1,5 +1,8 @@
 # 🎨 Zevylo — Design System & Visual Architecture
 
+> **Live Production Website**: [https://zevylo.netlify.app/](https://zevylo.netlify.app/)  
+> **Source Repository**: [https://github.com/daniyal44/Tools_wesbite](https://github.com/daniyal44/Tools_wesbite)
+
 This document specifies the design philosophy, visual design tokens, typography, color system, and layout principles implemented across the **Zevylo** web application.
 
 ---

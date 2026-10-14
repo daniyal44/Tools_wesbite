@@ -1,5 +1,8 @@
 # 🗂️ Project Structure & Directory Guide
 
+> **Live Production Website**: [https://zevylo.netlify.app/](https://zevylo.netlify.app/)  
+> **Source Repository**: [https://github.com/daniyal44/Tools_wesbite](https://github.com/daniyal44/Tools_wesbite)
+
 This document provides a comprehensive guide to the folder hierarchy, architectural conventions, and file organization of the **Zevylo** repository.
 
 ---
