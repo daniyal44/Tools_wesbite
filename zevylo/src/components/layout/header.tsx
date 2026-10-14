@@ -47,10 +47,10 @@ export function Header() {
             <Image
               src="/images/Zevylo_logo.png"
               alt="Zevylo Logo"
-              width={140}
-              height={36}
-              style={{ width: "auto", height: "auto" }}
-              className="h-8 sm:h-9 w-auto object-contain rounded transition-transform group-hover:scale-[1.02]"
+              width={122}
+              height={31}
+              style={{ height: "30px", width: "auto" }}
+              className="max-h-7 sm:max-h-8 w-auto object-contain rounded transition-transform group-hover:scale-[1.02]"
               priority
               unoptimized
             />

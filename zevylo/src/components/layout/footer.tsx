@@ -14,10 +14,10 @@ export function Footer() {
               <Image
                 src="/images/Zevylo_logo.png"
                 alt="Zevylo Logo"
-                width={130}
-                height={34}
-                style={{ width: "auto", height: "auto" }}
-                className="h-8 w-auto object-contain rounded"
+                width={122}
+                height={31}
+                style={{ height: "28px", width: "auto" }}
+                className="max-h-7 w-auto object-contain rounded"
                 unoptimized
               />
             </div>
