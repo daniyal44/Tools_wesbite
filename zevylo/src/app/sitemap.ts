@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   };
 
+  // 1. Core Platform & Discovery Hubs
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
@@ -69,59 +70,70 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/categories`,
       lastModified: now,
       changeFrequency: 'weekly',
-      priority: 0.85,
+      priority: 0.9,
+      alternates: createLanguageAlternates('/categories'),
     },
     {
       url: `${baseUrl}/articles`,
       lastModified: now,
       changeFrequency: 'daily',
       priority: 0.9,
+      alternates: createLanguageAlternates('/articles'),
     },
     {
       url: `${baseUrl}/resources`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.75,
+      alternates: createLanguageAlternates('/resources'),
     },
     {
       url: `${baseUrl}/llms.txt`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.8,
+      alternates: createLanguageAlternates('/llms.txt'),
     },
     {
       url: `${baseUrl}/badges`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.7,
+      alternates: createLanguageAlternates('/badges'),
     },
     {
       url: `${baseUrl}/about`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.6,
+      alternates: createLanguageAlternates('/about'),
     },
     {
       url: `${baseUrl}/contact`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.6,
+      alternates: createLanguageAlternates('/contact'),
     },
     {
       url: `${baseUrl}/privacy`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.5,
+      alternates: createLanguageAlternates('/privacy'),
     },
     {
       url: `${baseUrl}/terms`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.5,
+      alternates: createLanguageAlternates('/terms'),
     },
   ];
 
-  const categoryPages: MetadataRoute.Sitemap = categoryList.map((cat) => ({
+  // 2. 18 Tool Category Hubs (Alphabetically Sorted)
+  const sortedCategories = [...categoryList].sort((a, b) => a.slug.localeCompare(b.slug));
+  const categoryPages: MetadataRoute.Sitemap = sortedCategories.map((cat) => ({
     url: `${baseUrl}/tools/${cat.slug}`,
     lastModified: now,
     changeFrequency: 'weekly',
@@ -129,7 +141,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: createLanguageAlternates(`/tools/${cat.slug}`),
   }));
 
-  const aiCategoryPages: MetadataRoute.Sitemap = AI_CATEGORIES.map((cat) => ({
+  // 3. AI Directory Categories (24 Categories)
+  const sortedAiCategories = [...AI_CATEGORIES].sort((a, b) => a.slug.localeCompare(b.slug));
+  const aiCategoryPages: MetadataRoute.Sitemap = sortedAiCategories.map((cat) => ({
     url: `${baseUrl}/ai-tools/${cat.slug}`,
     lastModified: now,
     changeFrequency: 'weekly',
@@ -137,8 +151,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: createLanguageAlternates(`/ai-tools/${cat.slug}`),
   }));
 
-  const tools = getAllTools();
-  const toolPages: MetadataRoute.Sitemap = tools.map((tool) => ({
+  // 4. In-Browser Tools (206+ Tools Sorted by Category and Slug)
+  const sortedTools = [...getAllTools()].sort((a, b) => {
+    if (a.category !== b.category) {
+      return a.category.localeCompare(b.category);
+    }
+    return a.slug.localeCompare(b.slug);
+  });
+  const toolPages: MetadataRoute.Sitemap = sortedTools.map((tool) => ({
     url: `${baseUrl}/tools/${tool.category}/${tool.slug}`,
     lastModified: now,
     changeFrequency: 'weekly',
@@ -146,7 +166,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: createLanguageAlternates(`/tools/${tool.category}/${tool.slug}`),
   }));
 
-  const aiToolPages: MetadataRoute.Sitemap = AI_TOOLS_DATABASE.map((tool) => ({
+  // 5. Curated AI Tools Profiles (107 Tools)
+  const sortedAiTools = [...AI_TOOLS_DATABASE].sort((a, b) => a.slug.localeCompare(b.slug));
+  const aiToolPages: MetadataRoute.Sitemap = sortedAiTools.map((tool) => ({
     url: `${baseUrl}/ai-tools/tool/${tool.slug}`,
     lastModified: now,
     changeFrequency: 'weekly',
@@ -154,20 +176,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: createLanguageAlternates(`/ai-tools/tool/${tool.slug}`),
   }));
 
-  const articlePages: MetadataRoute.Sitemap = tools.map((tool) => ({
+  // 6. Technical Guides & Articles (206 Articles)
+  const articlePages: MetadataRoute.Sitemap = sortedTools.map((tool) => ({
     url: `${baseUrl}/articles/${tool.slug}`,
     lastModified: now,
     changeFrequency: 'weekly',
-    priority: 0.8,
+    priority: 0.75,
     alternates: createLanguageAlternates(`/articles/${tool.slug}`),
   }));
 
   return [
     ...staticPages,
     ...categoryPages,
-    ...aiCategoryPages,
+    ...sortedAiCategories.length ? aiCategoryPages : [],
     ...toolPages,
-    ...aiToolPages,
+    ...sortedAiTools.length ? aiToolPages : [],
     ...articlePages,
   ];
 }
