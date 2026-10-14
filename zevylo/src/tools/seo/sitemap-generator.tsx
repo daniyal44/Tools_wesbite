@@ -14,10 +14,10 @@ interface SitemapEntry {
 const TODAY = new Date().toISOString().slice(0, 10);
 
 const INITIAL_ENTRIES: SitemapEntry[] = [
-  { id: '1', loc: 'https://zevylo.com/', changefreq: 'daily', priority: '1.0', lastmod: TODAY },
-  { id: '2', loc: 'https://zevylo.com/tools', changefreq: 'daily', priority: '0.9', lastmod: TODAY },
-  { id: '3', loc: 'https://zevylo.com/categories', changefreq: 'weekly', priority: '0.8', lastmod: TODAY },
-  { id: '4', loc: 'https://zevylo.com/privacy', changefreq: 'monthly', priority: '0.3', lastmod: TODAY },
+  { id: '1', loc: 'https://zevylo.netlify.app/', changefreq: 'daily', priority: '1.0', lastmod: TODAY },
+  { id: '2', loc: 'https://zevylo.netlify.app/tools', changefreq: 'daily', priority: '0.9', lastmod: TODAY },
+  { id: '3', loc: 'https://zevylo.netlify.app/categories', changefreq: 'weekly', priority: '0.8', lastmod: TODAY },
+  { id: '4', loc: 'https://zevylo.netlify.app/privacy', changefreq: 'monthly', priority: '0.3', lastmod: TODAY },
 ];
 
 export default function SitemapGenerator() {

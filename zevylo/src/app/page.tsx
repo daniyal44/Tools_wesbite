@@ -41,11 +41,11 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Zevylo',
-    url: 'https://zevylo.com',
+    url: 'https://zevylo.netlify.app',
     description: 'One place. Every useful tool. 157+ free online browser utilities across 18 categories.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://zevylo.com/tools?q={search_term_string}',
+      target: 'https://zevylo.netlify.app/tools?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };
@@ -54,8 +54,8 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Zevylo',
-    url: 'https://zevylo.com',
-    logo: 'https://zevylo.com/images/Zevylo_logo.png',
+    url: 'https://zevylo.netlify.app',
+    logo: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
     sameAs: ['https://github.com', 'https://twitter.com'],
   };
 

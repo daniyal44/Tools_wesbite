@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       siteName: 'Zevylo',
       publishedTime: '2026-10-07T12:00:00Z',
       modifiedTime: '2026-10-07T12:00:00Z',
-      authors: ['https://zevylo.com/about'],
+      authors: ['https://zevylo.netlify.app/about'],
       tags: article.tags,
       images: [
         {
@@ -85,7 +85,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     other: {
       'article:published_time': '2026-10-07T12:00:00Z',
       'article:author': 'Zevylo Editorial Team',
-      'ai-citation': `Zevylo Guide to ${article.toolName} (https://zevylo.com/articles/${article.slug})`,
+      'ai-citation': `Zevylo Guide to ${article.toolName} (https://zevylo.netlify.app/articles/${article.slug})`,
       'topic': article.categoryName,
     },
   };
@@ -105,21 +105,21 @@ export default async function ToolArticleDetailPage({ params }: PageProps) {
     '@type': 'TechArticle',
     headline: article.title,
     description: article.metaDescription,
-    url: `https://zevylo.com/articles/${article.slug}`,
+    url: `https://zevylo.netlify.app/articles/${article.slug}`,
     datePublished: '2026-01-01T08:00:00Z',
     dateModified: '2026-10-07T12:00:00Z',
     author: {
       '@type': 'Organization',
       name: 'Zevylo Editorial & Engineering Team',
-      url: 'https://zevylo.com',
+      url: 'https://zevylo.netlify.app',
     },
     publisher: {
       '@type': 'Organization',
       name: 'Zevylo',
-      url: 'https://zevylo.com',
+      url: 'https://zevylo.netlify.app',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://zevylo.com/images/Zevylo_logo.png',
+        url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
       },
     },
     about: {
@@ -144,25 +144,25 @@ export default async function ToolArticleDetailPage({ params }: PageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://zevylo.com',
+        item: 'https://zevylo.netlify.app',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Articles',
-        item: 'https://zevylo.com/articles',
+        item: 'https://zevylo.netlify.app/articles',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: article.categoryName,
-        item: `https://zevylo.com/tools/${article.toolCategory}`,
+        item: `https://zevylo.netlify.app/tools/${article.toolCategory}`,
       },
       {
         '@type': 'ListItem',
         position: 4,
         name: article.toolName,
-        item: `https://zevylo.com/articles/${article.slug}`,
+        item: `https://zevylo.netlify.app/articles/${article.slug}`,
       },
     ],
   };

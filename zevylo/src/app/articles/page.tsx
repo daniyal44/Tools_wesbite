@@ -29,7 +29,7 @@ export default function ArticlesHubPage() {
     '@type': 'CollectionPage',
     name: 'Zevylo Tool Guides & Technical Documentation',
     description: 'Complete technical guides and step-by-step documentation for all browser utilities.',
-    url: 'https://zevylo.com/articles',
+    url: 'https://zevylo.netlify.app/articles',
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -37,13 +37,13 @@ export default function ArticlesHubPage() {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://zevylo.com',
+          item: 'https://zevylo.netlify.app',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Articles & Guides',
-          item: 'https://zevylo.com/articles',
+          item: 'https://zevylo.netlify.app/articles',
         },
       ],
     },

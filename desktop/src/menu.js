@@ -152,9 +152,9 @@ function buildMenu(mainWindow) {
       label: '&Help',
       submenu: [
         {
-          label: 'Official Website',
+          label: 'Official Website (zevylo.netlify.app)',
           click: async () => {
-            await shell.openExternal('https://github.com/daniyal44/Tools_wesbite');
+            await shell.openExternal('https://zevylo.netlify.app');
           }
         },
         {

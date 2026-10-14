@@ -100,7 +100,7 @@ export function ToolInteractiveBar({ slug, name, category }: ToolInteractiveBarP
 
   const toolUrl = typeof window !== 'undefined'
     ? `${window.location.origin}/tools/${category}/${slug}`
-    : `https://zevylo.com/tools/${category}/${slug}`;
+    : `https://zevylo.netlify.app/tools/${category}/${slug}`;
 
   // Backlink & Embed Snippets
   const iframeSnippet = `<iframe src="${toolUrl}" width="100%" height="650" frameborder="0" style="border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" title="${name}"></iframe>\n<p style="font-size: 12px; color: #64748b; margin-top: 6px;">Free online tool provided by <a href="${toolUrl}" target="_blank" rel="noopener">Zevylo</a></p>`;

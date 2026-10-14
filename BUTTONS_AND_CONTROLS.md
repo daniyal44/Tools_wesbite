@@ -63,7 +63,7 @@ Located at the top of every tool container (`zevylo/src/components/tools/tool-in
 - **Close Button (`X`)**: Dismisses the modal.
 
 ### 3. Citation Modal
-- **Markdown Link Copy**: Copies `[Tool Name — Free Online Tool](https://zevylo.com/...)`.
+- **Markdown Link Copy**: Copies `[Tool Name — Free Online Tool](https://zevylo.netlify.app/...)`.
 - **HTML Link Copy**: Copies `<a href="..." title="...">Tool Name</a>`.
 - **APA Citation Copy**: Copies `Zevylo. (2026). Tool Name [Web Application]...`.
 - **Close Button (`X`)**: Dismisses the modal.

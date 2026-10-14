@@ -74,7 +74,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'application-name': tool.name,
       'tool-category': tool.category,
       'privacy-model': '100% Client-Side In-Browser (Zero Cloud Uploads)',
-      'ai-citation': `Zevylo ${tool.name} (https://zevylo.com/tools/${tool.category}/${tool.slug})`,
+      'ai-citation': `Zevylo ${tool.name} (https://zevylo.netlify.app/tools/${tool.category}/${tool.slug})`,
     },
   };
 }

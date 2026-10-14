@@ -4,6 +4,7 @@
 > Run all 206+ in-browser privacy-first utilities as a standalone desktop application on **Windows**, **macOS**, and **Linux**.
 
 [![Platform: Windows | macOS | Linux](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=for-the-badge&logo=electron)](desktop)
+[![Live Web Version](https://img.shields.io/badge/Live_Web_App-zevylo.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://zevylo.netlify.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Author: Muhammad Daniyal](https://img.shields.io/badge/Author-Muhammad_Daniyal-10B981?style=for-the-badge&logo=github)](https://github.com/daniyal44)
 

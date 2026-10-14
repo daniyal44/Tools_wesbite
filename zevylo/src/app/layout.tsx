@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.com';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.netlify.app';
 
 export const metadata: Metadata = {
   title: {
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
   other: {
     'google-site-verification': 'Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q',
     'llms-txt': `${baseUrl}/llms.txt`,
-    'ai-citation': 'Zevylo (https://zevylo.com)',
+    'ai-citation': 'Zevylo (https://zevylo.netlify.app)',
     'format-detection': 'telephone=no',
   },
   icons: {
@@ -122,12 +122,12 @@ const globalGraphSchema = {
   '@graph': [
     {
       '@type': 'Organization',
-      '@id': 'https://zevylo.com/#organization',
+      '@id': 'https://zevylo.netlify.app/#organization',
       name: 'Zevylo',
-      url: 'https://zevylo.com',
+      url: 'https://zevylo.netlify.app',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://zevylo.com/images/Zevylo_logo.png',
+        url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
       },
       sameAs: [
         'https://github.com/zevylo',
@@ -145,24 +145,24 @@ const globalGraphSchema = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://zevylo.com/#website',
-      url: 'https://zevylo.com',
+      '@id': 'https://zevylo.netlify.app/#website',
+      url: 'https://zevylo.netlify.app',
       name: 'Zevylo',
       publisher: {
-        '@id': 'https://zevylo.com/#organization',
+        '@id': 'https://zevylo.netlify.app/#organization',
       },
       potentialAction: {
         '@type': 'SearchAction',
         target: {
           '@type': 'EntryPoint',
-          urlTemplate: 'https://zevylo.com/tools?q={search_term_string}',
+          urlTemplate: 'https://zevylo.netlify.app/tools?q={search_term_string}',
         },
         'query-input': 'required name=search_term_string',
       },
     },
     {
       '@type': 'SoftwareApplication',
-      '@id': 'https://zevylo.com/#application',
+      '@id': 'https://zevylo.netlify.app/#application',
       name: 'Zevylo Web Suite',
       operatingSystem: 'All modern web browsers (Chrome, Firefox, Safari, Edge)',
       applicationCategory: 'UtilitiesApplication',

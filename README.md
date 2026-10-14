@@ -9,6 +9,7 @@
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![WebAssembly](https://img.shields.io/badge/WebAssembly-FFmpeg_WASM-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)](https://webassembly.org/)
 [![Desktop App](https://img.shields.io/badge/Desktop_App-Windows%20%7C%20macOS%20%7C%20Linux-9333EA?style=for-the-badge&logo=electron&logoColor=white)](DESKTOP.md)
+[![Live Web App](https://img.shields.io/badge/Live_Website-zevylo.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://zevylo.netlify.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Privacy: 100% Client-Side](https://img.shields.io/badge/Privacy-100%25_Client--Side-10B981?style=for-the-badge)](SECURITY_AND_PRIVACY.md)
 
@@ -18,7 +19,11 @@
   Convert, calculate, generate, analyze, optimize, and create without uploading your files to third-party servers.
 </p>
 
-[Explore Tools](TOOLS_DIRECTORY.md) • [Desktop App](DESKTOP.md) • [Architecture](ARCHITECTURE.md) • [Features](FEATURES.md) • [Contributing](CONTRIBUTING.md) • [Security & Privacy](SECURITY_AND_PRIVACY.md)
+<p align="center">
+  🚀 <b>Live Production Website:</b> <a href="https://zevylo.netlify.app/"><b>https://zevylo.netlify.app/</b></a>
+</p>
+
+[🌐 Live Website](https://zevylo.netlify.app/) • [Explore Tools](TOOLS_DIRECTORY.md) • [Desktop App](DESKTOP.md) • [Architecture](ARCHITECTURE.md) • [Features](FEATURES.md) • [Contributing](CONTRIBUTING.md) • [Security & Privacy](SECURITY_AND_PRIVACY.md)
 
 ---
 

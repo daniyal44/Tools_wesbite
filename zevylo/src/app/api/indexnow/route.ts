@@ -5,7 +5,7 @@ import { categoryList } from '@/lib/tools/categories';
 import { INDEXNOW_KEY } from '@/app/indexnow.txt/route';
 
 export async function POST() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.netlify.app';
   const tools = getAllTools();
 
   const urlList = [
@@ -23,7 +23,7 @@ export async function POST() {
   ];
 
   const payload = {
-    host: 'zevylo.com',
+    host: 'zevylo.netlify.app',
     key: INDEXNOW_KEY,
     keyLocation: `${baseUrl}/indexnow.txt`,
     urlList: urlList.slice(0, 10000),

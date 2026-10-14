@@ -78,12 +78,12 @@ export default async function AICategoryPage({ params }: PageProps) {
     '@type': 'CollectionPage',
     name: `${category.name} Directory`,
     description: category.description,
-    url: `https://zevylo.com/ai-tools/${category.slug}`,
+    url: `https://zevylo.netlify.app/ai-tools/${category.slug}`,
     itemListElement: tools.map((tool, idx) => ({
       '@type': 'ListItem',
       position: idx + 1,
       name: tool.name,
-      url: `https://zevylo.com/ai-tools/tool/${tool.slug}`,
+      url: `https://zevylo.netlify.app/ai-tools/tool/${tool.slug}`,
     })),
   };
 

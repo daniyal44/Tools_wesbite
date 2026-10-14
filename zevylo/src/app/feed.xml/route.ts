@@ -3,7 +3,7 @@ import '@/tools';
 import { getAllTools } from '@/lib/tools/registry';
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.netlify.app';
   const tools = getAllTools();
   const buildDate = new Date().toUTCString();
 

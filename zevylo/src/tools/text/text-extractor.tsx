@@ -40,8 +40,8 @@ const PATTERNS: Record<ExtractionMode, { regex: RegExp; label: string }> = {
   },
 };
 
-const SAMPLE_TEXT = `Hello team, please send reports to dev@zevylo.com and copy support@zevylo.tech.
-Refer to https://zevylo.com/tools and docs at https://github.com/zevylo for guides.
+const SAMPLE_TEXT = `Hello team, please send reports to dev@zevylo.netlify.app and copy support@zevylo.tech.
+Refer to https://zevylo.netlify.app/tools and docs at https://github.com/zevylo for guides.
 Contact urgent helpline at +1 (555) 234-5678 or office line 555-876-5432.
 Server nodes: Primary IP 192.168.1.1 and gateway 10.0.0.254 are online.
 Theme palette updated to primary #3b82f6, background #0f172a, and accent #10b981.

@@ -31,7 +31,7 @@ export function ToolPage({ tool, children }: ToolPageProps) {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": tool.name,
-    "url": `https://zevylo.com/tools/${tool.category}/${tool.slug}`,
+    "url": `https://zevylo.netlify.app/tools/${tool.category}/${tool.slug}`,
     "description": tool.shortDescription,
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "All modern web browsers",
@@ -45,7 +45,7 @@ export function ToolPage({ tool, children }: ToolPageProps) {
     "creator": {
       "@type": "Organization",
       "name": "Zevylo",
-      "url": "https://zevylo.com",
+      "url": "https://zevylo.netlify.app",
     },
     "featureList": [
       "100% Client-Side In-Browser Execution",
@@ -63,19 +63,19 @@ export function ToolPage({ tool, children }: ToolPageProps) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://zevylo.com",
+        "item": "https://zevylo.netlify.app",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": `${tool.category.charAt(0).toUpperCase() + tool.category.slice(1)} Tools`,
-        "item": `https://zevylo.com/tools/${tool.category}`,
+        "item": `https://zevylo.netlify.app/tools/${tool.category}`,
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": tool.name,
-        "item": `https://zevylo.com/tools/${tool.category}/${tool.slug}`,
+        "item": `https://zevylo.netlify.app/tools/${tool.category}/${tool.slug}`,
       },
     ],
   };

@@ -25,11 +25,11 @@ export default function AIToolsPage() {
     '@type': 'CollectionPage',
     name: 'AI Tools Directory & Discovery Hub',
     description: 'Catalog of 100+ top artificial intelligence tools and free in-browser utilities across 23 specialized categories.',
-    url: 'https://zevylo.com/ai-tools',
+    url: 'https://zevylo.netlify.app/ai-tools',
     isPartOf: {
       '@type': 'WebSite',
       name: 'Zevylo',
-      url: 'https://zevylo.com',
+      url: 'https://zevylo.netlify.app',
     },
   };
 

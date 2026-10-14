@@ -181,7 +181,7 @@ export default function HtmlToMarkdown() {
   </tbody>
 </table>
 <blockquote>"The best way to predict the future is to build it."</blockquote>
-<p>Learn more at <a href="https://zevylo.com">Zevylo Tools</a>.</p>`);
+<p>Learn more at <a href="https://zevylo.netlify.app">Zevylo Tools</a>.</p>`);
 
   const [markdownOutput, setMarkdownOutput] = useState('');
   const [copied, setCopied] = useState(false);

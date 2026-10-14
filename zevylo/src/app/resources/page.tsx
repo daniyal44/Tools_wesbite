@@ -58,13 +58,13 @@ export default function ResourcesPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://zevylo.com',
+        item: 'https://zevylo.netlify.app',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Resources Directory',
-        item: 'https://zevylo.com/resources',
+        item: 'https://zevylo.netlify.app/resources',
       },
     ],
   };

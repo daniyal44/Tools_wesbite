@@ -6,7 +6,7 @@ import { Search, Globe, AlertTriangle, CheckCircle2, Copy, Check } from 'lucide-
 export default function SerpPixelChecker() {
   const [title, setTitle] = useState<string>('Free Online Tools & Converters - 100% Client-Side Privacy | Zevylo');
   const [description, setDescription] = useState<string>('Discover 85+ free web tools for developers, designers, and marketers. Convert images, calculate finances, and edit documents directly in your browser with zero server uploads.');
-  const [url, setUrl] = useState<string>('https://zevylo.com/tools');
+  const [url, setUrl] = useState<string>('https://zevylo.netlify.app/tools');
   const [brandName, setBrandName] = useState<string>('Zevylo Tools');
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
 

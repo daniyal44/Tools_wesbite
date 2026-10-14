@@ -5,7 +5,7 @@ import { Copy, Check, ArrowRightLeft, Link2, ListFilter } from 'lucide-react';
 import { copyToClipboard } from '@/lib/utils';
 
 export default function UrlEncoderTool() {
-  const [input, setInput] = useState('https://zevylo.com/search?query=developer tools&category=web&tags=fast,free,private');
+  const [input, setInput] = useState('https://zevylo.netlify.app/search?query=developer tools&category=web&tags=fast,free,private');
   const [mode, setMode] = useState<'encode' | 'decode'>('encode');
   const [scope, setScope] = useState<'component' | 'full'>('component');
   const [copied, setCopied] = useState(false);

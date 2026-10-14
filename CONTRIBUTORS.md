@@ -11,6 +11,7 @@
 
 [![GitHub daniyal44](https://img.shields.io/badge/GitHub-daniyal44-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/daniyal44)
 [![Portfolio](https://img.shields.io/badge/Profile-Muhammad_Daniyal-blue?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/daniyal44)
+[![Live Web App](https://img.shields.io/badge/Live_Website-zevylo.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://zevylo.netlify.app/)
 
 </div>
 

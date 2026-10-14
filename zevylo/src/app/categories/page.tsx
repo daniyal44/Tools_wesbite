@@ -30,13 +30,13 @@ export default function CategoriesPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://zevylo.com',
+        item: 'https://zevylo.netlify.app',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Categories',
-        item: 'https://zevylo.com/categories',
+        item: 'https://zevylo.netlify.app/categories',
       },
     ],
   };

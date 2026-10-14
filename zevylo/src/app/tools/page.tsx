@@ -32,13 +32,13 @@ export default function ToolsDirectoryPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://zevylo.com',
+        item: 'https://zevylo.netlify.app',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'All Tools',
-        item: 'https://zevylo.com/tools',
+        item: 'https://zevylo.netlify.app/tools',
       },
     ],
   };

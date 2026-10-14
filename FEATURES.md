@@ -1,5 +1,8 @@
 # 🌟 Zevylo — Complete Features & Capabilities Guide
 
+> **Live Production Website**: [https://zevylo.netlify.app/](https://zevylo.netlify.app/)  
+> **Source Repository**: [https://github.com/daniyal44/Tools_wesbite](https://github.com/daniyal44/Tools_wesbite)
+
 This document provides an exhaustive, feature-by-feature breakdown of the **Zevylo** web application.
 
 ---

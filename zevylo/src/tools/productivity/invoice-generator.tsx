@@ -22,7 +22,7 @@ export default function InvoiceGenerator() {
 
   // Sender info
   const [senderName, setSenderName] = useState('Zevylo Creative Agency');
-  const [senderEmail, setSenderEmail] = useState('billing@zevylo.com');
+  const [senderEmail, setSenderEmail] = useState('billing@zevylo.netlify.app');
   const [senderAddress, setSenderAddress] = useState('100 Innovation Way\nSan Francisco, CA 94107');
 
   // Client info

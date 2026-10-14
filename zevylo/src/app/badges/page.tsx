@@ -23,13 +23,13 @@ export default function BadgesPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://zevylo.com',
+        item: 'https://zevylo.netlify.app',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Badges & Embed Widgets',
-        item: 'https://zevylo.com/badges',
+        item: 'https://zevylo.netlify.app/badges',
       },
     ],
   };

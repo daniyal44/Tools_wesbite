@@ -96,7 +96,7 @@ const DEFAULT_JSON = `{
   "maintainers": [
     {
       "name": "Deepmind Engineer",
-      "email": "dev@zevylo.com"
+      "email": "dev@zevylo.netlify.app"
     }
   ]
 }`;

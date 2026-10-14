@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import QRCode from 'qrcode';
 
 export default function QrCodeGenerator() {
-  const [text, setText] = useState('https://zevylo.com');
+  const [text, setText] = useState('https://zevylo.netlify.app');
   const [size, setSize] = useState(256);
   const [margin, setMargin] = useState(4);
   const [errorCorrection, setErrorCorrection] = useState<'L' | 'M' | 'Q' | 'H'>('M');

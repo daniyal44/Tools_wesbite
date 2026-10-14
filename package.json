@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "description": "Zevylo — 206+ Free Privacy-First Browser Tools Suite (100% Client-Side Web & Desktop App)",
+  "homepage": "https://zevylo.netlify.app",
+  "author": "Muhammad Daniyal <m.daniyalkhan490@gmail.com> (https://github.com/daniyal44)",
   "scripts": {
     "dev": "npm --prefix zevylo run dev",
     "build": "npm --prefix zevylo run build",

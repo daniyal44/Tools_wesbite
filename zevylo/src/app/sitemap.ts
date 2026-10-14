@@ -6,7 +6,7 @@ import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
 import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.netlify.app';
   const now = new Date();
 
   const staticPages: MetadataRoute.Sitemap = [

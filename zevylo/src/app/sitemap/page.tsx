@@ -27,13 +27,13 @@ export default function HtmlSitemapPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://zevylo.com',
+        item: 'https://zevylo.netlify.app',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'HTML Sitemap & Directory',
-        item: 'https://zevylo.com/sitemap',
+        item: 'https://zevylo.netlify.app/sitemap',
       },
     ],
   };

@@ -9,7 +9,7 @@ export default function TwitterCardPreview() {
   const [description, setDescription] = useState<string>('Supercharge your productivity with client-side calculators, converters, image optimizers, and developer utilities.');
   const [imageUrl, setImageUrl] = useState<string>('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80');
   const [siteHandle, setSiteHandle] = useState<string>('@zevylo');
-  const [domain, setDomain] = useState<string>('zevylo.com');
+  const [domain, setDomain] = useState<string>('zevylo.netlify.app');
   const [mockTheme, setMockTheme] = useState<'dark' | 'light'>('dark');
   const [copied, setCopied] = useState<boolean>(false);
 

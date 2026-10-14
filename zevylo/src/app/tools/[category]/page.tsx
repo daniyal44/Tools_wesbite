@@ -66,19 +66,19 @@ export default async function CategoryPageRoute({ params }: PageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://zevylo.com',
+        item: 'https://zevylo.netlify.app',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'All Tools',
-        item: 'https://zevylo.com/tools',
+        item: 'https://zevylo.netlify.app/tools',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: `${cat.name} Tools`,
-        item: `https://zevylo.com/tools/${category}`,
+        item: `https://zevylo.netlify.app/tools/${category}`,
       },
     ],
   };
@@ -94,7 +94,7 @@ export default async function CategoryPageRoute({ params }: PageProps) {
       position: index + 1,
       name: tool.name,
       description: tool.shortDescription,
-      url: `https://zevylo.com/tools/${tool.category}/${tool.slug}`,
+      url: `https://zevylo.netlify.app/tools/${tool.category}/${tool.slug}`,
     })),
   };
 

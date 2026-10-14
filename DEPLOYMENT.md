@@ -1,6 +1,9 @@
 # 🚀 Production Deployment Guide
 
-Zevylo is built with **Next.js 16** and can be deployed anywhere that supports Node.js or static export.
+> **Live Production Website**: [https://zevylo.netlify.app/](https://zevylo.netlify.app/)  
+> **Official Repository**: [https://github.com/daniyal44/Tools_wesbite](https://github.com/daniyal44/Tools_wesbite)
+
+Zevylo is built with **Next.js 16** and is live on Netlify at [https://zevylo.netlify.app/](https://zevylo.netlify.app/).
 
 ---
 
