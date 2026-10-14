@@ -21,6 +21,7 @@ export function Header() {
               alt="Zevylo Logo"
               width={140}
               height={36}
+              style={{ width: "auto", height: "auto" }}
               className="h-8 sm:h-9 w-auto object-contain rounded transition-opacity group-hover:opacity-90"
               priority
               unoptimized

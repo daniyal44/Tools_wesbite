@@ -16,6 +16,7 @@ export function Footer() {
                 alt="Zevylo Logo"
                 width={130}
                 height={34}
+                style={{ width: "auto", height: "auto" }}
                 className="h-8 w-auto object-contain rounded"
                 unoptimized
               />
