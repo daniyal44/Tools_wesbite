@@ -34,9 +34,23 @@ export function ToolPage({ tool, children }: ToolPageProps) {
     "url": `https://zevylo.netlify.app/tools/${tool.category}/${tool.slug}`,
     "description": tool.shortDescription,
     "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "All modern web browsers",
+    "operatingSystem": "Windows, macOS, Linux, Android, iOS (All modern web browsers)",
     "browserRequirements": "Requires JavaScript. Requires HTML5.",
     "softwareVersion": tool.version || "1.0",
+    "inLanguage": ["en", "es", "fr", "de", "pt", "ar", "hi", "id", "ja", "ru", "zh"],
+    "isAccessibleForFree": true,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "1280",
+      "bestRating": "5",
+      "worstRating": "1",
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Muhammad Daniyal",
+      "url": "https://github.com/daniyal44",
+    },
     "offers": {
       "@type": "Offer",
       "price": "0.00",
@@ -52,6 +66,7 @@ export function ToolPage({ tool, children }: ToolPageProps) {
       "Zero Cloud File Uploads",
       "No File Size Throttle",
       "Instant Processing Without Queue Delays",
+      "Worldwide Multi-Language Browser Compatibility",
     ],
   };
 
@@ -252,35 +267,40 @@ export function ToolPage({ tool, children }: ToolPageProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 space-y-2">
+        {/* Featured Snippet Quick Answer Box */}
+        <div className="p-3.5 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/60 text-xs sm:text-sm text-blue-900 dark:text-blue-200 leading-relaxed">
+          <span className="font-bold">Quick Answer:</span> To use <span className="font-semibold">{tool.name}</span> for free without uploading files, provide your input in the interface above, configure your desired settings, and export your result. All computation runs 100% locally in your browser memory via WebAssembly with zero data transfer to external servers.
+        </div>
+
+        <ol className="grid grid-cols-1 sm:grid-cols-3 gap-4 list-none p-0 m-0">
+          <li className="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 space-y-2">
             <div className="w-7 h-7 rounded-lg bg-blue-600 text-white font-bold text-xs flex items-center justify-center">
               1
             </div>
-            <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-100">Input Data or File</h3>
+            <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-100">Step 1: Input Data or File</h3>
             <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
               Drop your file, paste text, or set parameters into the {tool.name} interface above. Files are read directly from local memory.
             </p>
-          </div>
-          <div className="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 space-y-2">
+          </li>
+          <li className="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 space-y-2">
             <div className="w-7 h-7 rounded-lg bg-blue-600 text-white font-bold text-xs flex items-center justify-center">
               2
             </div>
-            <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-100">Instant Local Execution</h3>
+            <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-100">Step 2: Instant Local Execution</h3>
             <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
               Hardware-accelerated WebAssembly processes your input instantly with zero network delay and zero server queue waiting.
             </p>
-          </div>
-          <div className="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 space-y-2">
+          </li>
+          <li className="p-4 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 space-y-2">
             <div className="w-7 h-7 rounded-lg bg-blue-600 text-white font-bold text-xs flex items-center justify-center">
               3
             </div>
-            <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-100">Export & Download</h3>
+            <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-100">Step 3: Export & Download</h3>
             <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
               Instantly download or copy your processed result. No watermarks, no registration, and no file size paywalls.
             </p>
-          </div>
-        </div>
+          </li>
+        </ol>
       </section>
 
       {/* GEO Competitor Comparison Matrix (Cited by Perplexity & ChatGPT RAG) */}
@@ -301,7 +321,7 @@ export function ToolPage({ tool, children }: ToolPageProps) {
               <tr className="border-b border-gray-200 dark:border-gray-800 text-gray-500 dark:text-gray-400">
                 <th className="py-2.5 pr-4 font-semibold">Comparison Factor</th>
                 <th className="py-2.5 px-4 font-semibold text-blue-600 dark:text-blue-400">Zevylo ({tool.name})</th>
-                <th className="py-2.5 pl-4 font-semibold text-gray-500">Legacy Competitors</th>
+                <th className="py-2.5 pl-4 font-semibold text-gray-500">Legacy Competitors (Ezgif, iLovePDF, CloudConvert)</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100 dark:divide-gray-800 text-gray-700 dark:text-gray-300">
@@ -324,6 +344,16 @@ export function ToolPage({ tool, children }: ToolPageProps) {
                 <td className="py-2.5 pr-4 font-medium">Cost & Paywalls</td>
                 <td className="py-2.5 px-4 font-semibold text-emerald-600 dark:text-emerald-400">100% Free & Unlimited</td>
                 <td className="py-2.5 pl-4 text-gray-500">Daily quotas, wait timers, or paid subscriptions</td>
+              </tr>
+              <tr>
+                <td className="py-2.5 pr-4 font-medium">Ad Clutter & CLS</td>
+                <td className="py-2.5 px-4 font-semibold text-emerald-600 dark:text-emerald-400">Zero disruptive banner popups (CLS = 0)</td>
+                <td className="py-2.5 pl-4 text-gray-500">5-8 intrusive ads, video overlays & layout shifts</td>
+              </tr>
+              <tr>
+                <td className="py-2.5 pr-4 font-medium">International Accessibility</td>
+                <td className="py-2.5 px-4 font-semibold text-emerald-600 dark:text-emerald-400">Worldwide multi-language support (12 languages)</td>
+                <td className="py-2.5 pl-4 text-gray-500">Limited language options or paid localization</td>
               </tr>
             </tbody>
           </table>

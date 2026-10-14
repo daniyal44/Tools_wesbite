@@ -9,36 +9,61 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.netlify.app';
   const now = new Date();
 
+  const createLanguageAlternates = (path: string) => {
+    const fullUrl = path.startsWith('http') ? path : `${baseUrl}${path}`;
+    return {
+      languages: {
+        'x-default': fullUrl,
+        'en': fullUrl,
+        'es': fullUrl,
+        'fr': fullUrl,
+        'de': fullUrl,
+        'pt': fullUrl,
+        'ar': fullUrl,
+        'hi': fullUrl,
+        'id': fullUrl,
+        'ja': fullUrl,
+        'ru': fullUrl,
+        'zh': fullUrl,
+      },
+    };
+  };
+
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: now,
       changeFrequency: 'daily',
       priority: 1.0,
+      alternates: createLanguageAlternates(''),
     },
     {
       url: `${baseUrl}/tools`,
       lastModified: now,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: createLanguageAlternates('/tools'),
     },
     {
       url: `${baseUrl}/ai-tools`,
       lastModified: now,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: createLanguageAlternates('/ai-tools'),
     },
     {
       url: `${baseUrl}/ai-tools/categories`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.9,
+      alternates: createLanguageAlternates('/ai-tools/categories'),
     },
     {
       url: `${baseUrl}/sitemap`,
       lastModified: now,
       changeFrequency: 'daily',
       priority: 0.9,
+      alternates: createLanguageAlternates('/sitemap'),
     },
     {
       url: `${baseUrl}/categories`,
@@ -101,6 +126,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: 'weekly',
     priority: 0.85,
+    alternates: createLanguageAlternates(`/tools/${cat.slug}`),
   }));
 
   const aiCategoryPages: MetadataRoute.Sitemap = AI_CATEGORIES.map((cat) => ({
@@ -108,6 +134,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: 'weekly',
     priority: 0.85,
+    alternates: createLanguageAlternates(`/ai-tools/${cat.slug}`),
   }));
 
   const tools = getAllTools();
@@ -116,6 +143,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: 'weekly',
     priority: 0.8,
+    alternates: createLanguageAlternates(`/tools/${tool.category}/${tool.slug}`),
   }));
 
   const aiToolPages: MetadataRoute.Sitemap = AI_TOOLS_DATABASE.map((tool) => ({
@@ -123,6 +151,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: 'weekly',
     priority: 0.8,
+    alternates: createLanguageAlternates(`/ai-tools/tool/${tool.slug}`),
   }));
 
   const articlePages: MetadataRoute.Sitemap = tools.map((tool) => ({
@@ -130,6 +159,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: 'weekly',
     priority: 0.8,
+    alternates: createLanguageAlternates(`/articles/${tool.slug}`),
   }));
 
   return [

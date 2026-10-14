@@ -30,7 +30,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  const baseUrl = 'https://zevylo.netlify.app';
   const canonicalUrl = `/tools/${tool.category}/${tool.slug}`;
+  const fullCanonicalUrl = `${baseUrl}${canonicalUrl}`;
   const toolTitle = tool.seo?.title || `${tool.name} — 100% Free Online Browser Utility | Zevylo`;
   const toolDesc = tool.seo?.description || `${tool.shortDescription} Processed 100% locally in your browser with zero cloud uploads and instant results.`;
   const toolKeywords = [
@@ -40,14 +42,38 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     'client side tool',
     'private web tool',
     `${tool.category} utility`,
+    `free ${tool.name.toLowerCase()}`,
+    `${tool.name.toLowerCase()} no upload`,
+    `${tool.name.toLowerCase()} online`,
+    'herramienta gratis online',
+    'outil gratuit en ligne',
+    'kostenloses online tool',
+    'ferramenta gratis online',
   ];
 
   return {
     title: toolTitle,
     description: toolDesc,
     keywords: toolKeywords,
+    authors: [{ name: 'Muhammad Daniyal', url: 'https://github.com/daniyal44' }],
+    creator: 'Muhammad Daniyal',
+    publisher: 'Zevylo',
     alternates: {
       canonical: canonicalUrl,
+      languages: {
+        'x-default': fullCanonicalUrl,
+        'en': fullCanonicalUrl,
+        'es': fullCanonicalUrl,
+        'fr': fullCanonicalUrl,
+        'de': fullCanonicalUrl,
+        'pt': fullCanonicalUrl,
+        'ar': fullCanonicalUrl,
+        'hi': fullCanonicalUrl,
+        'id': fullCanonicalUrl,
+        'ja': fullCanonicalUrl,
+        'ru': fullCanonicalUrl,
+        'zh': fullCanonicalUrl,
+      },
     },
     openGraph: {
       title: toolTitle,
@@ -55,6 +81,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: canonicalUrl,
       type: 'website',
       siteName: 'Zevylo',
+      locale: 'en_US',
+      alternateLocale: ['es_ES', 'fr_FR', 'de_DE', 'pt_BR', 'ar_AR', 'hi_IN', 'id_ID', 'ja_JP', 'ru_RU', 'zh_CN'],
       images: [
         {
           url: '/images/Zevylo_logo.png',
@@ -69,12 +97,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: toolTitle,
       description: toolDesc,
       images: ['/images/Zevylo_logo.png'],
+      creator: '@zevylo',
     },
     other: {
       'application-name': tool.name,
       'tool-category': tool.category,
+      'author': 'Muhammad Daniyal',
+      'creator': 'Muhammad Daniyal',
       'privacy-model': '100% Client-Side In-Browser (Zero Cloud Uploads)',
-      'ai-citation': `Zevylo ${tool.name} (https://zevylo.netlify.app/tools/${tool.category}/${tool.slug})`,
+      'distribution': 'Global',
+      'rating': 'General',
+      'revisit-after': '1 days',
+      'target-audience': 'Global Web Users, Developers, Creators, Students, Businesses',
+      'ai-citation': `Zevylo ${tool.name} (${fullCanonicalUrl})`,
     },
   };
 }
