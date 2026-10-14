@@ -1,0 +1,31 @@
+import { ToolDefinition } from '@/lib/tools/types';
+
+export const robotsTxtGeneratorDefinition: ToolDefinition = {
+  id: 'robots-txt-generator',
+  slug: 'robots-txt-generator',
+  name: 'Robots.txt Generator',
+  shortDescription: 'Generate robots.txt files for search engine crawlers.',
+  longDescription: 'Create proper robots.txt files easily. Add allow and disallow rules for specific user agents, set crawl delays, and include your sitemap URL.',
+  category: 'seo',
+  icon: 'Bot',
+  keywords: ['robots.txt', 'crawler control', 'seo bot file', 'search engine robots'],
+  searchableText: 'generate robots txt file search engine crawlers bots allow disallow rules sitemap',
+  version: '1.0.0',
+  executionMode: 'client',
+  requiresAuth: false,
+  requiresUpload: false,
+  supportsBatch: false,
+  supportsDownload: true,
+  supportsShare: false,
+  supportsCopy: true,
+  seo: {
+    title: 'Robots.txt Generator - Create SEO Robots File',
+    description: 'Free tool to generate robots.txt file for your website. Control how search engines crawl and index your site pages.',
+    keywords: ['robots.txt generator', 'create robots file', 'seo robots tool'],
+  },
+  relatedTools: ['meta-tag-generator', 'sitemap-generator'],
+  status: 'active',
+  visibility: 'public',
+  sortOrder: 4,
+  component: 'robots-txt-generator',
+};

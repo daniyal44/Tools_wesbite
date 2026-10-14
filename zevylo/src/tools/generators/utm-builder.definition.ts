@@ -1,0 +1,31 @@
+import { ToolDefinition } from '@/lib/tools/types';
+
+export const utmBuilderDefinition: ToolDefinition = {
+  id: 'utm-builder',
+  slug: 'utm-builder',
+  name: 'UTM Link Builder',
+  shortDescription: 'Generate trackable URLs with UTM parameters.',
+  longDescription: 'Create campaign URLs with UTM parameters to track your marketing campaigns in Google Analytics. Add source, medium, campaign, term, and content parameters instantly.',
+  category: 'marketing',
+  icon: 'Link',
+  keywords: ['utm builder', 'url builder', 'campaign tracking', 'google analytics utm'],
+  searchableText: 'utm link builder generator url tracking google analytics campaign source medium',
+  version: '1.0.0',
+  executionMode: 'client',
+  requiresAuth: false,
+  requiresUpload: false,
+  supportsBatch: false,
+  supportsDownload: false,
+  supportsShare: false,
+  supportsCopy: true,
+  seo: {
+    title: 'UTM Link Builder - Campaign URL Generator',
+    description: 'Free UTM link builder tool. Generate trackable campaign URLs for Google Analytics by adding UTM parameters like source, medium, and campaign.',
+    keywords: ['utm builder', 'campaign url builder', 'google analytics url builder'],
+  },
+  relatedTools: ['qr-code-generator'],
+  status: 'active',
+  visibility: 'public',
+  sortOrder: 4,
+  component: 'utm-builder',
+};

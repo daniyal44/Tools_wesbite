@@ -1,0 +1,31 @@
+import { ToolDefinition } from '@/lib/tools/types';
+
+export const ogGeneratorDefinition: ToolDefinition = {
+  id: 'og-generator',
+  slug: 'og-generator',
+  name: 'Open Graph Generator',
+  shortDescription: 'Generate Open Graph and Twitter Card tags.',
+  longDescription: 'Create perfect Open Graph and Twitter Card meta tags to ensure your links look great when shared on social media platforms like Facebook, Twitter, LinkedIn, and Discord.',
+  category: 'seo',
+  icon: 'Share2',
+  keywords: ['open graph', 'og tags', 'twitter cards', 'social media tags'],
+  searchableText: 'generate open graph twitter card meta tags social media facebook linkedin discord',
+  version: '1.0.0',
+  executionMode: 'client',
+  requiresAuth: false,
+  requiresUpload: false,
+  supportsBatch: false,
+  supportsDownload: true,
+  supportsShare: false,
+  supportsCopy: true,
+  seo: {
+    title: 'Open Graph Generator - Create OG Meta Tags',
+    description: 'Free tool to generate Open Graph and Twitter Card tags. Improve how your links look when shared on social media.',
+    keywords: ['open graph generator', 'og tags', 'twitter card generator'],
+  },
+  relatedTools: ['meta-tag-generator'],
+  status: 'active',
+  visibility: 'public',
+  sortOrder: 3,
+  component: 'og-generator',
+};

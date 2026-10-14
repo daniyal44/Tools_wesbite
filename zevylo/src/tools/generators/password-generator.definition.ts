@@ -1,0 +1,31 @@
+import { ToolDefinition } from '@/lib/tools/types';
+
+export const passwordGeneratorDefinition: ToolDefinition = {
+  id: 'password-generator',
+  slug: 'password-generator',
+  name: 'Password Generator',
+  shortDescription: 'Generate secure, random passwords.',
+  longDescription: 'Create highly secure, random passwords using cryptographically secure algorithms. Customize length and character types, and evaluate password entropy.',
+  category: 'generators',
+  icon: 'Key',
+  keywords: ['password generator', 'secure password', 'random string', 'strong password'],
+  searchableText: 'generate secure random passwords cryptographically safe string maker',
+  version: '1.0.0',
+  executionMode: 'client',
+  requiresAuth: false,
+  requiresUpload: false,
+  supportsBatch: true,
+  supportsDownload: true,
+  supportsShare: false,
+  supportsCopy: true,
+  seo: {
+    title: 'Secure Password Generator - Create Strong Passwords',
+    description: 'Free tool to generate secure, strong, and random passwords. Processed entirely locally in your browser for maximum security.',
+    keywords: ['secure password generator', 'strong password creator', 'random password'],
+  },
+  relatedTools: ['uuid-generator', 'password-strength'],
+  status: 'active',
+  visibility: 'public',
+  sortOrder: 1,
+  component: 'password-generator',
+};

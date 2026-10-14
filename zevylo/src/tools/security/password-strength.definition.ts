@@ -1,0 +1,31 @@
+import { ToolDefinition } from '@/lib/tools/types';
+
+export const passwordStrengthDefinition: ToolDefinition = {
+  id: 'password-strength',
+  slug: 'password-strength',
+  name: 'Password Strength Checker',
+  shortDescription: 'Test the strength and security of your passwords.',
+  longDescription: 'Analyze your password for strength and vulnerability. Get instant feedback on entropy, complexity, crack time estimates, and actionable tips for improvement. All analysis is performed locally in your browser for maximum security.',
+  category: 'security',
+  icon: 'ShieldCheck',
+  keywords: ['password strength', 'password checker', 'security test', 'entropy calculator'],
+  searchableText: 'test password strength checker security entropy crack time estimates locally browser',
+  version: '1.0.0',
+  executionMode: 'client',
+  requiresAuth: false,
+  requiresUpload: false,
+  supportsBatch: false,
+  supportsDownload: false,
+  supportsShare: false,
+  supportsCopy: false,
+  seo: {
+    title: 'Password Strength Checker - Test Password Security',
+    description: 'Free tool to test the strength and security of your passwords. Get instant feedback and crack time estimates. 100% secure, processed locally.',
+    keywords: ['password strength checker', 'test password', 'password security tester'],
+  },
+  relatedTools: ['password-generator'],
+  status: 'active',
+  visibility: 'public',
+  sortOrder: 1,
+  component: 'password-strength',
+};

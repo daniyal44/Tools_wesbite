@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
+    "heic2any": "^0.0.4",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.4.299"
+  }
+}

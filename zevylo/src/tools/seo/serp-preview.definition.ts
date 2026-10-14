@@ -1,0 +1,31 @@
+import { ToolDefinition } from '@/lib/tools/types';
+
+export const serpPreviewDefinition: ToolDefinition = {
+  id: 'serp-preview',
+  slug: 'serp-preview',
+  name: 'SERP Preview',
+  shortDescription: 'Preview how your page looks in Google Search results.',
+  longDescription: 'Visualize your web page appearance in Google SERPs on desktop and mobile. Check title and description lengths with character counters and truncation simulation.',
+  category: 'seo',
+  icon: 'Search',
+  keywords: ['serp preview', 'google search preview', 'seo title check'],
+  searchableText: 'preview google search results serp title description length truncation check',
+  version: '1.0.0',
+  executionMode: 'client',
+  requiresAuth: false,
+  requiresUpload: false,
+  supportsBatch: false,
+  supportsDownload: false,
+  supportsShare: false,
+  supportsCopy: false,
+  seo: {
+    title: 'SERP Preview Tool - Check Google Search Appearance',
+    description: 'Free tool to preview how your page will look in Google Search results. Check title and description truncation for desktop and mobile.',
+    keywords: ['serp preview', 'google snippet preview'],
+  },
+  relatedTools: ['meta-tag-generator'],
+  status: 'active',
+  visibility: 'public',
+  sortOrder: 2,
+  component: 'serp-preview',
+};

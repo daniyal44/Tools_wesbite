@@ -1,0 +1,31 @@
+import { ToolDefinition } from '@/lib/tools/types';
+
+export const uuidGeneratorDefinition: ToolDefinition = {
+  id: 'uuid-generator',
+  slug: 'uuid-generator',
+  name: 'UUID Generator',
+  shortDescription: 'Generate universally unique identifiers (UUIDs).',
+  longDescription: 'Generate random v4 UUIDs for your databases, programming needs, or any scenario requiring unique identifiers. Bulk generate up to 100 UUIDs instantly.',
+  category: 'generators',
+  icon: 'Fingerprint',
+  keywords: ['uuid generator', 'guid generator', 'v4 uuid', 'unique identifier'],
+  searchableText: 'generate uuid guid universally unique identifier v4 random bulk creator string',
+  version: '1.0.0',
+  executionMode: 'client',
+  requiresAuth: false,
+  requiresUpload: false,
+  supportsBatch: true,
+  supportsDownload: true,
+  supportsShare: false,
+  supportsCopy: true,
+  seo: {
+    title: 'UUID Generator - Create Random v4 UUIDs',
+    description: 'Free online tool to generate v4 UUIDs (Universally Unique Identifiers). Generate multiple UUIDs in bulk and copy instantly.',
+    keywords: ['uuid generator', 'guid generator', 'random uuid', 'bulk uuid'],
+  },
+  relatedTools: ['password-generator'],
+  status: 'active',
+  visibility: 'public',
+  sortOrder: 3,
+  component: 'uuid-generator',
+};

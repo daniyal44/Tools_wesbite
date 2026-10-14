@@ -1,0 +1,31 @@
+import { ToolDefinition } from '@/lib/tools/types';
+
+export const qrCodeGeneratorDefinition: ToolDefinition = {
+  id: 'qr-code-generator',
+  slug: 'qr-code-generator',
+  name: 'QR Code Generator',
+  shortDescription: 'Generate custom QR codes for URLs and text.',
+  longDescription: 'Create quick response (QR) codes for your links, text, emails, or phone numbers. Customize colors, size, and error correction levels, then download the result as a PNG image.',
+  category: 'generators',
+  icon: 'QrCode',
+  keywords: ['qr code', 'qrcode generator', '2d barcode', 'create qr'],
+  searchableText: 'generate qr code quick response 2d barcode links text customize png download',
+  version: '1.0.0',
+  executionMode: 'client',
+  requiresAuth: false,
+  requiresUpload: false,
+  supportsBatch: false,
+  supportsDownload: true,
+  supportsShare: false,
+  supportsCopy: true,
+  seo: {
+    title: 'Free QR Code Generator - Create Custom QR Codes',
+    description: 'Generate customizable QR codes for URLs, text, and more. Change colors, size, and download as PNG for free.',
+    keywords: ['qr code generator', 'custom qr code', 'free qr creator'],
+  },
+  relatedTools: ['url-shortener'],
+  status: 'active',
+  visibility: 'public',
+  sortOrder: 2,
+  component: 'qr-code-generator',
+};

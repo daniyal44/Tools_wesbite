@@ -1,0 +1,31 @@
+import { ToolDefinition } from '@/lib/tools/types';
+
+export const metaTagGeneratorDefinition: ToolDefinition = {
+  id: 'meta-tag-generator',
+  slug: 'meta-tag-generator',
+  name: 'Meta Tag Generator',
+  shortDescription: 'Generate HTML meta tags for SEO optimization.',
+  longDescription: "Create optimized meta tags including title, description, keywords, robots, viewport, and social media Open Graph and Twitter Cards. Easily generate HTML tags to improve your website's SEO and social sharing appearance.",
+  category: 'seo',
+  icon: 'Tags',
+  keywords: ['meta tags', 'seo generator', 'html head', 'open graph generator', 'twitter cards'],
+  searchableText: 'generate html meta tags seo optimization title description keywords open graph twitter cards',
+  version: '1.0.0',
+  executionMode: 'client',
+  requiresAuth: false,
+  requiresUpload: false,
+  supportsBatch: false,
+  supportsDownload: true,
+  supportsShare: false,
+  supportsCopy: true,
+  seo: {
+    title: 'Meta Tag Generator - Create SEO HTML Tags',
+    description: 'Free online tool to generate optimized meta tags for your website. Create title, description, robots, Open Graph, and Twitter Card tags easily.',
+    keywords: ['meta tag generator', 'seo tags', 'html meta generator'],
+  },
+  relatedTools: ['serp-preview', 'og-generator'],
+  status: 'active',
+  visibility: 'public',
+  sortOrder: 1,
+  component: 'meta-tag-generator',
+};
