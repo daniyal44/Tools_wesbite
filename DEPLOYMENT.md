@@ -33,13 +33,23 @@ This is already pre-configured in `zevylo/next.config.ts`. Ensure your reverse p
 
 ## ⚡ Deploy to Netlify
 
-1. Connect your repository on the [Netlify Dashboard](https://app.netlify.com).
-2. Configure build settings:
-   - **Base directory**: `zevylo`
+Netlify configuration is fully pre-configured via [`netlify.toml`](netlify.toml) and [`zevylo/netlify.toml`](zevylo/netlify.toml) using the official `@netlify/plugin-nextjs`:
+
+### Configuration Overview
+- **Base directory**: `zevylo` (Handled automatically by root `netlify.toml`)
+- **Build command**: `npm run build`
+- **Publish directory**: `.next`
+- **Plugin**: `@netlify/plugin-nextjs`
+- **WebAssembly Headers**: Injected automatically for all routes (`Cross-Origin-Opener-Policy: same-origin`, `Cross-Origin-Embedder-Policy: require-corp`)
+
+### Troubleshooting Netlify 404 ("Page Not Found"):
+If you linked the repository before `netlify.toml` was added:
+1. Go to your **Netlify Site Dashboard** -> **Site configuration** -> **Build & deploy** -> **Build settings**:
+   - **Base directory**: `zevylo` (or leave empty if using root `netlify.toml`)
    - **Build command**: `npm run build`
-   - **Publish directory**: `zevylo/.next`
-3. In `zevylo/netlify.toml` (or Headers tab), ensure the COOP/COEP headers are applied.
-4. Click **Deploy Site**.
+   - **Publish directory**: `.next`
+2. Go to the **Deploys** tab -> Click **Trigger deploy** -> **Clear cache and deploy site**.
+3. Netlify will detect `netlify.toml` and `@netlify/plugin-nextjs`, build all 586 pages, and serve the site live at `https://zevylo.netlify.app/`.
 
 ---
 
