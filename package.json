@@ -2,12 +2,15 @@
   "name": "tools-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Zevylo — 206+ Free Privacy-First Browser Tools Suite (100% Client-Side)",
+  "description": "Zevylo — 206+ Free Privacy-First Browser Tools Suite (100% Client-Side Web & Desktop App)",
   "scripts": {
     "dev": "npm --prefix zevylo run dev",
     "build": "npm --prefix zevylo run build",
     "start": "npm --prefix zevylo run start",
     "lint": "npm --prefix zevylo run lint",
+    "desktop": "npm --prefix desktop start",
+    "desktop:dev": "npm --prefix desktop run dev",
+    "desktop:dist": "npm --prefix desktop run dist",
     "docs:tools": "node zevylo/scripts/generate-tool-docs.mjs",
     "docs:graph": "node scripts/generate-codebase-graph.mjs",
     "docs:all": "npm run docs:tools && npm run docs:graph"

@@ -11,9 +11,20 @@ Tools_wesbite/                     # Root Workspace Directory
 ├── .github/                       # GitHub Actions Workflows
 │   └── workflows/
 │       └── update-graph.yml       # Auto-updates codebase diagrams on push
+├── desktop/                       # Cross-Platform Desktop Client (Electron)
+│   ├── assets/                    # App icons (icon.ico, tray icons)
+│   ├── src/                       # Main process, secure preload bridge, menu, tray
+│   │   ├── main.js                # Window lifecycle, COOP/COEP headers, IPC
+│   │   ├── preload.js             # contextBridge sandbox API
+│   │   ├── menu.js                # Native application menus
+│   │   ├── server.js              # Local Next.js background manager
+│   │   └── tray.js                # Taskbar system tray quick launcher
+│   ├── electron-builder.json      # Packaging configs for Windows, Mac & Linux
+│   └── package.json               # Desktop dependencies & packaging scripts
 ├── docs/                          # Project documentation
 ├── scripts/                       # Root orchestration & automation scripts
-│   └── generate-codebase-graph.mjs# Codebase graph & category statistics parser
+│   ├── generate-codebase-graph.mjs# Codebase graph & category statistics parser
+│   └── build-tools-directory.mjs  # Master tools directory generator
 ├── zevylo/                        # Next.js 16 Web Application Root
 │   ├── docs/                      # Technical roadmaps, benchmarks & tool guides
 │   ├── public/                    # Static assets (favicons, SVG logos, llms.txt)
@@ -27,17 +38,27 @@ Tools_wesbite/                     # Root Workspace Directory
 │   ├── package.json               # Next.js dependencies, scripts & configs
 │   ├── tsconfig.json              # TypeScript configuration
 │   └── next.config.ts             # Next.js build & WASM header settings
-├── .gitignore                     # Git ignore rules (node_modules, .next, etc.)
+├── .gitignore                     # Git ignore rules (node_modules, .next, dist)
+├── AGENTS.md                      # AI agent instructions bound by UNIVERSAL_RULE
 ├── ARCHITECTURE.md                # System architecture & Mermaid graphs
+├── BUTTONS_AND_CONTROLS.md        # Comprehensive catalog of all buttons & controls
 ├── CHANGELOG.md                   # Version history & update logs
+├── CLAUDE.md                      # Claude guidelines pointing to UNIVERSAL_RULE
 ├── CONTRIBUTING.md                # Contribution guide & tool creation instructions
+├── CONTRIBUTORS.md                # Lead architect & author profile (Muhammad Daniyal)
 ├── DEPLOYMENT.md                  # Production deployment configurations
+├── DESKTOP.md                     # Cross-platform desktop application guide
+├── DESIGN_SYSTEM.md               # Theme tokens, colors, typography & spacing
+├── FEATURES.md                    # Exhaustive guide to all platform features
+├── FUNCTIONS_AND_ENGINES.md       # Technical guide to WASM, Canvas, & PDF math
 ├── github.bat                     # Windows 1-click sync & push automation
 ├── package.json                   # Root monorepo workspace package.json
+├── PROJECT_STRUCTURE.md           # Deep dive into folder architecture & file roles
 ├── README.md                      # Flagship presentation documentation
 ├── ROADMAP.md                     # Planned features & vision
 ├── SECURITY_AND_PRIVACY.md        # Client-side sandbox & security policies
-└── TOOLS_DIRECTORY.md             # Master directory of all 206 tools
+├── TOOLS_DIRECTORY.md             # Master directory of all 206 tools
+└── UNIVERSAL_RULE.md              # Supreme invariant: permanent zero-deletion law
 ```
 
 ---

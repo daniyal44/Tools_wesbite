@@ -8,15 +8,17 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![WebAssembly](https://img.shields.io/badge/WebAssembly-FFmpeg_WASM-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)](https://webassembly.org/)
+[![Desktop App](https://img.shields.io/badge/Desktop_App-Windows%20%7C%20macOS%20%7C%20Linux-9333EA?style=for-the-badge&logo=electron&logoColor=white)](DESKTOP.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Privacy: 100% Client-Side](https://img.shields.io/badge/Privacy-100%25_Client--Side-10B981?style=for-the-badge)](SECURITY_AND_PRIVACY.md)
 
 <p align="center">
   <b>A comprehensive, open-source browser utility ecosystem featuring 206+ tools.</b><br>
+  Available as both a modern web app and an <b>open-source desktop application</b>.<br>
   Convert, calculate, generate, analyze, optimize, and create without uploading your files to third-party servers.
 </p>
 
-[Explore Tools](TOOLS_DIRECTORY.md) • [Architecture](ARCHITECTURE.md) • [Project Structure](PROJECT_STRUCTURE.md) • [Contributing](CONTRIBUTING.md) • [Security & Privacy](SECURITY_AND_PRIVACY.md)
+[Explore Tools](TOOLS_DIRECTORY.md) • [Desktop App](DESKTOP.md) • [Architecture](ARCHITECTURE.md) • [Features](FEATURES.md) • [Contributing](CONTRIBUTING.md) • [Security & Privacy](SECURITY_AND_PRIVACY.md)
 
 ---
 
@@ -257,6 +259,7 @@ Your tool will automatically appear in the catalog, search index, sitemap, and a
 | 🧰 [**TOOLS_DIRECTORY.md**](TOOLS_DIRECTORY.md) | Complete master catalog of all 206 tools across 18 categories |
 | 🤝 [**CONTRIBUTING.md**](CONTRIBUTING.md) | Step-by-step contribution guide, code standards, and PR instructions |
 | 🔒 [**SECURITY_AND_PRIVACY.md**](SECURITY_AND_PRIVACY.md) | Client-side execution proof, WASM sandbox, zero-cloud architecture |
+| 🖥️ [**DESKTOP.md**](DESKTOP.md) | **Cross-platform desktop application guide (Windows, macOS, Linux)** |
 | 🚢 [**DEPLOYMENT.md**](DEPLOYMENT.md) | Production setup for Vercel, Netlify, Cloudflare, and Docker |
 | 🗺️ [**ROADMAP.md**](ROADMAP.md) | Future milestones: PWA offline support, WebGPU local models |
 | 📜 [**CHANGELOG.md**](CHANGELOG.md) | Version history and milestone documentation |
