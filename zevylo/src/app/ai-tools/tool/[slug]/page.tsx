@@ -54,6 +54,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: tool.description,
       url: `/ai-tools/tool/${tool.slug}`,
       type: 'article',
+      siteName: 'Zevylo',
+      images: [
+        {
+          url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
+          width: 1200,
+          height: 630,
+          alt: `${tool.name} Review & Pricing on Zevylo AI Directory`,
+          type: 'image/png',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${tool.name} Review & Pricing | Zevylo`,
+      description: tool.tagline,
+      images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
+      creator: '@zevylo',
+    },
+    other: {
+      'image': 'https://zevylo.netlify.app/images/Zevylo_logo.png',
     },
   };
 }
@@ -96,6 +116,13 @@ export default async function AIToolDetailPage({ params }: PageProps) {
       '@type': 'Offer',
       price: tool.startingPrice,
       priceCurrency: 'USD',
+    },
+    image: {
+      '@type': 'ImageObject',
+      url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
+      caption: `${tool.name} AI Application`,
+      width: 1200,
+      height: 630,
     },
     url: tool.url,
   };

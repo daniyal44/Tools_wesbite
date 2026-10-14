@@ -61,6 +61,20 @@ export function ToolPage({ tool, children }: ToolPageProps) {
       "name": "Zevylo",
       "url": "https://zevylo.netlify.app",
     },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://zevylo.netlify.app/images/Zevylo_logo.png",
+      "caption": `${tool.name} — 100% Free In-Browser Tool by Zevylo`,
+      "width": 1200,
+      "height": 630,
+    },
+    "screenshot": {
+      "@type": "ImageObject",
+      "url": "https://zevylo.netlify.app/images/Zevylo_logo.png",
+      "caption": `${tool.name} client-side web application interface`,
+      "width": 1200,
+      "height": 630,
+    },
     "featureList": [
       "100% Client-Side In-Browser Execution",
       "Zero Cloud File Uploads",

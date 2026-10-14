@@ -43,10 +43,11 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
         {/* Left Side: Brand Logo + Desktop Nav */}
         <div className="flex items-center gap-6 lg:gap-8">
-          <Link href="/" className="flex items-center gap-2 shrink-0 group" aria-label="Zevylo Home">
+          <Link href="/" className="flex items-center gap-2 shrink-0 group" aria-label="Zevylo Home — 206+ Free In-Browser Online Utilities">
             <Image
               src="/images/Zevylo_logo.png"
-              alt="Zevylo Logo"
+              alt="Zevylo — 206+ Free Client-Side Online Browser Utilities (Zero Cloud Uploads)"
+              title="Zevylo — 206+ Free Online Browser Tools (100% Client-Side Privacy)"
               width={122}
               height={31}
               style={{ height: "30px", width: "auto" }}

@@ -13,7 +13,8 @@ export function Footer() {
             <div className="flex items-center gap-2">
               <Image
                 src="/images/Zevylo_logo.png"
-                alt="Zevylo Logo"
+                alt="Zevylo — In-Browser Online Tools Suite Logo"
+                title="Zevylo — 206+ In-Browser Tools Suite (Zero Server Uploads)"
                 width={122}
                 height={31}
                 style={{ height: "28px", width: "auto" }}
@@ -22,7 +23,7 @@ export function Footer() {
               />
             </div>
             <p className="text-xs text-gray-500 dark:text-gray-400 max-w-xs leading-relaxed">
-              One place. Every useful tool. 157+ fast, private, browser-based utilities. More tools are added regularly on-demand based on community requirements.
+              One place. Every useful tool. 206+ fast, private, browser-based utilities. More tools are added regularly on-demand based on community requirements.
             </p>
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 text-xs font-medium border border-emerald-200 dark:border-emerald-800">
               <ShieldCheck className="w-3.5 h-3.5" />

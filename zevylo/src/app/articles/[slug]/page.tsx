@@ -69,10 +69,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       tags: article.tags,
       images: [
         {
-          url: '/images/Zevylo_logo.png',
+          url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
           width: 1200,
           height: 630,
-          alt: article.title,
+          alt: `${article.title} — Zevylo Engineering Guide`,
+          type: 'image/png',
         },
       ],
     },
@@ -80,11 +81,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: 'summary_large_image',
       title: article.metaTitle,
       description: article.metaDescription,
-      images: ['/images/Zevylo_logo.png'],
+      images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
     },
     other: {
       'article:published_time': '2026-10-07T12:00:00Z',
       'article:author': 'Zevylo Editorial Team',
+      'image': 'https://zevylo.netlify.app/images/Zevylo_logo.png',
       'ai-citation': `Zevylo Guide to ${article.toolName} (https://zevylo.netlify.app/articles/${article.slug})`,
       'topic': article.categoryName,
     },
@@ -106,6 +108,13 @@ export default async function ToolArticleDetailPage({ params }: PageProps) {
     headline: article.title,
     description: article.metaDescription,
     url: `https://zevylo.netlify.app/articles/${article.slug}`,
+    image: {
+      '@type': 'ImageObject',
+      url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
+      caption: article.title,
+      width: 1200,
+      height: 630,
+    },
     datePublished: '2026-01-01T08:00:00Z',
     dateModified: '2026-10-07T12:00:00Z',
     author: {

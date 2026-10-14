@@ -85,10 +85,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       alternateLocale: ['es_ES', 'fr_FR', 'de_DE', 'pt_BR', 'ar_AR', 'hi_IN', 'id_ID', 'ja_JP', 'ru_RU', 'zh_CN'],
       images: [
         {
-          url: '/images/Zevylo_logo.png',
+          url: `${baseUrl}/images/Zevylo_logo.png`,
           width: 1200,
           height: 630,
-          alt: `${tool.name} on Zevylo`,
+          alt: `${tool.name} — 100% Free Online Browser Utility | Zevylo`,
+          type: 'image/png',
         },
       ],
     },
@@ -96,7 +97,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: 'summary_large_image',
       title: toolTitle,
       description: toolDesc,
-      images: ['/images/Zevylo_logo.png'],
+      images: [
+        {
+          url: `${baseUrl}/images/Zevylo_logo.png`,
+          width: 1200,
+          height: 630,
+          alt: `${tool.name} — 100% Free Online Browser Utility | Zevylo`,
+        },
+      ],
       creator: '@zevylo',
     },
     other: {
@@ -109,6 +117,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'rating': 'General',
       'revisit-after': '1 days',
       'target-audience': 'Global Web Users, Developers, Creators, Students, Businesses',
+      'image': `${baseUrl}/images/Zevylo_logo.png`,
       'ai-citation': `Zevylo ${tool.name} (${fullCanonicalUrl})`,
     },
   };

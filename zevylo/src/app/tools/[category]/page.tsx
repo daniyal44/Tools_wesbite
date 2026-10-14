@@ -44,6 +44,27 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: cat.description,
       url: canonicalUrl,
       type: 'website',
+      siteName: 'Zevylo',
+      images: [
+        {
+          url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
+          width: 1200,
+          height: 630,
+          alt: `${cat.name} — Free In-Browser Online Tools Suite | Zevylo`,
+          type: 'image/png',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${cat.name} — Free Online Utilities | Zevylo`,
+      description: cat.description,
+      images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
+      creator: '@zevylo',
+    },
+    other: {
+      'image': 'https://zevylo.netlify.app/images/Zevylo_logo.png',
+      'target-audience': 'Global Web Users',
     },
   };
 }
@@ -88,12 +109,14 @@ export default async function CategoryPageRoute({ params }: PageProps) {
     '@type': 'ItemList',
     name: `${cat.name} Free Online Tools`,
     description: cat.description,
+    image: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
     numberOfItems: tools.length,
     itemListElement: tools.map((tool, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       name: tool.name,
       description: tool.shortDescription,
+      image: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
       url: `https://zevylo.netlify.app/tools/${tool.category}/${tool.slug}`,
     })),
   };

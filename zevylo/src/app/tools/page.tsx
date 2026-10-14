@@ -9,15 +9,35 @@ import { Sparkles, Lightbulb, ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'All Tools Directory — Free Online Utilities | Zevylo',
   description:
-    'Browse the full catalog of free online tools on Zevylo. Fast, private, browser-based utilities for text, development, SEO, calculation, conversion, and generation.',
+    'Browse the full catalog of 206+ free online tools on Zevylo. Fast, private, browser-based utilities for text, development, SEO, calculation, conversion, and generation.',
   alternates: {
     canonical: '/tools',
   },
   openGraph: {
     title: 'All Tools Directory — Free Online Utilities | Zevylo',
-    description: 'Browse the full catalog of 157+ free browser tools on Zevylo.',
+    description: 'Browse the full catalog of 206+ free browser tools on Zevylo with 100% client-side privacy.',
     url: '/tools',
     type: 'website',
+    siteName: 'Zevylo',
+    images: [
+      {
+        url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Zevylo Tools Directory — 206+ Free In-Browser Online Utilities',
+        type: 'image/png',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'All Tools Directory — Free Online Utilities | Zevylo',
+    description: 'Browse the full catalog of 206+ free browser tools on Zevylo.',
+    images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
+    creator: '@zevylo',
+  },
+  other: {
+    'image': 'https://zevylo.netlify.app/images/Zevylo_logo.png',
   },
 };
 

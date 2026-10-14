@@ -16,6 +16,26 @@ export const metadata: Metadata = {
       'Search 100+ top artificial intelligence tools and run browser-based generative AI utilities with zero wait timers and 100% privacy.',
     url: '/ai-tools',
     type: 'website',
+    siteName: 'Zevylo',
+    images: [
+      {
+        url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Zevylo AI Tools Directory — 100+ Top AI Tools & In-Browser Utilities',
+        type: 'image/png',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Tools Directory — Best AI Tools from A to Z | Zevylo',
+    description: 'Discover 100+ top artificial intelligence tools and free in-browser AI utilities.',
+    images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
+    creator: '@zevylo',
+  },
+  other: {
+    'image': 'https://zevylo.netlify.app/images/Zevylo_logo.png',
   },
 };
 
@@ -26,6 +46,13 @@ export default function AIToolsPage() {
     name: 'AI Tools Directory & Discovery Hub',
     description: 'Catalog of 100+ top artificial intelligence tools and free in-browser utilities across 23 specialized categories.',
     url: 'https://zevylo.netlify.app/ai-tools',
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
+      caption: 'Zevylo AI Tools Directory',
+      width: 1200,
+      height: 630,
+    },
     isPartOf: {
       '@type': 'WebSite',
       name: 'Zevylo',
