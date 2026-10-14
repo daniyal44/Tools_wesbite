@@ -1,0 +1,36 @@
+name: Auto-Update Codebase Architecture Graph
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'zevylo/src/tools/**'
+      - 'scripts/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-graph:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate Updated Codebase Graph & Documentation
+        run: |
+          node scripts/generate-codebase-graph.mjs
+          node zevylo/scripts/generate-tool-docs.mjs
+
+      - name: Commit and Push if Changed
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add ARCHITECTURE.md README.md zevylo/docs/tools/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "docs(graph): auto-update codebase architecture graph & tool metrics [skip ci]" && git push)

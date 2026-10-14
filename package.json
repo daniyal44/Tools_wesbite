@@ -1,4 +1,17 @@
 {
+  "name": "tools-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zevylo — 206+ Free Privacy-First Browser Tools Suite (100% Client-Side)",
+  "scripts": {
+    "dev": "npm --prefix zevylo run dev",
+    "build": "npm --prefix zevylo run build",
+    "start": "npm --prefix zevylo run start",
+    "lint": "npm --prefix zevylo run lint",
+    "docs:tools": "node zevylo/scripts/generate-tool-docs.mjs",
+    "docs:graph": "node scripts/generate-codebase-graph.mjs",
+    "docs:all": "npm run docs:tools && npm run docs:graph"
+  },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.12.15",
     "@ffmpeg/util": "^0.12.2",

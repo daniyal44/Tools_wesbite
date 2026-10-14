@@ -76,6 +76,12 @@ echo.
 echo [1/4] Checking remote status (fetching origin/%CURRENT_BRANCH%)...
 git fetch origin %CURRENT_BRANCH% >nul 2>&1
 
+:: Auto-generate/update codebase architecture graph & docs
+if exist "scripts\generate-codebase-graph.mjs" (
+    echo [*] Updating Codebase Architecture Graph...
+    node scripts\generate-codebase-graph.mjs >nul 2>&1
+)
+
 :: 8. Stage all modified and new files
 echo [2/4] Staging all files (git add -A)...
 git add -A
