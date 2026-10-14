@@ -246,6 +246,12 @@ Your tool will automatically appear in the catalog, search index, sitemap, and a
 
 | Document | Purpose |
 |:---|:---|
+| ⚠️ [**UNIVERSAL_RULE.md**](UNIVERSAL_RULE.md) | **Permanent preservation law — Zero deletion invariant for project and code** |
+| 👑 [**CONTRIBUTORS.md**](CONTRIBUTORS.md) | Lead architect & author profile (**Muhammad Daniyal @daniyal44**) |
+| 🌟 [**FEATURES.md**](FEATURES.md) | Exhaustive breakdown of all platform features, search, routing, and workspaces |
+| 🎨 [**DESIGN_SYSTEM.md**](DESIGN_SYSTEM.md) | Design tokens, dark/light themes, typography, spacing, and component styling |
+| 🔘 [**BUTTONS_AND_CONTROLS.md**](BUTTONS_AND_CONTROLS.md) | Comprehensive catalog of all buttons, inputs, modals, sliders, and controls |
+| ⚙️ [**FUNCTIONS_AND_ENGINES.md**](FUNCTIONS_AND_ENGINES.md) | Technical reference for FFmpeg WASM, Canvas 2D math, PDF-Lib, and Web Crypto |
 | 🏛️ [**ARCHITECTURE.md**](ARCHITECTURE.md) | In-depth architectural breakdown, sequence diagrams, and dynamic codebase graphs |
 | 🗂️ [**PROJECT_STRUCTURE.md**](PROJECT_STRUCTURE.md) | Detailed directory conventions, file roles, and monorepo design |
 | 🧰 [**TOOLS_DIRECTORY.md**](TOOLS_DIRECTORY.md) | Complete master catalog of all 206 tools across 18 categories |

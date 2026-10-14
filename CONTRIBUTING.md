@@ -4,6 +4,20 @@ Thank you for your interest in contributing to **Zevylo**! We are building the i
 
 ---
 
+> ⚠️ **MANDATORY UNIVERSAL PRESERVATION LAW**:  
+> Before touching any code, all contributors must read [**UNIVERSAL_RULE.md**](UNIVERSAL_RULE.md).  
+> **GALTI SE BHI KISI BHI CHEEZ KO PERMANENTLY DELETE MAT KARNA!**  
+> Never delete the project, repository, directories, or source files. Always preserve and safely archive.
+
+---
+
+## 👑 Project Leadership & Lead Contributor
+- **Lead Architect & Creator**: **Muhammad Daniyal** ([@daniyal44](https://github.com/daniyal44))
+- **Email**: [m.daniyalkhan490@gmail.com](mailto:m.daniyalkhan490@gmail.com)
+- All contributions are reviewed under Muhammad Daniyal's architecture standards. See [CONTRIBUTORS.md](CONTRIBUTORS.md).
+
+---
+
 ## 📜 Guiding Principles
 
 1. 🛡️ **100% Client-Side Privacy**: All processing must occur strictly inside the user's browser (HTML5 Canvas, WebAssembly, Web Audio, Web Crypto, Web Workers). **Never send user files or raw data to external servers.**

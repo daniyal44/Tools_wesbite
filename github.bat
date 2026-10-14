@@ -1,9 +1,14 @@
 @echo off
 setlocal enabledelayedexpansion
-title Tools Website Direct Push to GitHub
+title Zevylo (Tools Website) - 1-Click Push to GitHub
 
+color 0B
 echo ==============================================================
-echo        TOOLS WEBSITE 1-CLICK GIT DIRECT PUSH TO GITHUB
+echo        ZEVYLO (TOOLS WEBSITE) - 1-CLICK GIT DIRECT PUSH
+echo ==============================================================
+echo   Author / Lead Contributor : Muhammad Daniyal (@daniyal44)
+echo   Repository                : https://github.com/daniyal44/Tools_wesbite
+echo   Architecture              : Next.js 16 + 206 In-Browser Tools
 echo ==============================================================
 echo.
 
@@ -11,32 +16,38 @@ echo.
 set "GIT_EDITOR=true"
 set "GIT_MERGE_AUTOEDIT=no"
 
-:: 2. Verify Git availability
+:: 2. Set author identity
+git config user.name "daniyal44"
+git config user.email "m.daniyalkhan490@gmail.com"
+
+:: 3. Verify Git availability
 where git >nul 2>nul
 if !ERRORLEVEL! neq 0 (
+    color 0C
     echo [ERROR] Git is not installed or not in system PATH.
     echo.
     pause
     exit /b 1
 )
 
-:: 3. Verify git repository
+:: 4. Verify git repository
 git rev-parse --is-inside-work-tree >nul 2>nul
 if !ERRORLEVEL! neq 0 (
+    color 0C
     echo [ERROR] Current folder is not a Git repository.
     echo.
     pause
     exit /b 1
 )
 
-:: 4. Remove stale lock files if any exist
+:: 5. Remove stale lock files if any exist
 if exist ".git\index.lock" del /f /q ".git\index.lock" >nul 2>nul
 if exist ".git\HEAD.lock" del /f /q ".git\HEAD.lock" >nul 2>nul
 if exist ".git\refs\heads\main.lock" del /f /q ".git\refs\heads\main.lock" >nul 2>nul
 if exist ".git\refs\remotes\origin\main.lock" del /f /q ".git\refs\remotes\origin\main.lock" >nul 2>nul
 if exist ".git\config.lock" del /f /q ".git\config.lock" >nul 2>nul
 
-:: 5. Auto-recover from any stuck rebase or merge from earlier interruptions
+:: 6. Auto-recover from any stuck rebase or merge from earlier interruptions
 if exist ".git\rebase-merge" (
     echo [!] Incomplete rebase detected from previous session. Attempting recovery...
     git rebase --continue >nul 2>&1
@@ -52,7 +63,7 @@ if exist ".git\MERGE_HEAD" (
     git merge --abort >nul 2>&1
 )
 
-:: 6. Detect current active branch
+:: 7. Detect current active branch
 set "CURRENT_BRANCH="
 for /f "delims=" %%i in ('git branch --show-current 2^>nul') do set "CURRENT_BRANCH=%%i"
 if "%CURRENT_BRANCH%"=="" (
@@ -68,25 +79,26 @@ if !ERRORLEVEL! equ 0 (
     git checkout %CURRENT_BRANCH% >nul 2>&1
 )
 
-echo [i] Repository    : %CD%
-echo [i] Target Branch : %CURRENT_BRANCH%
+echo [i] Pushing as Author : Muhammad Daniyal (daniyal44)
+echo [i] Repository Path   : %CD%
+echo [i] Target Branch     : %CURRENT_BRANCH%
 echo.
 
-:: 7. Fetch remote updates first
+:: 8. Fetch remote updates first
 echo [1/4] Checking remote status (fetching origin/%CURRENT_BRANCH%)...
 git fetch origin %CURRENT_BRANCH% >nul 2>&1
 
-:: Auto-generate/update codebase architecture graph & docs
+:: 9. Auto-generate/update codebase architecture graph & docs
 if exist "scripts\generate-codebase-graph.mjs" (
-    echo [*] Updating Codebase Architecture Graph...
-    node scripts\generate-codebase-graph.mjs >nul 2>&1
+    echo [*] Auto-updating Codebase Architecture Graph and Category Metrics...
+    node scripts\generate-codebase-graph.mjs
 )
 
-:: 8. Stage all modified and new files
+:: 10. Stage all modified and new files
 echo [2/4] Staging all files (git add -A)...
 git add -A
 
-:: 9. Commit changes if any exist
+:: 11. Commit changes if any exist
 echo [3/4] Checking for changes to commit...
 git diff --staged --quiet
 if !ERRORLEVEL! neq 0 (
@@ -94,16 +106,16 @@ if !ERRORLEVEL! neq 0 (
     if not "!CUSTOM_MSG!"=="" (
         set "COMMIT_MSG=!CUSTOM_MSG!"
     ) else (
-        set "COMMIT_MSG=feat(update): automated 1-click push on %DATE% at %TIME%"
+        set "COMMIT_MSG=feat(update): push by Muhammad Daniyal on %DATE% at %TIME%"
     )
-    git commit -m "!COMMIT_MSG!"
+    git commit --author="Muhammad Daniyal <m.daniyalkhan490@gmail.com>" -m "!COMMIT_MSG!"
     echo [OK] Changes committed successfully.
 ) else (
     echo [i] No new uncommitted changes detected.
 )
 echo.
 
-:: 10. Push to GitHub
+:: 12. Push to GitHub
 echo [4/4] Pushing to GitHub (origin/%CURRENT_BRANCH%)...
 git push -u origin %CURRENT_BRANCH%
 
@@ -118,6 +130,7 @@ if !ERRORLEVEL! neq 0 (
     git rebase --abort >nul 2>&1
     git pull --no-rebase --no-edit origin %CURRENT_BRANCH%
     if !ERRORLEVEL! neq 0 (
+        color 0C
         echo.
         echo ==============================================================
         echo  [ERROR] Sync failed due to conflicting files.
@@ -132,6 +145,7 @@ echo [i] Retrying push to GitHub...
 git push -u origin %CURRENT_BRANCH%
 if !ERRORLEVEL! equ 0 goto :push_success_synced
 
+color 0C
 echo.
 echo ==============================================================
 echo  [ERROR] Push failed. Please check your internet or GitHub access.
@@ -139,18 +153,22 @@ echo ==============================================================
 goto :push_end
 
 :push_success
+color 0A
 echo.
 echo ==============================================================
-echo  [SUCCESS] Code successfully pushed to GitHub!
+echo  [SUCCESS] Code successfully pushed to GitHub by Muhammad Daniyal!
+echo  Repo: https://github.com/daniyal44/Tools_wesbite
 echo ==============================================================
 echo Commit SHA :
 git rev-parse --short HEAD
 goto :push_end
 
 :push_success_synced
+color 0A
 echo.
 echo ==============================================================
 echo  [SUCCESS] Code successfully synced and pushed to GitHub!
+echo  Repo: https://github.com/daniyal44/Tools_wesbite
 echo ==============================================================
 echo Commit SHA :
 git rev-parse --short HEAD
