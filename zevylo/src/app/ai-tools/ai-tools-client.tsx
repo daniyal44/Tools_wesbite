@@ -245,7 +245,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
 
       {/* Main Switcher: Curated Directory vs Built-in In-Browser Utilities */}
       <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-4 flex-wrap gap-4">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
           <button
             onClick={() => setViewTab('directory')}
             className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center gap-2 ${
@@ -268,6 +268,13 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
             <Wand2 className="w-4 h-4 text-amber-500" />
             <span>Built-in Browser AI Tools ({builtInUtilities.length})</span>
           </button>
+          <Link
+            href="/ai-tools/article"
+            className="px-4 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center gap-2 bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-100 dark:hover:bg-indigo-900 border border-indigo-200/60 dark:border-indigo-800"
+          >
+            <BookOpen className="w-4 h-4 text-indigo-500" />
+            <span>AI Technical Articles &amp; Benchmarks (286) &rarr;</span>
+          </Link>
         </div>
 
         {viewTab === 'directory' && (

@@ -81,6 +81,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: createLanguageAlternates('/articles'),
     },
     {
+      url: `${baseUrl}/blog`,
+      lastModified: now,
+      changeFrequency: 'daily',
+      priority: 0.9,
+      alternates: createLanguageAlternates('/blog'),
+    },
+    {
+      url: `${baseUrl}/ai-tools/article`,
+      lastModified: now,
+      changeFrequency: 'daily',
+      priority: 0.9,
+      alternates: createLanguageAlternates('/ai-tools/article'),
+    },
+    {
       url: `${baseUrl}/resources`,
       lastModified: now,
       changeFrequency: 'weekly',

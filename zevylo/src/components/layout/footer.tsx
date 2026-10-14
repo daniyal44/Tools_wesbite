@@ -106,7 +106,13 @@ export function Footer() {
               <li>
                 <Link href="/articles" className="flex items-center gap-1.5 font-medium text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
                   <ExternalLink className="w-3.5 h-3.5 text-blue-500" />
-                  <span>Articles & Tool Guides (157+)</span>
+                  <span>Articles &amp; Blog Hub (500+ Deep Dives)</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/ai-tools/article" className="flex items-center gap-1.5 font-medium text-indigo-600 dark:text-indigo-400 hover:underline">
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  <span>AI Model Reviews &amp; Articles (286 Tools)</span>
                 </Link>
               </li>
               <li>

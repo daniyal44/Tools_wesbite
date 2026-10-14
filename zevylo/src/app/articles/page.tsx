@@ -81,11 +81,29 @@ export default function ArticlesHubPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-            In-depth documentation for all <strong className="text-gray-900 dark:text-white">157+ utilities</strong> on Zevylo.
-            Learn step-by-step how each tool works, the browser-side privacy mechanisms behind it, discover working tags, and jump straight into the live interactive tools.
+            In-depth documentation for all <strong className="text-gray-900 dark:text-white">206+ browser utilities</strong> and <strong className="text-gray-900 dark:text-white">286 global AI tools &amp; models</strong> on Zevylo.
+            Explore architecture specifications, MMLU benchmarks, token pricing, step-by-step workflows, and browser-side privacy mechanisms.
           </p>
 
-          <div className="flex flex-wrap gap-4 pt-2 text-xs font-medium text-gray-600 dark:text-gray-400">
+          {/* Quick Hub Navigation Pills */}
+          <div className="flex flex-wrap gap-2.5 pt-2">
+            <Link
+              href="/ai-tools/article"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all shadow-sm"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+              <span>AI Models &amp; Tools Reviews (286 Articles) &rarr;</span>
+            </Link>
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 text-xs font-bold transition-all"
+            >
+              <BookOpen className="w-3.5 h-3.5 text-blue-500" />
+              <span>Engineering Blog &amp; Insights</span>
+            </Link>
+          </div>
+
+          <div className="flex flex-wrap gap-4 pt-1 text-xs font-medium text-gray-600 dark:text-gray-400">
             <div className="flex items-center gap-1.5">
               <ShieldCheck className="w-4 h-4 text-emerald-500" />
               <span>100% Client-Side Architecture</span>
@@ -113,17 +131,17 @@ export default function ArticlesHubPage() {
             <span>Global AI Tools &amp; Frontier Model Reviews</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight">
-            Explore 280+ Dedicated AI Technical Articles &amp; Benchmarks
+            Explore 286 Dedicated AI Technical Articles &amp; Benchmarks
           </h2>
           <p className="text-xs sm:text-sm text-blue-100 leading-relaxed">
             Looking for architectural breakdowns, real-world HumanEval/MMLU benchmarks, token economics, and roadmaps for <strong>Claude 3.5/3.7, OpenAI Codex, Cursor AI, xAI Grok, Open-Claw, DeepSeek, Falcon, Qwen</strong>, and 280+ global AI software?
           </p>
         </div>
         <Link
-          href="/ai-tools"
+          href="/ai-tools/article"
           className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-white text-indigo-950 font-bold text-sm hover:bg-blue-50 transition-colors shadow-lg shrink-0"
         >
-          <span>Explore AI Directory &amp; Articles</span>
+          <span>Read 286 AI Articles &amp; Reviews</span>
           <ChevronRight className="w-4 h-4" />
         </Link>
       </div>

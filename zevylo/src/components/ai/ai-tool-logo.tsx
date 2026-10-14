@@ -31,53 +31,48 @@ function renderOfficialSVG(rawSlug: string, pixelSize: number): React.ReactNode 
   const s = pixelSize;
   const slug = rawSlug.toLowerCase();
 
-  // 1. Google Gemini
+  // 1. Google Gemini (Official Curved Diamond Sparkle)
   if (slug.includes('gemini') || slug === 'google-gemini') {
     return (
-      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width={s} height={s} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="gemini-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id="gemini-official-star-grad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#1BA1E3" />
-            <stop offset="45%" stopColor="#5B7FFF" />
-            <stop offset="75%" stopColor="#9B72CB" />
-            <stop offset="100%" stopColor="#D96570" />
+            <stop offset="35%" stopColor="#5486FF" />
+            <stop offset="70%" stopColor="#9E6CF5" />
+            <stop offset="100%" stopColor="#DF6575" />
           </linearGradient>
-          <radialGradient id="gemini-center" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.8" />
-            <stop offset="100%" stopColor="#5B7FFF" stopOpacity="0" />
-          </radialGradient>
         </defs>
+        <rect width="24" height="24" rx="6" fill="#F8FAFC" className="dark:fill-[#0F172A]" />
         <path
-          d="M24 0C24 13.255 13.255 24 0 24C13.255 24 24 34.745 24 48C24 34.745 34.745 24 48 24C34.745 24 24 13.255 24 0Z"
-          fill="url(#gemini-grad-1)"
+          d="M12 2C12 7.523 7.523 12 2 12C7.523 12 12 16.477 12 22C12 16.477 16.477 12 22 12C16.477 12 12 7.523 12 2Z"
+          fill="url(#gemini-official-star-grad)"
         />
-        <circle cx="24" cy="24" r="10" fill="url(#gemini-center)" />
       </svg>
     );
   }
 
-  // 2. OpenAI / ChatGPT / Sora / DALL-E
-  if (slug.includes('chatgpt') || slug.includes('openai') || slug.includes('dall-e') || slug.includes('sora') || slug.includes('searchgpt')) {
+  // 2. OpenAI / ChatGPT / GPT-5 Orion / DALL-E / Sora (Official OpenAI Rosette)
+  if (slug.includes('chatgpt') || slug.includes('openai') || slug.includes('gpt-5') || slug.includes('dall-e') || slug.includes('sora') || slug.includes('searchgpt')) {
     return (
-      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width={s} height={s} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="24" rx="6" fill="#10A37F" />
         <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M42.5 20.3a11.9 11.9 0 0 0-.9-9.1 12.1 12.1 0 0 0-10.9-6.3 12 12 0 0 0-3.6.5A12 12 0 0 0 17.5 2a12.1 12.1 0 0 0-11.6 8.7 11.9 11.9 0 0 0 2 12.5 12 12 0 0 0-.9 9.1 12.1 12.1 0 0 0 10.9 6.3c1.2 0 2.4-.2 3.6-.5a12 12 0 0 0 9.6 3.4 12.1 12.1 0 0 0 11.6-8.7 11.9 11.9 0 0 0-2-12.5h.2v.001ZM24 28a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"
-          fill="#10A37F"
+          fill="#FFFFFF"
+          d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.98 4.182a5.985 5.985 0 0 0-3.997 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.91 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.998-2.9 6.056 6.056 0 0 0-.748-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .393-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.495 4.494zm-9.66-4.125a4.471 4.471 0 0 1-.535-3.014l.142.085 4.783 2.758a.771.771 0 0 0 .78 0l5.843-3.368v2.332a.08.08 0 0 1-.033.062L9.74 19.95a4.499 4.499 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.7664.7664 0 0 0 .388.677l5.814 3.354-2.02 1.168a.076.076 0 0 1-.071 0l-4.83-2.786A4.504 4.504 0 0 1 2.34 7.896zm16.1 3.856L12.597 8.383l2.02-1.164a.076.076 0 0 1 .071 0l4.83 2.791a4.494 4.494 0 0 1-.676 8.104v-5.677a.79.79 0 0 0-.403-.681zm2.01-3.023l-.141-.085-4.774-2.782a.776.776 0 0 0-.785 0L9.407 9.23V6.897a.066.066 0 0 1 .028-.061l4.83-2.787a4.499 4.499 0 0 1 6.68 4.66zM8.307 12.863l-2.02-1.164a.08.08 0 0 1-.039-.057V6.074a4.499 4.499 0 0 1 7.376-3.454l-.142.08L8.704 5.46a.795.795 0 0 0-.393.681zm1.097-2.365l3.102-1.8 3.102 1.8v3.59l-3.102 1.792-3.102-1.8z"
         />
       </svg>
     );
   }
 
-  // 3. Anthropic Claude
+  // 3. Anthropic Claude (Official Terracotta Badge)
   if (slug.includes('claude') || slug.includes('anthropic')) {
     return (
-      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="24" cy="24" r="23" fill="#D97757" />
+      <svg width={s} height={s} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="24" rx="6" fill="#D97757" />
         <path
-          d="M25.5 10L27 19.5L36.5 17L30 24L37 29L27.5 28L25.5 38L22.5 28.5L13 31L19.5 24L12.5 19L22 20L25.5 10Z"
           fill="#FFFFFF"
+          d="M17.418 16.594l-.84-2.12a.49.49 0 0 0-.46-.32h-3.23a.49.49 0 0 0-.46.32l-.84 2.12a.49.49 0 0 0 .46.67h4.91a.49.49 0 0 0 .46-.67zM14.5 9.17l1.07 2.7h-2.14l1.07-2.7zm-2.07 9.87h3.14l1.32 3.32a.49.49 0 0 0 .46.32h1.61a.49.49 0 0 0 .46-.66L15.82 1.34a.49.49 0 0 0-.91 0L11.31 22a.49.49 0 0 0 .46.66h1.61a.49.49 0 0 0 .46-.32l.59-1.48z"
         />
       </svg>
     );
@@ -391,18 +386,26 @@ function renderOfficialSVG(rawSlug: string, pixelSize: number): React.ReactNode 
     );
   }
 
-  // 24. Open-Claw (Autonomous AI Agent)
-  if (slug.includes('open-claw') || slug.includes('claw')) {
+  // 24. Open-Claw (Official openclaw.ai Lobster Vector)
+  if (slug.includes('open-claw') || slug.includes('openclaw') || slug === 'claw') {
     return (
-      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="48" height="48" rx="14" fill="#0A0E1A" />
-        <path
-          d="M14 14C14 14 18 22 17 28C16 32 14 36 14 36M24 10C24 10 27 20 25 28C24 33 22 38 22 38M34 14C34 14 30 22 31 28C32 32 34 36 34 36"
-          stroke="#00F0FF"
-          strokeWidth="3.5"
-          strokeLinecap="round"
-        />
-        <circle cx="24" cy="24" r="3" fill="#7928CA" />
+      <svg width={s} height={s} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="120" height="120" rx="28" fill="#0C0E14" />
+        <defs>
+          <linearGradient id="openclaw-official-lobster" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#ff4d4d" />
+            <stop offset="100%" stopColor="#991b1b" />
+          </linearGradient>
+        </defs>
+        <path d="M60 10 C30 10 15 35 15 55 C15 75 30 95 45 100 L45 110 L55 110 L55 100 C55 100 60 102 65 100 L65 110 L75 110 L75 100 C90 95 105 75 105 55 C105 35 90 10 60 10Z" fill="url(#openclaw-official-lobster)" />
+        <path d="M20 45 C5 40 0 50 5 60 C10 70 20 65 25 55 C28 48 25 45 20 45Z" fill="url(#openclaw-official-lobster)" />
+        <path d="M100 45 C115 40 120 50 115 60 C110 70 100 65 95 55 C92 48 95 45 100 45Z" fill="url(#openclaw-official-lobster)" />
+        <path d="M45 15 Q35 5 30 8" stroke="#ff4d4d" strokeWidth="3.5" strokeLinecap="round" />
+        <path d="M75 15 Q85 5 90 8" stroke="#ff4d4d" strokeWidth="3.5" strokeLinecap="round" />
+        <circle cx="45" cy="35" r="6" fill="#050810" />
+        <circle cx="75" cy="35" r="6" fill="#050810" />
+        <circle cx="46" cy="34" r="2.5" fill="#00e5cc" />
+        <circle cx="76" cy="34" r="2.5" fill="#00e5cc" />
       </svg>
     );
   }
@@ -589,7 +592,7 @@ export function AIToolLogo({
   size = 'md',
   className = '',
 }: AIToolLogoProps) {
-  const [imageError, setImageError] = useState(false);
+  const [sourceIndex, setSourceIndex] = useState(0);
   const pixelSize = iconPixelSizes[size];
   const sizeClass = sizeClasses[size];
 
@@ -605,22 +608,29 @@ export function AIToolLogo({
     );
   }
 
-  // 2. High-resolution domain icon from verified sources
+  // 2. High-resolution domain icon from verified multi-tier sources
   const domain = getCleanDomain(url);
-  const iconSrc = logoUrl || (domain ? `https://www.google.com/s2/favicons?domain=${domain}&sz=128` : '');
+  const sources: string[] = [];
+  if (logoUrl) sources.push(logoUrl);
+  if (domain) {
+    sources.push(`https://www.google.com/s2/favicons?domain=${domain}&sz=128`);
+    sources.push(`https://icons.duckduckgo.com/ip3/${domain}.ico`);
+  }
 
-  if (iconSrc && !imageError) {
+  const currentSrc = sources[sourceIndex];
+
+  if (currentSrc && sourceIndex < sources.length) {
     return (
       <div
         className={`relative flex items-center justify-center bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm shrink-0 overflow-hidden transition-transform group-hover:scale-105 p-1.5 ${sizeClass} ${className}`}
       >
         <Image
-          src={iconSrc}
+          src={currentSrc}
           alt={`${name} Official Logo`}
           width={pixelSize}
           height={pixelSize}
           className="w-full h-full object-contain rounded-lg"
-          onError={() => setImageError(true)}
+          onError={() => setSourceIndex((prev) => prev + 1)}
           unoptimized
         />
       </div>

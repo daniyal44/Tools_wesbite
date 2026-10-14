@@ -87,12 +87,13 @@ export function Header() {
               Categories
             </Link>
 
-            {/* Articles & Guides (Visible on lg+) */}
+            {/* Articles & Blog */}
             <Link
               href="/articles"
-              className="hidden lg:inline-flex px-3 py-1.5 rounded-lg text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100/70 dark:text-gray-300 dark:hover:text-blue-400 dark:hover:bg-gray-800/50 transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100/70 dark:text-gray-300 dark:hover:text-blue-400 dark:hover:bg-gray-800/50 transition-colors"
             >
-              Guides
+              <BookOpen className="w-3.5 h-3.5 text-blue-500" />
+              <span>Articles &amp; Blog</span>
             </Link>
 
             {/* More Dropdown (Directory, Badges, About, Contact) */}
@@ -251,7 +252,7 @@ export function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <BookOpen className="w-4 h-4 text-blue-500" />
-              <span>Articles & Guides</span>
+              <span>Articles &amp; Blog Hub</span>
             </Link>
             <Link
               href="/sitemap"
