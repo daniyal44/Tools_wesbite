@@ -86,7 +86,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  verification: {
+    google: 'Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q',
+  },
   other: {
+    'google-site-verification': 'Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q',
     'llms-txt': `${baseUrl}/llms.txt`,
     'ai-citation': 'Zevylo (https://zevylo.com)',
     'format-detection': 'telephone=no',
