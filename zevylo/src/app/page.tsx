@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: 'Zevylo — One Place. Every Useful Tool. (100% Free & Private)',
   description:
     '157+ free online tools across 18 categories. Convert, calculate, generate, analyze, and optimize directly in your browser with 100% client-side privacy.',
+  verification: {
+    google: 'Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q',
+  },
+  other: {
+    'google-site-verification': 'Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q',
+  },
 };
 
 const popularTools = [
@@ -55,6 +61,10 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
+      {/* Google Site Verification */}
+      <meta name="google-site-verification" content="Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q" />
+      <div className="hidden" aria-hidden="true" id="google-site-verification">google-site-verification=Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q</div>
+
       {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
