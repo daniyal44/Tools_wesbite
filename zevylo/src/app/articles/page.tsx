@@ -105,6 +105,29 @@ export default function ArticlesHubPage() {
       {/* Interactive Searchable Client Hub */}
       <ArticlesClientHub initialArticles={articles} />
 
+      {/* AI Frontier Models & Tools Technical Articles Hub */}
+      <div className="rounded-3xl border border-blue-200 dark:border-blue-900/60 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="space-y-3 max-w-2xl">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/20 text-white backdrop-blur-md">
+            <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+            <span>Global AI Tools &amp; Frontier Model Reviews</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-black tracking-tight">
+            Explore 280+ Dedicated AI Technical Articles &amp; Benchmarks
+          </h2>
+          <p className="text-xs sm:text-sm text-blue-100 leading-relaxed">
+            Looking for architectural breakdowns, real-world HumanEval/MMLU benchmarks, token economics, and roadmaps for <strong>Claude 3.5/3.7, OpenAI Codex, Cursor AI, xAI Grok, Open-Claw, DeepSeek, Falcon, Qwen</strong>, and 280+ global AI software?
+          </p>
+        </div>
+        <Link
+          href="/ai-tools"
+          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-white text-indigo-950 font-bold text-sm hover:bg-blue-50 transition-colors shadow-lg shrink-0"
+        >
+          <span>Explore AI Directory &amp; Articles</span>
+          <ChevronRight className="w-4 h-4" />
+        </Link>
+      </div>
+
       {/* On-Demand Tool Roadmap & Community Requests Banner */}
       <div className="rounded-3xl border border-indigo-200 dark:border-indigo-900/60 bg-gradient-to-br from-indigo-50/80 via-white to-purple-50/50 dark:from-indigo-950/40 dark:via-gray-900 dark:to-purple-950/30 p-8 sm:p-10 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div className="space-y-2 max-w-2xl">

@@ -20,6 +20,8 @@ import {
   ArrowRight,
   Layers,
   Wand2,
+  BookOpen,
+  Globe,
 } from 'lucide-react';
 import { AITool, AICategory, AIPricing } from '@/lib/ai-directory/types';
 import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
@@ -35,6 +37,8 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedPricing, setSelectedPricing] = useState<string>('all');
+  const [selectedCountry, setSelectedCountry] = useState<string>('all');
+  const [selectedStatus, setSelectedStatus] = useState<string>('all');
   const [selectedLetter, setSelectedLetter] = useState<string>('all');
   const [sortBy, setSortBy] = useState<'traffic' | 'rating' | 'trending' | 'name'>('traffic');
   const [viewTab, setViewTab] = useState<'directory' | 'built-in'>('directory');
@@ -112,6 +116,14 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
       list = list.filter((t) => t.pricing === selectedPricing);
     }
 
+    if (selectedCountry !== 'all') {
+      list = list.filter((t) => t.countryCode === selectedCountry || t.country === selectedCountry);
+    }
+
+    if (selectedStatus !== 'all') {
+      list = list.filter((t) => t.status === selectedStatus);
+    }
+
     if (selectedLetter !== 'all') {
       if (selectedLetter === '#') {
         list = list.filter((t) => !/^[A-Z]/i.test(t.name.trim()));
@@ -127,6 +139,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
           t.name.toLowerCase().includes(q) ||
           t.tagline.toLowerCase().includes(q) ||
           t.description.toLowerCase().includes(q) ||
+          (t.country && t.country.toLowerCase().includes(q)) ||
           t.tags.some((tag) => tag.toLowerCase().includes(q))
       );
     }
@@ -147,7 +160,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
     }
 
     return list;
-  }, [initialTools, selectedCategory, selectedPricing, selectedLetter, searchQuery, sortBy]);
+  }, [initialTools, selectedCategory, selectedPricing, selectedCountry, selectedStatus, selectedLetter, searchQuery, sortBy]);
 
   const pricingBadges: Record<AIPricing, { label: string; color: string }> = {
     free: { label: '100% Free', color: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border-emerald-200' },
@@ -186,10 +199,10 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
             <span>World-Class AI Tools Discovery Directory • Inspired by Toolify</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
-            Discover the Best AI Tools &amp; Utilities from A to Z
+            Discover Global AI Tools &amp; Utilities from A to Z
           </h1>
           <p className="text-sm sm:text-base text-blue-100 leading-relaxed max-w-2xl">
-            Explore 250+ curated AI powerhouses across 23 specialized categories, or run our 11 built-in browser AI tools with 100% client-side privacy.
+            Explore 280+ curated AI powerhouses across 23 specialized categories from USA, China, Japan, UAE, Taiwan, UK, and Europe, or run our 11 built-in browser AI tools with 100% client-side privacy.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -200,10 +213,11 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
               <PlusCircle className="w-4 h-4 text-blue-600" />
               <span>Submit an AI Tool</span>
             </button>
-            <div className="flex items-center gap-4 text-xs text-blue-200 pl-2">
-              <span>✓ 250+ Curated Tools</span>
+            <div className="flex items-center gap-4 text-xs text-blue-200 pl-2 flex-wrap">
+              <span>✓ 280+ Global Tools</span>
+              <span>✓ 12+ Nations</span>
               <span>✓ 23 AI Categories</span>
-              <span>✓ Verified Traffic &amp; Pricing</span>
+              <span>✓ Technical Guides &amp; Reviews</span>
             </div>
           </div>
         </div>
@@ -318,8 +332,73 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
           </div>
         </div>
       ) : (
-        /* Curated Directory Section */
         <div className="space-y-8">
+          {/* Global Country & Nation Origin Filter */}
+          <div className="space-y-2">
+            <span className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+              <Globe className="w-3.5 h-3.5 text-blue-500" />
+              <span>Filter by Country of Origin (USA, China, Japan, UAE, UK, Taiwan, EU):</span>
+            </span>
+            <div className="flex items-center gap-2 overflow-x-auto pb-1.5 scrollbar-none">
+              {[
+                { label: 'All Countries', code: 'all', flag: '🌐' },
+                { label: 'USA', code: 'US', flag: '🇺🇸' },
+                { label: 'China', code: 'CN', flag: '🇨🇳' },
+                { label: 'Japan', code: 'JP', flag: '🇯🇵' },
+                { label: 'UAE', code: 'AE', flag: '🇦🇪' },
+                { label: 'United Kingdom', code: 'GB', flag: '🇬🇧' },
+                { label: 'Taiwan', code: 'TW', flag: '🇹🇼' },
+                { label: 'Germany', code: 'DE', flag: '🇩🇪' },
+                { label: 'France', code: 'FR', flag: '🇫🇷' },
+                { label: 'South Korea', code: 'KR', flag: '🇰🇷' },
+                { label: 'India', code: 'IN', flag: '🇮🇳' },
+                { label: 'Canada', code: 'CA', flag: '🇨🇦' },
+              ].map((c) => (
+                <button
+                  key={c.code}
+                  type="button"
+                  onClick={() => setSelectedCountry(c.code)}
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+                    selectedCountry === c.code
+                      ? 'bg-blue-600 text-white shadow-sm ring-2 ring-blue-500/20'
+                      : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200'
+                  }`}
+                >
+                  <span>{c.flag}</span>
+                  <span>{c.label}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Release Lifecycle Status Filter */}
+          <div className="space-y-2">
+            <span className="text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 block">
+              Release Lifecycle &amp; Roadmaps:
+            </span>
+            <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+              {[
+                { label: 'All Statuses', value: 'all' },
+                { label: '🟢 Live / Launched', value: 'launched' },
+                { label: '🟡 Beta / Waitlist', value: 'beta' },
+                { label: '🟣 Upcoming / In Development', value: 'upcoming' },
+              ].map((st) => (
+                <button
+                  key={st.value}
+                  type="button"
+                  onClick={() => setSelectedStatus(st.value)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+                    selectedStatus === st.value
+                      ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 shadow-sm'
+                      : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200'
+                  }`}
+                >
+                  {st.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* Category Filter Pills */}
           <div className="space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-gray-400 block">
@@ -470,10 +549,30 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
                             size="md"
                           />
                           <div>
-                            <div className="flex items-center gap-1.5">
+                            <div className="flex items-center gap-1.5 flex-wrap">
                               <h3 className="font-bold text-base text-gray-900 dark:text-gray-100 group-hover:text-blue-600 transition-colors">
                                 {tool.name}
                               </h3>
+                              {tool.country && (
+                                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+                                  <span>{tool.flagEmoji || '🌐'}</span>
+                                  <span>{tool.countryCode || tool.country}</span>
+                                </span>
+                              )}
+                              {tool.status && (
+                                <span
+                                  className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold border ${
+                                    tool.status === 'upcoming'
+                                      ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border-purple-200'
+                                      : tool.status === 'beta'
+                                      ? 'bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300 border-amber-200'
+                                      : 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border-emerald-200'
+                                  }`}
+                                >
+                                  <span className="w-1.5 h-1.5 rounded-full bg-current" />
+                                  <span className="capitalize">{tool.status}</span>
+                                </span>
+                              )}
                               {tool.verified && (
                                 <span title="Verified AI Tool" className="shrink-0">
                                   <CheckCircle2 className="w-4 h-4 text-blue-500" />
@@ -540,8 +639,8 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
                     </div>
 
                     {/* Footer Actions */}
-                    <div className="pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-3">
+                    <div className="pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between gap-2 flex-wrap">
+                      <div className="flex items-center gap-2.5">
                         <button
                           type="button"
                           onClick={() => setPreviewTool(tool)}
@@ -549,6 +648,13 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
                         >
                           Quick View
                         </button>
+                        <Link
+                          href={`/ai-tools/article/${tool.slug}`}
+                          className="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1"
+                        >
+                          <BookOpen className="w-3 h-3" />
+                          <span>Article</span>
+                        </Link>
                         <Link
                           href={`/ai-tools/tool/${tool.slug}`}
                           className="text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-0.5"

@@ -297,10 +297,10 @@ export default function HomePage() {
                   <span>The AI Revolution Directory • Powered by Zevylo</span>
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-                  Explore 250+ World-Class AI Tools from A to Z
+                  Explore 280+ Global AI Tools from A to Z
                 </h2>
                 <p className="text-sm sm:text-base text-blue-100 leading-relaxed">
-                  Discover top artificial intelligence software across 23 specialized categories, verified traffic stats, pricing filters, or run our 11 built-in browser AI tools with 100% client-side privacy.
+                  Discover top artificial intelligence software across 23 specialized categories from USA, China, Japan, UAE, UK, and Europe, with verified traffic stats, pricing filters, and 11 built-in browser tools.
                 </p>
               </div>
 

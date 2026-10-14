@@ -37,11 +37,19 @@ export interface AITool {
   alternatives: string[];
   launchYear: number;
   logoUrl?: string;
+  country?: string;
+  countryCode?: string;
+  flagEmoji?: string;
+  status?: 'launched' | 'beta' | 'upcoming';
+  roadmapInfo?: string;
+  articleSlug?: string;
 }
 
 export interface AISearchFilters {
   query?: string;
   category?: string;
   pricing?: AIPricing | 'all';
+  country?: string | 'all';
+  status?: 'launched' | 'beta' | 'upcoming' | 'all';
   sortBy?: 'traffic' | 'rating' | 'trending' | 'name' | 'newest';
 }

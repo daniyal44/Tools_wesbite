@@ -166,7 +166,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: createLanguageAlternates(`/tools/${tool.category}/${tool.slug}`),
   }));
 
-  // 5. Curated AI Tools Profiles (255 Tools)
+  // 5. Curated AI Tools Profiles (286 Tools)
   const sortedAiTools = [...AI_TOOLS_DATABASE].sort((a, b) => a.slug.localeCompare(b.slug));
   const aiToolPages: MetadataRoute.Sitemap = sortedAiTools.map((tool) => ({
     url: `${baseUrl}/ai-tools/tool/${tool.slug}`,
@@ -176,7 +176,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: createLanguageAlternates(`/ai-tools/tool/${tool.slug}`),
   }));
 
-  // 6. Technical Guides & Articles (206 Articles)
+  // 6. Dedicated AI Technical Articles (286 Articles)
+  const aiArticlePages: MetadataRoute.Sitemap = sortedAiTools.map((tool) => ({
+    url: `${baseUrl}/ai-tools/article/${tool.slug}`,
+    lastModified: now,
+    changeFrequency: 'weekly',
+    priority: 0.85,
+    alternates: createLanguageAlternates(`/ai-tools/article/${tool.slug}`),
+  }));
+
+  // 7. Technical Guides & Articles (206 In-Browser Tool Articles)
   const articlePages: MetadataRoute.Sitemap = sortedTools.map((tool) => ({
     url: `${baseUrl}/articles/${tool.slug}`,
     lastModified: now,
@@ -188,9 +197,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticPages,
     ...categoryPages,
-    ...sortedAiCategories.length ? aiCategoryPages : [],
+    ...(sortedAiCategories.length ? aiCategoryPages : []),
     ...toolPages,
-    ...sortedAiTools.length ? aiToolPages : [],
+    ...(sortedAiTools.length ? aiToolPages : []),
+    ...(sortedAiTools.length ? aiArticlePages : []),
     ...articlePages,
   ];
 }

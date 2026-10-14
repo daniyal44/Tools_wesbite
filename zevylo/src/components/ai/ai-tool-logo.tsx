@@ -391,6 +391,183 @@ function renderOfficialSVG(rawSlug: string, pixelSize: number): React.ReactNode 
     );
   }
 
+  // 24. Open-Claw (Autonomous AI Agent)
+  if (slug.includes('open-claw') || slug.includes('claw')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#0A0E1A" />
+        <path
+          d="M14 14C14 14 18 22 17 28C16 32 14 36 14 36M24 10C24 10 27 20 25 28C24 33 22 38 22 38M34 14C34 14 30 22 31 28C32 32 34 36 34 36"
+          stroke="#00F0FF"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+        />
+        <circle cx="24" cy="24" r="3" fill="#7928CA" />
+      </svg>
+    );
+  }
+
+  // 25. OpenAI Codex
+  if (slug.includes('codex') || slug === 'openai-codex') {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#0D1117" />
+        <path
+          d="M18 16L10 24L18 32M30 16L38 24L30 32M26 12L22 36"
+          stroke="#10A37F"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+
+  // 26. Falcon AI (UAE / TII)
+  if (slug.includes('falcon')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="falcon-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#F59E0B" />
+            <stop offset="100%" stopColor="#D97706" />
+          </linearGradient>
+        </defs>
+        <rect width="48" height="48" rx="14" fill="#0F172A" />
+        <path
+          d="M24 10L36 20L30 26L38 34L24 28L10 34L18 26L12 20L24 10Z"
+          fill="url(#falcon-gold)"
+        />
+        <circle cx="24" cy="22" r="2.5" fill="#FFFFFF" />
+      </svg>
+    );
+  }
+
+  // 27. Sakana AI (Japan)
+  if (slug.includes('sakana')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="1" />
+        <path
+          d="M12 24C16 16 28 14 36 24C28 34 16 32 12 24ZM36 24L40 18V30L36 24Z"
+          fill="#E11D48"
+        />
+        <circle cx="20" cy="22" r="2" fill="#FFFFFF" />
+      </svg>
+    );
+  }
+
+  // 28. Qwen (Alibaba Cloud)
+  if (slug.includes('qwen') || slug.includes('tongyi')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#6366F1" fillOpacity="0.12" />
+        <path
+          d="M24 8L38 16V32L24 40L10 32V16L24 8Z"
+          stroke="#6366F1"
+          strokeWidth="3"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M24 16L31 20V28L24 32L17 28V20L24 16Z"
+          fill="#6366F1"
+        />
+      </svg>
+    );
+  }
+
+  // 29. Kimi Chat (Moonshot AI)
+  if (slug.includes('kimi') || slug.includes('moonshot')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#0284C7" fillOpacity="0.12" />
+        <circle cx="24" cy="24" r="14" stroke="#0284C7" strokeWidth="3" />
+        <path d="M24 10V38M10 24H38" stroke="#0284C7" strokeWidth="2.5" strokeLinecap="round" />
+        <circle cx="24" cy="24" r="5" fill="#0284C7" />
+      </svg>
+    );
+  }
+
+  // 30. Synthesia (UK)
+  if (slug.includes('synthesia')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="synthesia-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#7928CA" />
+            <stop offset="100%" stopColor="#FF0080" />
+          </linearGradient>
+        </defs>
+        <rect width="48" height="48" rx="14" fill="url(#synthesia-grad)" />
+        <circle cx="24" cy="24" r="12" stroke="#FFFFFF" strokeWidth="3" />
+        <polygon points="21,18 29,24 21,30" fill="#FFFFFF" />
+      </svg>
+    );
+  }
+
+  // 31. DeepL (Germany)
+  if (slug.includes('deepl')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#0F2B46" />
+        <path
+          d="M16 12V36H32M22 18L30 26M30 18L22 26"
+          stroke="#0F8EAC"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+
+  // 32. Apple Intelligence
+  if (slug.includes('apple-intelligence') || slug === 'apple') {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="apple-siri" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#FF6B6B" />
+            <stop offset="33%" stopColor="#9B51E0" />
+            <stop offset="66%" stopColor="#2D9CDB" />
+            <stop offset="100%" stopColor="#27AE60" />
+          </linearGradient>
+        </defs>
+        <rect width="48" height="48" rx="14" fill="#000000" />
+        <circle cx="24" cy="24" r="13" stroke="url(#apple-siri)" strokeWidth="4" />
+        <circle cx="24" cy="24" r="6" fill="url(#apple-siri)" opacity="0.8" />
+      </svg>
+    );
+  }
+
+  // 33. FLUX.1 (Black Forest Labs)
+  if (slug.includes('flux') || slug.includes('blackforest')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#000000" />
+        <path
+          d="M12 12H36V20H20V24H32V30H20V36H12V12Z"
+          fill="#FFFFFF"
+        />
+      </svg>
+    );
+  }
+
+  // 34. AlphaFold (DeepMind)
+  if (slug.includes('alphafold')) {
+    return (
+      <svg width={s} height={s} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="#0284C7" />
+        <circle cx="16" cy="16" r="4" fill="#FFFFFF" />
+        <circle cx="32" cy="16" r="4" fill="#FFFFFF" />
+        <circle cx="24" cy="24" r="5" fill="#38BDF8" />
+        <circle cx="16" cy="32" r="4" fill="#FFFFFF" />
+        <circle cx="32" cy="32" r="4" fill="#FFFFFF" />
+        <path d="M16 16L24 24M32 16L24 24M16 32L24 24M32 32L24 24" stroke="#FFFFFF" strokeWidth="2.5" />
+      </svg>
+    );
+  }
+
   return null;
 }
 

@@ -19,6 +19,7 @@ import {
   DollarSign,
   ThumbsUp,
   AlertTriangle,
+  BookOpen,
 } from 'lucide-react';
 import { AI_TOOLS_DATABASE, getAIToolBySlug, getRelatedAITools } from '@/lib/ai-directory/database';
 import { AIPricing } from '@/lib/ai-directory/types';
@@ -168,6 +169,26 @@ export default async function AIToolDetailPage({ params }: PageProps) {
                 <h1 className="text-2xl sm:text-4xl font-black text-gray-900 dark:text-gray-100">
                   {tool.name}
                 </h1>
+                {tool.country && (
+                  <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-bold bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
+                    <span>{tool.flagEmoji || '🌐'}</span>
+                    <span>{tool.country}</span>
+                  </span>
+                )}
+                {tool.status && (
+                  <span
+                    className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold border ${
+                      tool.status === 'upcoming'
+                        ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border-purple-200'
+                        : tool.status === 'beta'
+                        ? 'bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300 border-amber-200'
+                        : 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border-emerald-200'
+                    }`}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-current" />
+                    <span className="capitalize">{tool.status}</span>
+                  </span>
+                )}
                 {tool.verified && (
                   <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
                     <CheckCircle2 className="w-3.5 h-3.5" />
@@ -195,19 +216,34 @@ export default async function AIToolDetailPage({ params }: PageProps) {
                 <span>Subcategory: {tool.subcategory}</span>
                 <span>•</span>
                 <span>Launched {tool.launchYear}</span>
+                {tool.roadmapInfo && (
+                  <>
+                    <span>•</span>
+                    <span className="text-purple-600 dark:text-purple-400 font-semibold">{tool.roadmapInfo}</span>
+                  </>
+                )}
               </div>
             </div>
           </div>
 
-          <a
-            href={tool.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-blue-600 text-white font-bold text-sm hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20 shrink-0"
-          >
-            <span>Visit Official Site</span>
-            <ExternalLink className="w-4 h-4" />
-          </a>
+          <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto shrink-0">
+            <Link
+              href={`/ai-tools/article/${tool.slug}`}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-indigo-50 dark:bg-indigo-950/50 hover:bg-indigo-100 text-indigo-700 dark:text-indigo-300 font-bold text-xs sm:text-sm border border-indigo-200 dark:border-indigo-800 transition-colors shadow-xs"
+            >
+              <BookOpen className="w-4 h-4" />
+              <span>Read Full Article</span>
+            </Link>
+            <a
+              href={tool.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-blue-600 text-white font-bold text-xs sm:text-sm hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20"
+            >
+              <span>Visit Official Site</span>
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          </div>
         </div>
 
         {/* Quick Stats Grid */}
@@ -274,6 +310,31 @@ export default async function AIToolDetailPage({ params }: PageProps) {
                   #{tag}
                 </span>
               ))}
+            </div>
+          </div>
+
+          {/* In-Depth Technical Review & Editorial Guide Banner */}
+          <div className="rounded-3xl border border-indigo-200 dark:border-indigo-800/80 bg-gradient-to-br from-indigo-50/60 to-blue-50/60 dark:from-indigo-950/20 dark:to-blue-950/20 p-6 sm:p-8 space-y-4 shadow-xs">
+            <div className="flex items-center justify-between flex-wrap gap-3">
+              <div className="flex items-center gap-2 text-indigo-900 dark:text-indigo-300 font-black text-lg">
+                <BookOpen className="w-5 h-5 text-indigo-600" />
+                <span>In-Depth Technical Review &amp; Architecture Guide</span>
+              </div>
+              <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/60 text-indigo-800 dark:text-indigo-200">
+                2,000+ Words • Verified 2026
+              </span>
+            </div>
+            <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+              Dive into our comprehensive engineering deep dive covering {tool.name}&apos;s underlying neural architecture in {tool.country || 'global ecosystem'}, independent MMLU and HumanEval benchmark evaluations, full token economics breakdown, step-by-step implementation workflows, and upcoming 2026 version roadmaps.
+            </p>
+            <div className="pt-2">
+              <Link
+                href={`/ai-tools/article/${tool.slug}`}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs sm:text-sm transition-colors shadow-md shadow-indigo-600/20"
+              >
+                <span>Read Full Technical Article &amp; Guide</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
 
