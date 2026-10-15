@@ -32,6 +32,5 @@ Allow: /images/
 Allow: /badge.svg
 Allow: /icon.png
 
-Host: https://zevylo.netlify.app
 Sitemap: https://zevylo.netlify.app/sitemap.xml
 Sitemap: https://zevylo.netlify.app/feed.xml
