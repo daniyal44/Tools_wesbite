@@ -50,7 +50,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    alternateLocale: ['es_ES', 'fr_FR', 'de_DE', 'pt_BR', 'ar_AR', 'hi_IN', 'id_ID', 'ja_JP', 'ru_RU', 'zh_CN'],
     url: baseUrl,
     siteName: 'Zevylo',
     title: 'Zevylo — One Place. Every Useful Tool. (100% Free & Private)',
@@ -86,20 +85,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: baseUrl,
-    languages: {
-      'x-default': baseUrl,
-      'en': baseUrl,
-      'es': baseUrl,
-      'fr': baseUrl,
-      'de': baseUrl,
-      'pt': baseUrl,
-      'ar': baseUrl,
-      'hi': baseUrl,
-      'id': baseUrl,
-      'ja': baseUrl,
-      'ru': baseUrl,
-      'zh': baseUrl,
-    },
   },
   verification: {
     google: 'Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q',
@@ -174,7 +159,7 @@ const globalGraphSchema = {
       '@id': 'https://zevylo.netlify.app/#website',
       url: 'https://zevylo.netlify.app',
       name: 'Zevylo',
-      inLanguage: ['en', 'es', 'fr', 'de', 'pt', 'ar', 'hi', 'id', 'ja', 'ru', 'zh'],
+      inLanguage: 'en',
       publisher: {
         '@id': 'https://zevylo.netlify.app/#organization',
       },
@@ -186,39 +171,6 @@ const globalGraphSchema = {
         },
         'query-input': 'required name=search_term_string',
       },
-    },
-    {
-      '@type': 'SoftwareApplication',
-      '@id': 'https://zevylo.netlify.app/#application',
-      name: 'Zevylo Web Suite',
-      operatingSystem: 'Windows, macOS, Linux, Android, iOS (All modern web browsers)',
-      applicationCategory: 'UtilitiesApplication',
-      inLanguage: ['en', 'es', 'fr', 'de', 'pt', 'ar', 'hi', 'id', 'ja', 'ru', 'zh'],
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        ratingCount: '1420',
-        bestRating: '5',
-        worstRating: '1',
-      },
-      offers: {
-        '@type': 'Offer',
-        price: '0.00',
-        priceCurrency: 'USD',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'Muhammad Daniyal',
-        url: 'https://github.com/daniyal44',
-      },
-      featureList: [
-        '100% Client-Side In-Browser Execution',
-        'Zero Cloud File Uploads (Complete Privacy)',
-        'Zero File Size Throttling or Wait Queues',
-        'Hardware-Accelerated WebAssembly Core',
-        'No Account, Signup, or Credit Card Required',
-        'Works Globally Across All Modern Browsers',
-      ],
     },
   ],
 };

@@ -65,3 +65,17 @@
     Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
     Access-Control-Allow-Origin = "*"
 
+[[headers]]
+  for = "/indexnow.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "text/plain; charset=utf-8"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/a8f4c2e6b10d48729548b29c01f65492.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "text/plain; charset=utf-8"
+    Access-Control-Allow-Origin = "*"
+

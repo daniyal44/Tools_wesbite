@@ -59,30 +59,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     creator: 'Muhammad Daniyal',
     publisher: 'Zevylo',
     alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        'x-default': fullCanonicalUrl,
-        'en': fullCanonicalUrl,
-        'es': fullCanonicalUrl,
-        'fr': fullCanonicalUrl,
-        'de': fullCanonicalUrl,
-        'pt': fullCanonicalUrl,
-        'ar': fullCanonicalUrl,
-        'hi': fullCanonicalUrl,
-        'id': fullCanonicalUrl,
-        'ja': fullCanonicalUrl,
-        'ru': fullCanonicalUrl,
-        'zh': fullCanonicalUrl,
-      },
+      canonical: fullCanonicalUrl,
     },
     openGraph: {
       title: toolTitle,
       description: toolDesc,
-      url: canonicalUrl,
+      url: fullCanonicalUrl,
       type: 'website',
       siteName: 'Zevylo',
       locale: 'en_US',
-      alternateLocale: ['es_ES', 'fr_FR', 'de_DE', 'pt_BR', 'ar_AR', 'hi_IN', 'id_ID', 'ja_JP', 'ru_RU', 'zh_CN'],
       images: [
         {
           url: `${baseUrl}/images/Zevylo_logo.png`,

@@ -37,6 +37,9 @@ export const metadata: Metadata = {
   verification: {
     google: 'Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q',
   },
+  alternates: {
+    canonical: 'https://zevylo.netlify.app',
+  },
   other: {
     'google-site-verification': 'Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q',
     'image': 'https://zevylo.netlify.app/images/Zevylo_logo.png',
@@ -61,69 +64,8 @@ const popularTools = [
 export default function HomePage() {
   const totalTools = getAllTools().length;
 
-  const websiteSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'Zevylo',
-    url: 'https://zevylo.netlify.app',
-    description: 'One place. Every useful tool. 206+ free online browser utilities across 18 categories.',
-    primaryImageOfPage: {
-      '@type': 'ImageObject',
-      url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
-      caption: 'Zevylo Free Online Browser Utilities Suite',
-      width: 1200,
-      height: 630,
-    },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://zevylo.netlify.app/tools?q={search_term_string}',
-      'query-input': 'required name=search_term_string',
-    },
-  };
-
-  const organizationSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Zevylo',
-    url: 'https://zevylo.netlify.app',
-    logo: {
-      '@type': 'ImageObject',
-      url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
-      caption: 'Zevylo Brand Logo',
-      width: 1200,
-      height: 630,
-    },
-    image: {
-      '@type': 'ImageObject',
-      url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
-      caption: 'Zevylo 206+ Free Client-Side Online Browser Utilities',
-      width: 1200,
-      height: 630,
-    },
-    founder: {
-      '@type': 'Person',
-      name: 'Muhammad Daniyal',
-      url: 'https://github.com/daniyal44',
-    },
-    sameAs: ['https://github.com/daniyal44', 'https://twitter.com/zevylo'],
-  };
-
   return (
     <div className="min-h-screen">
-      {/* Google Site Verification */}
-      <meta name="google-site-verification" content="Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q" />
-      <div className="hidden" aria-hidden="true" id="google-site-verification">google-site-verification=Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q</div>
-
-      {/* Schema.org Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-gray-200 dark:border-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">

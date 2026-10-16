@@ -1,0 +1,37 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+User-Agent: Googlebot
+User-Agent: Bingbot
+User-Agent: Applebot
+User-Agent: DuckDuckBot
+User-Agent: YandexBot
+User-Agent: Baiduspider
+User-Agent: Sogou
+Allow: /
+Disallow: /api/
+
+User-Agent: GPTBot
+User-Agent: ChatGPT-User
+User-Agent: PerplexityBot
+User-Agent: ClaudeBot
+User-Agent: Claude-Web
+User-Agent: anthropic-ai
+User-Agent: Google-Extended
+User-Agent: Applebot-Extended
+User-Agent: CCBot
+User-Agent: cohere-ai
+User-Agent: Bytespider
+User-Agent: Diffbot
+Allow: /
+Disallow: /api/
+
+User-Agent: Googlebot-Image
+Allow: /images/
+Allow: /badge.svg
+Allow: /icon.png
+
+Host: https://zevylo.netlify.app
+Sitemap: https://zevylo.netlify.app/sitemap.xml
+Sitemap: https://zevylo.netlify.app/feed.xml

@@ -37,15 +37,8 @@ export function ToolPage({ tool, children }: ToolPageProps) {
     "operatingSystem": "Windows, macOS, Linux, Android, iOS (All modern web browsers)",
     "browserRequirements": "Requires JavaScript. Requires HTML5.",
     "softwareVersion": tool.version || "1.0",
-    "inLanguage": ["en", "es", "fr", "de", "pt", "ar", "hi", "id", "ja", "ru", "zh"],
+    "inLanguage": "en",
     "isAccessibleForFree": true,
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "ratingCount": "1280",
-      "bestRating": "5",
-      "worstRating": "1",
-    },
     "author": {
       "@type": "Person",
       "name": "Muhammad Daniyal",
