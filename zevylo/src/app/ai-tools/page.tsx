@@ -4,16 +4,15 @@ import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
 import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
 
 export const metadata: Metadata = {
-  title: 'AI Tools Directory — Explore 100+ Best AI Tools from A to Z | Zevylo',
+  title: `AI Tools Directory — Explore ${AI_TOOLS_DATABASE.length}+ Best AI Tools from A to Z (Updated November 2026) | Zevylo`,
   description:
-    'Discover the top AI tools across writing, video, audio, coding, image generation, business, and marketing. Filter by verified pricing, monthly traffic, and run 16 free browser AI utilities.',
+    `Discover ${AI_TOOLS_DATABASE.length}+ top AI tools across writing, video, audio, coding, image generation, business, and marketing — updated with the latest November 2026 models. Filter by Free, Freemium or Paid pricing, compare monthly traffic, and run 16 free browser AI utilities.`,
   alternates: {
     canonical: '/ai-tools',
   },
   openGraph: {
-    title: 'AI Tools Directory — Best AI Tools from A to Z | Zevylo',
-    description:
-      'Search 100+ top artificial intelligence tools and run browser-based generative AI utilities with zero wait timers and 100% privacy.',
+    title: 'AI Tools Directory — Best AI Tools from A to Z | Zevylo',      description:
+        `Search ${AI_TOOLS_DATABASE.length}+ top artificial intelligence tools and run browser-based generative AI utilities with zero wait timers and 100% privacy.`,
     url: '/ai-tools',
     type: 'website',
     siteName: 'Zevylo',
@@ -44,7 +43,7 @@ export default function AIToolsPage() {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: 'AI Tools Directory & Discovery Hub',
-    description: 'Catalog of 100+ top artificial intelligence tools and free in-browser utilities across 23 specialized categories.',
+    description: `Catalog of ${AI_TOOLS_DATABASE.length}+ top artificial intelligence tools and free in-browser utilities across 23 specialized categories.`,
     url: 'https://zevylo.netlify.app/ai-tools',
     primaryImageOfPage: {
       '@type': 'ImageObject',

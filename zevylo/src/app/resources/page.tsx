@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronRight, ExternalLink, Globe, BookOpen, Shield, Code, Sparkles, Mail, CheckCircle2 } from 'lucide-react';
+import '@/tools';
+import { getAllTools } from '@/lib/tools/registry';
 
 export const metadata: Metadata = {
   title: 'Web Standards & Developer Resources Directory | Zevylo',
@@ -94,7 +96,7 @@ export default function ResourcesPage() {
             Web Standards & Developer Resources
           </h1>
           <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-            Zevylo builds all 157+ browser tools strictly adhering to open standards and authoritative specifications. Explore foundational web authorities or partner with us for link directory exchanges.
+            Zevylo builds all {getAllTools().length}+ browser tools strictly adhering to open standards and authoritative specifications. Explore foundational web authorities or partner with us for link directory exchanges.
           </p>
         </div>
       </div>

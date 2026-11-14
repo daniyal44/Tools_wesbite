@@ -202,7 +202,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
             Discover Global AI Tools &amp; Utilities from A to Z
           </h1>
           <p className="text-sm sm:text-base text-blue-100 leading-relaxed max-w-2xl">
-            Explore 280+ curated AI powerhouses across 23 specialized categories from USA, China, Japan, UAE, Taiwan, UK, and Europe, or run our 11 built-in browser AI tools with 100% client-side privacy.
+            Explore {initialTools.length}+ curated AI powerhouses across 23 specialized categories from USA, China, France, Singapore, Japan, UAE, Taiwan, UK, and Europe, or run our {builtInUtilities.length} built-in browser AI tools with 100% client-side privacy. Every listing is labelled Free, Freemium, Paid, Free Trial or Open Source.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -214,7 +214,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
               <span>Submit an AI Tool</span>
             </button>
             <div className="flex items-center gap-4 text-xs text-blue-200 pl-2 flex-wrap">
-              <span>✓ 280+ Global Tools</span>
+              <span>✓ {initialTools.length}+ Global Tools</span>
               <span>✓ 12+ Nations</span>
               <span>✓ 23 AI Categories</span>
               <span>✓ Technical Guides &amp; Reviews</span>
@@ -273,7 +273,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
             className="px-4 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center gap-2 bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-100 dark:hover:bg-indigo-900 border border-indigo-200/60 dark:border-indigo-800"
           >
             <BookOpen className="w-4 h-4 text-indigo-500" />
-            <span>AI Technical Articles &amp; Benchmarks (286) &rarr;</span>
+            <span>AI Technical Articles &amp; Benchmarks ({initialTools.length}) &rarr;</span>
           </Link>
         </div>
 
@@ -300,7 +300,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-gray-900 dark:text-gray-100">
-                11 Free Built-In AI Utilities (100% In-Browser Privacy)
+                {builtInUtilities.length} Free Built-In AI Utilities (100% In-Browser Privacy)
               </h2>
               <p className="text-xs sm:text-sm text-gray-500 mt-1">
                 Zero cloud uploads, no API keys needed, zero subscriptions. Run right in your browser.
@@ -318,8 +318,13 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="text-3xl">{tool.icon}</span>
-                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-900">
-                      Browser Native
+                    <span className="flex items-center gap-1">
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-900">
+                        100% Free
+                      </span>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-900">
+                        Browser Native
+                      </span>
                     </span>
                   </div>
                   <h3 className="font-bold text-base text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
@@ -578,6 +583,11 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
                                 >
                                   <span className="w-1.5 h-1.5 rounded-full bg-current" />
                                   <span className="capitalize">{tool.status}</span>
+                                </span>
+                              )}
+                              {tool.new && (
+                                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-50 text-rose-600 dark:bg-rose-950/40 dark:text-rose-300 border border-rose-200 dark:border-rose-900">
+                                  NEW
                                 </span>
                               )}
                               {tool.verified && (

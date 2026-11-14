@@ -5,6 +5,7 @@ import { uuidGeneratorDefinition } from './uuid-generator.definition';
 import { utmBuilderDefinition } from './utm-builder.definition';
 import { barcodeGeneratorDefinition } from './barcode-generator.definition';
 import { randomNumberGeneratorDefinition } from './random-number-generator.definition';
+import { bulkQrGeneratorDefinition } from './bulk-qr-generator.definition';
 
 export const generatorsTools = [
   passwordGeneratorDefinition,
@@ -13,6 +14,7 @@ export const generatorsTools = [
   utmBuilderDefinition,
   barcodeGeneratorDefinition,
   randomNumberGeneratorDefinition,
+  bulkQrGeneratorDefinition,
 ];
 
 registerTools(generatorsTools);
@@ -24,4 +26,5 @@ export {
   utmBuilderDefinition,
   barcodeGeneratorDefinition,
   randomNumberGeneratorDefinition,
+  bulkQrGeneratorDefinition,
 };

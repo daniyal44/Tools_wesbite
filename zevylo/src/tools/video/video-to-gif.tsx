@@ -141,7 +141,7 @@ export default function VideoToGif() {
                 onChange={(e) => setTargetWidth(parseInt(e.target.value))}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-800 text-gray-900 dark:text-white text-sm"
               >
-                <option value="320">320px (Compact / Discord)</option>
+                <option value="314">314px (Compact / Discord)</option>
                 <option value="400">400px (Standard Web)</option>
                 <option value="480">480px (High Quality)</option>
                 <option value="600">600px (HD Width)</option>

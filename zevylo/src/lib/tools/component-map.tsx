@@ -793,6 +793,18 @@ export const toolComponentMap: Record<string, React.ComponentType<object>> = {
     ssr: false,
     loading: LoadingFallback,
   }),
+  'bulk-image-watermarker': dynamic(() => import('@/tools/images/bulk-image-watermarker'), {
+    ssr: false,
+    loading: LoadingFallback,
+  }),
+  'bulk-image-cropper': dynamic(() => import('@/tools/images/bulk-image-cropper'), {
+    ssr: false,
+    loading: LoadingFallback,
+  }),
+  'bulk-find-replace': dynamic(() => import('@/tools/text/bulk-find-replace'), {
+    ssr: false,
+    loading: LoadingFallback,
+  }),
   'bulk-rename': dynamic(() => import('@/tools/productivity/bulk-rename'), {
     ssr: false,
     loading: LoadingFallback,
@@ -880,6 +892,24 @@ export const toolComponentMap: Record<string, React.ComponentType<object>> = {
     loading: LoadingFallback,
   }),
   'audio-speed-changer': dynamic(() => import('@/tools/audio/audio-speed-changer'), {
+    ssr: false,
+    loading: LoadingFallback,
+  }),
+
+  // Bulk Processing Suite
+  'bulk-image-resizer': dynamic(() => import('@/tools/images/bulk-image-resizer'), {
+    ssr: false,
+    loading: LoadingFallback,
+  }),
+  'bulk-image-compressor': dynamic(() => import('@/tools/images/bulk-image-compressor'), {
+    ssr: false,
+    loading: LoadingFallback,
+  }),
+  'bulk-qr-generator': dynamic(() => import('@/tools/generators/bulk-qr-generator'), {
+    ssr: false,
+    loading: LoadingFallback,
+  }),
+  'bulk-text-case-converter': dynamic(() => import('@/tools/text/bulk-text-case-converter'), {
     ssr: false,
     loading: LoadingFallback,
   }),

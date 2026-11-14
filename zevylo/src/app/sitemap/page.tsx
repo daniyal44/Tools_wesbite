@@ -8,10 +8,10 @@ import { ChevronRight, FolderTree } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Complete Tools Directory & HTML Sitemap | Zevylo',
   description:
-    'Complete index and directory of all 157+ free online utilities across 18 categories on Zevylo. Fast crawl directory for users and search engines.',
+    `Complete index and directory of all ${getAllTools().length}+ free online utilities across 18 categories on Zevylo. Fast crawl directory for users and search engines.`,
   openGraph: {
     title: 'Complete Tools Directory & HTML Sitemap | Zevylo',
-    description: 'Browse all 157+ free browser tools across 18 categories with one-click access.',
+    description: `Browse all ${getAllTools().length}+ free browser tools across 18 categories with one-click access.`,
     type: 'website',
   },
 };
@@ -66,7 +66,7 @@ export default function HtmlSitemapPage() {
             Direct HTML index linking every single one of Zevylo&apos;s {allTools.length} free online utilities across all 18 categories. Designed for quick user navigation and search engine crawlability.
           </p>
           <div className="flex flex-wrap items-center gap-3 pt-2 text-xs text-gray-500">
-            <span>• Articles & Guides: <Link href="/articles" className="text-blue-600 dark:text-blue-400 underline font-medium">157+ Tool Guides</Link></span>
+            <span>• Articles & Guides: <Link href="/articles" className="text-blue-600 dark:text-blue-400 underline font-medium">{allTools.length}+ Tool Guides</Link></span>
             <span>• XML Sitemap: <a href="/sitemap.xml" className="text-blue-600 dark:text-blue-400 underline">sitemap.xml</a></span>
             <span>• RSS Feed: <a href="/feed.xml" className="text-blue-600 dark:text-blue-400 underline">feed.xml</a></span>
             <span>• Robots: <a href="/robots.txt" className="text-blue-600 dark:text-blue-400 underline">robots.txt</a></span>

@@ -1,6 +1,6 @@
 # Tool Reference Index
 
-Auto-generated catalog of **206** tools. One file per tool lives in
+Auto-generated catalog of **213** tools. One file per tool lives in
 `docs/tools/<category>/<slug>.md`. Regenerate with `node scripts/generate-tool-docs.mjs`.
 
 ## ai (17)
@@ -129,21 +129,26 @@ Auto-generated catalog of **206** tools. One file per tool lives in
 - [GPA & Grade Point Calculator](education/gpa-calculator.md) — Calculate semester and cumulative Grade Point Average (GPA) on standard 4.0 scale.
 - [Realistic Handwriting & Notes Generator](education/handwriting-generator.md) — Convert typed digital text into realistic handwritten notes on lined paper with custom ink and font styles.
 
-## generators (5)
+## generators (6)
 
 - [Barcode Generator (Code 128)](generators/barcode-generator.md) — Free online Code 128 barcode generator with instant PNG and SVG vector download.
+- [Bulk QR Code Generator](generators/bulk-qr-generator.md) — Generate hundreds of QR codes at once — one per line — and download them all.
 - [Password Generator](generators/password-generator.md) — Generate secure, random passwords.
 - [QR Code Generator](generators/qr-code-generator.md) — Generate custom QR codes for URLs and text.
 - [Random Number Generator](generators/random-number-generator.md) — Generate random numbers in any range — integers or decimals, unique or repeatable.
 - [UUID Generator](generators/uuid-generator.md) — Generate universally unique identifiers (UUIDs).
 
-## image (34)
+## image (38)
 
 - [ASCII Art & Text Banner Generator](image/ascii-art-generator.md) — Convert plain text headlines or images into retro ASCII character art and banners.
 - [Aspect Ratio Calculator](image/aspect-ratio-calculator.md) — Calculate dimensions and scale images, videos, and screens across standard aspect ratios.
 - [AVIF to JPG Converter (Ezgif AVIF to JPG)](image/avif-to-jpg.md) — Convert next-generation AVIF images into universally compatible JPG / JPEG format.
 - [BMP to PNG Converter (Ezgif BMP Converter)](image/bmp-to-png.md) — Convert bitmap BMP images into compressed PNG format with transparency preservation.
+- [Bulk Image Compressor](image/bulk-image-compressor.md) — Compress hundreds of photos at once and see exactly how many MB you saved.
 - [Bulk Image Converter (Ezgif Bulk Converters)](image/bulk-image-converter.md) — Batch convert hundreds of images between WebP, AVIF, PNG, JPG, and BMP simultaneously.
+- [Bulk Image Cropper](image/bulk-image-cropper.md) — Crop many images at once to a square, social aspect ratio or custom size, centred automatically.
+- [Bulk Image Resizer](image/bulk-image-resizer.md) — Resize dozens of images at once to exact pixels or a max width, with aspect lock and format choice.
+- [Bulk Image Watermarker](image/bulk-image-watermarker.md) — Add a text watermark to dozens of images at once with position, opacity, size and colour controls.
 - [Remove EXIF Metadata from Images (EXIF Cleaner)](image/exif-remover.md) — Strip camera details, GPS location data, timestamps, and device info from photos.
 - [Favicon Generator & HTML Icon Tags](image/favicon-generator.md) — Generate standard multi-size website favicons (16x16, 32x32, 48x48, 180x180) and HTML link tags.
 - [Animated GIF Maker (Images to GIF)](image/gif-maker.md) — Combine multiple images or photos into an animated GIF with customizable frame rates and resolution.
@@ -221,9 +226,11 @@ Auto-generated catalog of **206** tools. One file per tool lives in
 - [Twitter / X Card Preview & Meta Generator](seo/twitter-card-preview.md) — Preview and generate Twitter / X summary and summary_large_image card meta tags.
 - [URL Cleaner & Tracking Stripper](seo/url-cleaner.md) — Remove UTM tags, tracking parameters, fbclid, and click IDs from web links.
 
-## text (19)
+## text (21)
 
 - [Bionic Reading Converter](text/bionic-reading-converter.md) — Convert any text into high-focus Bionic Reading format to boost speed and comprehension.
+- [Bulk Find & Replace](text/bulk-find-replace.md) — Replace one or many terms across large blocks of text at once, with case, whole-word and regex options.
+- [Bulk Text Case Converter](text/bulk-text-case-converter.md) — Convert hundreds of lines to UPPER, lower, Title, Sentence, camelCase or snake_case at once.
 - [Case Converter](text/case-converter.md) — Convert text between different letter cases.
 - [Find and Replace Text](text/find-replace.md) — Find and replace text online with case, whole-word, and regex options.
 - [Lorem Ipsum Dummy Text Generator](text/lorem-ipsum-generator.md) — Generate placeholder dummy text by paragraphs, sentences, words, or HTML lists.

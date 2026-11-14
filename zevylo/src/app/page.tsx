@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import '@/tools';
 import { categoryList } from '@/lib/tools/categories';
 import { getToolsByCategory, getAllTools } from '@/lib/tools/registry';
+import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
 import { UserToolsStrip } from '@/components/tools/user-tools-strip';
 import { ShieldCheck, Zap, Sparkles, ArrowRight, Lock, CheckCircle2 } from 'lucide-react';
 import { ToolIcon } from '@/components/tools/tool-icon';
@@ -10,10 +11,10 @@ import { ToolIcon } from '@/components/tools/tool-icon';
 export const metadata: Metadata = {
   title: 'Zevylo — One Place. Every Useful Tool. (100% Free & Private)',
   description:
-    '206+ free online tools across 18 categories. Convert, calculate, generate, analyze, and optimize directly in your browser with 100% client-side privacy.',
+    `${getAllTools().length}+ free online tools across 18 categories. Convert, calculate, generate, analyze, and optimize directly in your browser with 100% client-side privacy.`,
   openGraph: {
     title: 'Zevylo — One Place. Every Useful Tool. (100% Free & In-Browser)',
-    description: '206+ free online tools across 18 categories. 100% client-side privacy, zero cloud uploads, zero wait timers.',
+    description: `${getAllTools().length}+ free online tools across 18 categories. 100% client-side privacy, zero cloud uploads, zero wait timers.`,
     url: 'https://zevylo.netlify.app',
     type: 'website',
     siteName: 'Zevylo',
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
         url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
         width: 1200,
         height: 630,
-        alt: 'Zevylo — 206+ Free In-Browser Online Tools Suite (100% Client-Side Privacy)',
+        alt: `Zevylo — ${getAllTools().length}+ Free In-Browser Online Tools Suite (100% Client-Side Privacy)`,
         type: 'image/png',
       },
     ],
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Zevylo — One Place. Every Useful Tool. (100% Free & In-Browser)',
-    description: '206+ free online tools across 18 categories. 100% client-side privacy, zero cloud uploads.',
+    description: `${getAllTools().length}+ free online tools across 18 categories. 100% client-side privacy, zero cloud uploads.`,
     images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
     creator: '@zevylo',
   },
@@ -239,7 +240,7 @@ export default function HomePage() {
                   <span>The AI Revolution Directory • Powered by Zevylo</span>
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-                  Explore 280+ Global AI Tools from A to Z
+                  Explore {AI_TOOLS_DATABASE.length}+ Global AI Tools from A to Z
                 </h2>
                 <p className="text-sm sm:text-base text-blue-100 leading-relaxed">
                   Discover top artificial intelligence software across 23 specialized categories from USA, China, Japan, UAE, UK, and Europe, with verified traffic stats, pricing filters, and 11 built-in browser tools.
@@ -381,7 +382,7 @@ export default function HomePage() {
                 href="/articles"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-blue-700/80 hover:bg-blue-700 text-white font-semibold text-sm transition-colors border border-white/20"
               >
-                <span>Browse All 157+ Tool Guides</span>
+                <span>Browse All {getAllTools().length}+ Tool Guides</span>
               </Link>
             </div>
           </div>

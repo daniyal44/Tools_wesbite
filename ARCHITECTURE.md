@@ -13,7 +13,7 @@ The diagram below reflects the live architecture of the codebase and updates aut
 
 <!-- BEGIN_DYNAMIC_CODEBASE_GRAPH -->
 ```mermaid
-%% Dynamic Codebase Graph — Generated on 2026-11-13 (206 tools across 18 categories)
+%% Dynamic Codebase Graph — Generated on 2026-11-14 (213 tools across 18 categories)
 flowchart TB
     subgraph ClientLayer["Client-Side Browser Execution (Zero-Upload Privacy Sandbox)"]
         UserBrowser["🌐 User Web Browser"]
@@ -38,11 +38,11 @@ flowchart TB
         DefinitionRegistry["*.definition.ts (Metadata, SEO, FAQ, Inputs)"]
     end
 
-    subgraph ToolCategories["Active Tool Suites (206 In-Browser Tools)"]
-        CAT_Image["🖼️ Image Suite (34 tools)"]
+    subgraph ToolCategories["Active Tool Suites (213 In-Browser Tools)"]
+        CAT_Image["🖼️ Image Suite (38 tools)"]
         CAT_Dev["💻 Developer Suite (27 tools)"]
         CAT_Calc["🧮 Calculator Suite (19 tools)"]
-        CAT_Text["📝 Text & Markdown Suite (19 tools)"]
+        CAT_Text["📝 Text & Markdown Suite (21 tools)"]
         CAT_Video["🎥 Video & GIF Suite (17 tools)"]
         CAT_AI["🤖 AI Utility Suite (17 tools)"]
         CAT_Convert["🔄 Converters Suite (10 tools)"]
@@ -50,7 +50,7 @@ flowchart TB
         CAT_PDF["📄 PDF Document Suite (9 tools)"]
         CAT_Audio["🎵 Audio Suite (8 tools)"]
         CAT_Prod["⚡ Productivity Suite (6 tools)"]
-        CAT_Gen["🎲 Generators Suite (5 tools)"]
+        CAT_Gen["🎲 Generators Suite (6 tools)"]
         CAT_Color["🎨 Color Suite (5 tools)"]
         CAT_Other["🛠️ Date, Math, Security, Marketing (19 tools)"]
     end
@@ -86,10 +86,10 @@ flowchart TB
 <!-- BEGIN_CATEGORY_TABLE -->
 | Category | Tool Count | Sample Tools | Directory |
 |:---|:---:|:---|:---|
-| **IMAGE** | 34 | `ascii-art-generator`, `aspect-ratio-calculator`, `avif-to-jpg`... | [`zevylo/src/tools/image`](zevylo/src/tools/image) |
+| **IMAGE** | 38 | `ascii-art-generator`, `aspect-ratio-calculator`, `avif-to-jpg`... | [`zevylo/src/tools/image`](zevylo/src/tools/image) |
 | **DEVELOPER** | 27 | `base64`, `chmod-calculator`, `code-minifier`... | [`zevylo/src/tools/developer`](zevylo/src/tools/developer) |
+| **TEXT** | 21 | `bionic-reading-converter`, `bulk-find-replace`, `bulk-text-case-converter`... | [`zevylo/src/tools/text`](zevylo/src/tools/text) |
 | **CALCULATORS** | 19 | `age-calculator`, `average-calculator`, `bmi-calculator`... | [`zevylo/src/tools/calculators`](zevylo/src/tools/calculators) |
-| **TEXT** | 19 | `bionic-reading-converter`, `case-converter`, `find-replace`... | [`zevylo/src/tools/text`](zevylo/src/tools/text) |
 | **AI** | 17 | `ai-article-writer`, `ai-bio-generator`, `ai-business-name-generator`... | [`zevylo/src/tools/ai`](zevylo/src/tools/ai) |
 | **VIDEO** | 17 | `crop-video`, `cut-video`, `gif-to-mp4`... | [`zevylo/src/tools/video`](zevylo/src/tools/video) |
 | **SEO** | 11 | `hashtag-generator`, `hreflang-generator`, `keyword-density-analyzer`... | [`zevylo/src/tools/seo`](zevylo/src/tools/seo) |
@@ -97,14 +97,14 @@ flowchart TB
 | **PDF** | 9 | `crop-pdf`, `pdf-merge-split`, `pdf-metadata-editor`... | [`zevylo/src/tools/pdf`](zevylo/src/tools/pdf) |
 | **AUDIO** | 8 | `audio-speed-changer`, `audio-trimmer`, `metronome`... | [`zevylo/src/tools/audio`](zevylo/src/tools/audio) |
 | **DATE-TIME** | 6 | `date-difference-calculator`, `timestamp-converter`, `timezone-converter`... | [`zevylo/src/tools/date-time`](zevylo/src/tools/date-time) |
+| **GENERATORS** | 6 | `barcode-generator`, `bulk-qr-generator`, `password-generator`... | [`zevylo/src/tools/generators`](zevylo/src/tools/generators) |
 | **PRODUCTIVITY** | 6 | `bulk-rename`, `coin-flip`, `pomodoro-timer`... | [`zevylo/src/tools/productivity`](zevylo/src/tools/productivity) |
 | **COLOR** | 5 | `color-contrast-checker`, `color-converter`, `color-generator`... | [`zevylo/src/tools/color`](zevylo/src/tools/color) |
-| **GENERATORS** | 5 | `barcode-generator`, `password-generator`, `qr-code-generator`... | [`zevylo/src/tools/generators`](zevylo/src/tools/generators) |
 | **BUSINESS** | 4 | `price-estimator`, `resume-cv-builder`, `profit-loss-calculator`... | [`zevylo/src/tools/business`](zevylo/src/tools/business) |
 | **MARKETING** | 4 | `utm-builder`, `bulk-email-generator`, `social-video-downloader-helper`... | [`zevylo/src/tools/marketing`](zevylo/src/tools/marketing) |
 | **EDUCATION** | 3 | `gpa-calculator`, `assignment-writing-helper`, `handwriting-generator`... | [`zevylo/src/tools/education`](zevylo/src/tools/education) |
 | **SECURITY** | 2 | `hmac-generator`, `password-strength`... | [`zevylo/src/tools/security`](zevylo/src/tools/security) |
-| **TOTAL** | **206** | *Fully client-side & in-browser* | 18 Active Suites |
+| **TOTAL** | **213** | *Fully client-side & in-browser* | 18 Active Suites |
 
 <!-- END_CATEGORY_TABLE -->
 

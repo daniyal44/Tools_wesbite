@@ -32,6 +32,10 @@ import { avifToJpgDefinition } from './avif-to-jpg.definition';
 import { heicToJpgDefinition } from './heic-to-jpg.definition';
 import { bmpToPngDefinition } from './bmp-to-png.definition';
 import { bulkImageConverterDefinition } from './bulk-image-converter.definition';
+import { bulkImageResizerDefinition } from './bulk-image-resizer.definition';
+import { bulkImageCompressorDefinition } from './bulk-image-compressor.definition';
+import { bulkImageWatermarkerDefinition } from './bulk-image-watermarker.definition';
+import { bulkImageCropperDefinition } from './bulk-image-cropper.definition';
 import { viewMetadataDefinition } from './view-metadata.definition';
 import { lottieToGifDefinition } from './lottie-to-gif.definition';
 import { registerTools } from '@/lib/tools/registry';
@@ -69,6 +73,10 @@ export const imageTools = [
   heicToJpgDefinition,
   bmpToPngDefinition,
   bulkImageConverterDefinition,
+  bulkImageResizerDefinition,
+  bulkImageCompressorDefinition,
+  bulkImageWatermarkerDefinition,
+  bulkImageCropperDefinition,
   viewMetadataDefinition,
   lottieToGifDefinition,
 ];
@@ -108,6 +116,10 @@ export {
   heicToJpgDefinition,
   bmpToPngDefinition,
   bulkImageConverterDefinition,
+  bulkImageResizerDefinition,
+  bulkImageCompressorDefinition,
+  bulkImageWatermarkerDefinition,
+  bulkImageCropperDefinition,
   viewMetadataDefinition,
   lottieToGifDefinition,
 };

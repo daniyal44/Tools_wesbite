@@ -127,7 +127,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  // 4. In-Browser Tools (206+ Tools Sorted by Category and Slug)
+  // 4. In-Browser Tools (210+ Tools Sorted by Category and Slug)
   const sortedTools = [...getAllTools()].sort((a, b) => {
     if (a.category !== b.category) {
       return a.category.localeCompare(b.category);
@@ -158,7 +158,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  // 7. Technical Guides & Articles (206 In-Browser Tool Articles)
+  // 7. Technical Guides & Articles (210 In-Browser Tool Articles)
   const articlePages: MetadataRoute.Sitemap = sortedTools.map((tool) => ({
     url: `${baseUrl}/articles/${tool.slug}`,
     lastModified: now,

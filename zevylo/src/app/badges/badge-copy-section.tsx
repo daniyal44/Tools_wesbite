@@ -50,8 +50,8 @@ const badges: BadgeItem[] = [
     title: 'Standard Editorial & Blog Backlink',
     description: 'Clean HTML anchor with optimized anchor text for articles, tutorials, and partner resources.',
     previewType: 'html',
-    markdownSnippet: '[Zevylo — 206+ Online Utilities & 302+ Global AI Tools](https://zevylo.netlify.app)',
-    htmlSnippet: '<a href="https://zevylo.netlify.app" title="Zevylo — 206+ Free Online Tools & 302+ AI Tools">Zevylo Free Online Tools &amp; AI Directory</a>',
+    markdownSnippet: '[Zevylo — 213+ Online Utilities & 318+ Global AI Tools](https://zevylo.netlify.app)',
+    htmlSnippet: '<a href="https://zevylo.netlify.app" title="Zevylo — 213+ Free Online Tools & 318+ AI Tools">Zevylo Free Online Tools &amp; AI Directory</a>',
   },
 ];
 
@@ -123,7 +123,7 @@ export function BadgeCopySection() {
                   ) : badge.id === 'shield-tools' ? (
                     <div className="inline-flex text-[11px] font-semibold rounded overflow-hidden shadow-sm">
                       <span className="bg-gray-700 text-white px-2.5 py-1">Tools</span>
-                      <span className="bg-blue-600 text-white px-2.5 py-1">Zevylo (157+)</span>
+                      <span className="bg-blue-600 text-white px-2.5 py-1">Zevylo (213+)</span>
                     </div>
                   ) : badge.id === 'shield-privacy' ? (
                     <div className="inline-flex text-[11px] font-semibold rounded overflow-hidden shadow-sm">

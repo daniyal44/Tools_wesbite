@@ -36,8 +36,8 @@ tools.forEach(t => {
   cats[t.category].push(t);
 });
 
-let md = '# 🧰 Master Tools Directory (206+ Built-in Utilities)\n\n';
-md += '> All 206 tools execute **100% client-side** inside your web browser. Zero cloud uploads, zero data tracking.\n\n---\n\n';
+let md = `# 🧰 Master Tools Directory (${tools.length}+ Built-in Utilities)\n\n`;
+md += `> All ${tools.length} tools execute **100% client-side** inside your web browser. Zero cloud uploads, zero data tracking.\n\n---\n\n`;
 md += '## 📑 Quick Category Jump\n\n';
 const sortedCats = Object.keys(cats).sort((a, b) => cats[b].length - cats[a].length);
 md += sortedCats.map(c => `[**${c.toUpperCase()} (${cats[c].length})**](#category-${c.toLowerCase()})`).join(' • ') + '\n\n---\n\n';

@@ -1,10 +1,12 @@
 import type { MetadataRoute } from 'next';
+import '@/tools';
+import { getAllTools } from '@/lib/tools/registry';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Zevylo — Every Useful Tool',
     short_name: 'Zevylo',
-    description: '157+ free online tools for developers, creators, and professionals with 100% client-side privacy.',
+    description: `${getAllTools().length}+ free online tools for developers, creators, and professionals with 100% client-side privacy.`,
     start_url: '/',
     display: 'standalone',
     background_color: '#09090b',

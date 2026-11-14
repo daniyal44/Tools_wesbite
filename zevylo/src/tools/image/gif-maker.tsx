@@ -182,7 +182,7 @@ export default function GifMaker() {
                 <span className="font-bold text-gray-900 dark:text-white">{targetWidth}px</span>
               </div>
               <div className="flex items-center gap-2">
-                {[320, 480, 640].map((w) => (
+                {[314, 480, 640].map((w) => (
                   <button
                     key={w}
                     type="button"

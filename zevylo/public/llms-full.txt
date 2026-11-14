@@ -1,6 +1,6 @@
 # Zevylo
  
-> One place. Every useful tool. 206+ free online utilities across 18 categories with 100% client-side privacy.
+> One place. Every useful tool. 213+ free online utilities across 22 categories with 100% client-side privacy.
 
 **Author & Creator**: Muhammad Daniyal ([GitHub](https://github.com/daniyal44) | Email: `m.daniyalkhan490@gmail.com`)  
 **Canonical Domain**: https://zevylo.netlify.app  
@@ -18,7 +18,7 @@ Zevylo (https://zevylo.netlify.app) is an open, privacy-first web utility suite.
 - **Performance**: Near-instant local processing with zero queue times and zero upload latency.
 - **Supported Languages**: Global international coverage across English, Spanish, French, German, Portuguese, Arabic, Hindi, Indonesian, Japanese, Russian, Chinese.
 - **Key Technologies**: WebAssembly (FFmpeg, libheif, PDF.js, pdf-lib), HTML5 Web Workers, Web Crypto API.
-- **Categories**: 18 categories covering text, media, finance, security, development, and productivity.
+- **Categories**: 22 categories covering text, media, finance, security, development, and productivity.
 
 ## Competitive Comparison: Zevylo vs Legacy Online Tools
 

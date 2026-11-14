@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { ThemeProvider } from '@/components/ui/theme-provider';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import '@/tools';
+import { getAllTools } from '@/lib/tools/registry';
 import './globals.css';
 
 const geistSans = Geist({
@@ -17,13 +19,13 @@ const geistMono = Geist_Mono({
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.netlify.app';
 
+const TOOL_COUNT = getAllTools().length;
+
 export const metadata: Metadata = {
-  title: {
-    default: 'Zevylo — One Place. Every Useful Tool. (100% Free & In-Browser)',
-    template: '%s | Zevylo',
-  },
+  // Plain string (no template) — child pages already include "| Zevylo" in their own titles.
+  title: 'Zevylo — One Place. Every Useful Tool. (100% Free & In-Browser)',
   description:
-    'Convert, calculate, generate, analyze, optimize, and create with 157+ free online browser utilities. 100% client-side privacy, zero cloud uploads, and zero paywalls.',
+    `Convert, calculate, generate, analyze, optimize, and create with ${TOOL_COUNT}+ free online browser utilities. 100% client-side privacy, zero cloud uploads, and zero paywalls.`,
   keywords: [
     'online tools',
     'free tools',
@@ -54,7 +56,7 @@ export const metadata: Metadata = {
     siteName: 'Zevylo',
     title: 'Zevylo — One Place. Every Useful Tool. (100% Free & Private)',
     description:
-      '206+ free online tools across 18 categories. Convert files, calculate finances, edit video frames, and build resumes with 100% in-browser privacy.',
+      `${TOOL_COUNT}+ free online tools across 18 categories. Convert files, calculate finances, edit video frames, and build resumes with 100% in-browser privacy.`,
     images: [
       {
         url: '/images/Zevylo_logo.png',
@@ -68,7 +70,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Zevylo — One Place. Every Useful Tool.',
     description:
-      '206+ free online browser utilities across 18 categories. 100% private, zero server uploads.',
+      `${TOOL_COUNT}+ free online browser utilities across 18 categories. 100% private, zero server uploads.`,
     images: ['/images/Zevylo_logo.png'],
     creator: '@zevylo',
   },
@@ -144,7 +146,7 @@ const globalGraphSchema = {
         name: 'Muhammad Daniyal',
         url: 'https://github.com/daniyal44',
       },
-      description: 'Zevylo provides 206+ free online client-side browser utilities across 18 categories with zero server uploads and 100% privacy.',
+      description: `Zevylo provides ${TOOL_COUNT}+ free online client-side browser utilities across 18 categories with zero server uploads and 100% privacy.`,
       knowsAbout: [
         'WebAssembly Browser Utilities',
         'Client-Side PDF Processing',
@@ -207,7 +209,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-full flex flex-col bg-[var(--color-bg)] text-[var(--color-text)]">
         <ThemeProvider>
           <div className="flex min-h-screen flex-col">
-            <Header />
+            <Header toolCount={TOOL_COUNT} />
             <main className="flex-1">
               {children}
             </main>

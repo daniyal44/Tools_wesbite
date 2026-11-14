@@ -17,6 +17,8 @@ import { bionicReadingConverterDefinition } from './bionic-reading-converter.def
 import { upsideDownTextGeneratorDefinition } from './upside-down-text-generator.definition';
 import { zalgoGlitchTextGeneratorDefinition } from './zalgo-glitch-text-generator.definition';
 import { slugToTitleConverterDefinition } from './slug-to-title-converter.definition';
+import { bulkTextCaseConverterDefinition } from './bulk-text-case-converter.definition';
+import { bulkFindReplaceDefinition } from './bulk-find-replace.definition';
 import { registerTools } from '@/lib/tools/registry';
 
 export const textTools = [
@@ -39,6 +41,8 @@ export const textTools = [
   upsideDownTextGeneratorDefinition,
   zalgoGlitchTextGeneratorDefinition,
   slugToTitleConverterDefinition,
+  bulkTextCaseConverterDefinition,
+  bulkFindReplaceDefinition,
 ];
 
 registerTools(textTools);
@@ -63,5 +67,7 @@ export {
   upsideDownTextGeneratorDefinition,
   zalgoGlitchTextGeneratorDefinition,
   slugToTitleConverterDefinition,
+  bulkTextCaseConverterDefinition,
+  bulkFindReplaceDefinition,
 };
 

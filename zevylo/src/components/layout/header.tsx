@@ -20,7 +20,7 @@ import {
   BookOpen
 } from "lucide-react"
 
-export function Header() {
+export function Header({ toolCount }: { toolCount: number }) {
   const { theme, setTheme } = useTheme()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const [isSearchOpen, setIsSearchOpen] = React.useState(false)
@@ -43,11 +43,11 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
         {/* Left Side: Brand Logo + Desktop Nav */}
         <div className="flex items-center gap-6 lg:gap-8">
-          <Link href="/" className="flex items-center gap-2 shrink-0 group" aria-label="Zevylo Home — 206+ Free In-Browser Online Utilities">
+          <Link href="/" className="flex items-center gap-2 shrink-0 group" aria-label={`Zevylo Home — ${toolCount}+ Free In-Browser Online Utilities`}>
             <Image
               src="/images/Zevylo_logo.png"
-              alt="Zevylo — 206+ Free Client-Side Online Browser Utilities (Zero Cloud Uploads)"
-              title="Zevylo — 206+ Free Online Browser Tools (100% Client-Side Privacy)"
+              alt={`Zevylo — ${toolCount}+ Free Client-Side Online Browser Utilities (Zero Cloud Uploads)`}
+              title={`Zevylo — ${toolCount}+ Free Online Browser Tools (100% Client-Side Privacy)`}
               width={122}
               height={31}
               style={{ height: "30px", width: "auto" }}
@@ -173,7 +173,7 @@ export function Header() {
             aria-label="Search tools"
           >
             <Search className="h-3.5 w-3.5 text-gray-400" />
-            <span className="hidden sm:inline">Search 206+ tools...</span>
+            <span className="hidden sm:inline">Search {toolCount}+ tools...</span>
             <kbd className="hidden sm:inline text-[10px] font-semibold bg-gray-200/70 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-500 dark:text-gray-400">
               ⌘K
             </kbd>
@@ -229,7 +229,7 @@ export function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <Layers className="w-4 h-4 text-blue-500" />
-              <span>All 206+ Tools</span>
+              <span>All {toolCount}+ Tools</span>
             </Link>
             <Link
               href="/categories"

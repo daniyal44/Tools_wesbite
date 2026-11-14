@@ -2,13 +2,18 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import '@/tools';
 import { getAllArticles } from '@/lib/articles/article-generator';
+import { getAllTools } from '@/lib/tools/registry';
+import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
 import { ArticlesClientHub } from '@/components/articles/articles-client-hub';
 import { ChevronRight, BookOpen, ShieldCheck, Zap, Layers, Sparkles, ExternalLink } from 'lucide-react';
+
+const TOOL_COUNT = getAllTools().length;
+const AI_TOOL_COUNT = AI_TOOLS_DATABASE.length;
 
 export const metadata: Metadata = {
   title: 'Comprehensive Tool Guides & Technical Documentation | Zevylo',
   description:
-    'Explore complete guides, step-by-step workflows, technical architectures, working tags, and backlink networks for all 157+ free online utilities on Zevylo.',
+    `Explore complete guides, step-by-step workflows, technical architectures, working tags, and backlink networks for all ${TOOL_COUNT}+ free online utilities on Zevylo.`,
   openGraph: {
     title: 'Tool Guides & Technical Documentation Directory | Zevylo',
     description:
@@ -81,7 +86,7 @@ export default function ArticlesHubPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-            In-depth documentation for all <strong className="text-gray-900 dark:text-white">206+ browser utilities</strong> and <strong className="text-gray-900 dark:text-white">286 global AI tools &amp; models</strong> on Zevylo.
+            In-depth documentation for all <strong className="text-gray-900 dark:text-white">{TOOL_COUNT}+ browser utilities</strong> and <strong className="text-gray-900 dark:text-white">{AI_TOOL_COUNT} global AI tools &amp; models</strong> on Zevylo.
             Explore architecture specifications, MMLU benchmarks, token pricing, step-by-step workflows, and browser-side privacy mechanisms.
           </p>
 
@@ -92,7 +97,7 @@ export default function ArticlesHubPage() {
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all shadow-sm"
             >
               <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-              <span>AI Models &amp; Tools Reviews (286 Articles) &rarr;</span>
+              <span>AI Models &amp; Tools Reviews ({AI_TOOL_COUNT} Articles) &rarr;</span>
             </Link>
             <Link
               href="/blog"
@@ -131,17 +136,17 @@ export default function ArticlesHubPage() {
             <span>Global AI Tools &amp; Frontier Model Reviews</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight">
-            Explore 286 Dedicated AI Technical Articles &amp; Benchmarks
+            Explore {AI_TOOL_COUNT} Dedicated AI Technical Articles &amp; Benchmarks
           </h2>
           <p className="text-xs sm:text-sm text-blue-100 leading-relaxed">
-            Looking for architectural breakdowns, real-world HumanEval/MMLU benchmarks, token economics, and roadmaps for <strong>Claude 3.5/3.7, OpenAI Codex, Cursor AI, xAI Grok, Open-Claw, DeepSeek, Falcon, Qwen</strong>, and 280+ global AI software?
+            Looking for architectural breakdowns, real-world HumanEval/MMLU benchmarks, token economics, and roadmaps for <strong>Claude, OpenAI Codex, Cursor AI, Nano Banana Pro, Seedance, Manus, Open-Claw, DeepSeek, Falcon, Qwen</strong>, and {AI_TOOL_COUNT}+ global AI software?
           </p>
         </div>
         <Link
           href="/ai-tools/article"
           className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-white text-indigo-950 font-bold text-sm hover:bg-blue-50 transition-colors shadow-lg shrink-0"
         >
-          <span>Read 286 AI Articles &amp; Reviews</span>
+          <span>Read {AI_TOOL_COUNT} AI Articles &amp; Reviews</span>
           <ChevronRight className="w-4 h-4" />
         </Link>
       </div>

@@ -504,7 +504,7 @@ export default async function AIArticlePage({ params }: PageProps) {
             Ready to Explore {article.toolName}?
           </h2>
           <p className="text-sm sm:text-base text-blue-100 max-w-2xl mx-auto leading-relaxed">
-            Experience the latest release directly on the official platform or browse 280+ curated tools across 23 categories in the Zevylo AI Directory.
+            Experience the latest release directly on the official platform or browse {AI_TOOLS_DATABASE.length}+ curated tools across 23 categories in the Zevylo AI Directory.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
             <a
@@ -520,7 +520,7 @@ export default async function AIArticlePage({ params }: PageProps) {
               href="/ai-tools"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-colors border border-white/20"
             >
-              <span>Explore All 280+ AI Tools</span>
+              <span>Explore All {AI_TOOLS_DATABASE.length}+ AI Tools</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

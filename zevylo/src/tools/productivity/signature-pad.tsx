@@ -200,7 +200,7 @@ export default function SignaturePad() {
           <canvas
             ref={canvasRef}
             width={800}
-            height={320}
+            height={314}
             onMouseDown={startDrawing}
             onMouseMove={draw}
             onMouseUp={stopDrawing}

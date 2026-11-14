@@ -13,13 +13,13 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '286 Dedicated AI Technical Articles, Benchmarks & Reviews | Zevylo AI',
+  title: `${AI_TOOLS_DATABASE.length} Dedicated AI Technical Articles, Benchmarks & Reviews | Zevylo AI`,
   description:
-    'Read exhaustive 2,000+ word technical breakdowns, model architecture specifications, MMLU/HumanEval benchmarks, token pricing economics, and release roadmaps for 286 global AI tools and models.',
+    `Read exhaustive 2,000+ word technical breakdowns, model architecture specifications, MMLU/HumanEval benchmarks, token pricing economics, and release roadmaps for ${AI_TOOLS_DATABASE.length} global AI tools and models.`,
   openGraph: {
-    title: '286 Dedicated AI Technical Articles & Architecture Reviews | Zevylo AI',
+    title: `${AI_TOOLS_DATABASE.length} Dedicated AI Technical Articles & Architecture Reviews | Zevylo AI`,
     description:
-      'In-depth engineering reviews of ChatGPT, Gemini, Claude 3.7, Codex, Cursor, Grok 3, Open-Claw, DeepSeek, Falcon, and 286 global AI technologies.',
+      `In-depth engineering reviews of ChatGPT, Gemini, Claude, Nano Banana Pro, Codex, Cursor, Grok, Seedance, Manus, DeepSeek, and ${AI_TOOLS_DATABASE.length} global AI technologies.`,
     url: '/ai-tools/article',
     type: 'website',
   },
@@ -34,9 +34,8 @@ export default function AIArticlesIndexPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Zevylo AI Technical Articles & Architecture Guides',
-    description:
-      'Comprehensive library of 286 technical reviews, benchmark evaluations, and roadmaps for global AI software and models.',
+    name: 'Zevylo AI Technical Articles & Architecture Guides',      description:
+        `Comprehensive library of ${AI_TOOLS_DATABASE.length} technical reviews, benchmark evaluations, and roadmaps for global AI software and models.`,
     url: 'https://zevylo.netlify.app/ai-tools/article',
     breadcrumb: {
       '@type': 'BreadcrumbList',
@@ -91,7 +90,7 @@ export default function AIArticlesIndexPage() {
         <div className="relative max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-white/20 text-white backdrop-blur-md">
             <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-            <span>286 Verified Technical Articles &amp; Benchmarks</span>
+            <span>{AI_TOOLS_DATABASE.length} Verified Technical Articles &amp; Benchmarks</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
@@ -99,7 +98,7 @@ export default function AIArticlesIndexPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-blue-100 leading-relaxed">
-            Exhaustive, engineering-first technical reviews for all <strong>286 global AI tools and models</strong>. Each guide analyzes model architecture, context window limits, quantitative HumanEval/MMLU benchmarks, token pricing economics, step-by-step implementation tutorials, and official release roadmaps.
+            Exhaustive, engineering-first technical reviews for all <strong>{AI_TOOLS_DATABASE.length} global AI tools and models</strong>. Each guide analyzes model architecture, context window limits, quantitative HumanEval/MMLU benchmarks, token pricing economics, step-by-step implementation tutorials, and official release roadmaps.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs font-semibold text-blue-200">

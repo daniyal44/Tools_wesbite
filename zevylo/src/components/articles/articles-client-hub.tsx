@@ -270,7 +270,7 @@ export function ArticlesClientHub({ initialArticles }: ArticlesClientHubProps) {
             No matching guides found
           </h3>
           <p className="text-xs text-gray-500 dark:text-gray-400 max-w-sm mx-auto">
-            Try adjusting your search keywords or reset the category and tag filters to view all 157+ available guides.
+            Try adjusting your search keywords or reset the category and tag filters to view all {initialArticles.length}+ available guides.
           </p>
           <button
             onClick={() => {

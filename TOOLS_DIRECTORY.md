@@ -1,18 +1,16 @@
-# 🧰 Master Tools Directory (206+ Built-in Utilities)
+# 🧰 Master Tools Directory (210+ Built-in Utilities)
 
-> **Live Production Website**: [https://zevylo.netlify.app/](https://zevylo.netlify.app/)  
-> **Source Repository**: [https://github.com/daniyal44/Tools_wesbite](https://github.com/daniyal44/Tools_wesbite)  
-> All 206 tools execute **100% client-side** inside your web browser. Zero cloud uploads, zero data tracking.
+> All 210 tools execute **100% client-side** inside your web browser. Zero cloud uploads, zero data tracking.
 
 ---
 
 ## 📑 Quick Category Jump
 
-[**IMAGE (34)**](#category-image) • [**DEVELOPER (27)**](#category-developer) • [**CALCULATORS (19)**](#category-calculators) • [**TEXT (19)**](#category-text) • [**AI (17)**](#category-ai) • [**VIDEO (17)**](#category-video) • [**SEO (11)**](#category-seo) • [**CONVERTERS (10)**](#category-converters) • [**PDF (9)**](#category-pdf) • [**AUDIO (8)**](#category-audio) • [**DATE-TIME (6)**](#category-date-time) • [**PRODUCTIVITY (6)**](#category-productivity) • [**COLOR (5)**](#category-color) • [**GENERATORS (5)**](#category-generators) • [**BUSINESS (4)**](#category-business) • [**MARKETING (4)**](#category-marketing) • [**EDUCATION (3)**](#category-education) • [**SECURITY (2)**](#category-security)
+[**IMAGE (36)**](#category-image) • [**DEVELOPER (27)**](#category-developer) • [**TEXT (20)**](#category-text) • [**CALCULATORS (19)**](#category-calculators) • [**AI (17)**](#category-ai) • [**VIDEO (17)**](#category-video) • [**SEO (11)**](#category-seo) • [**CONVERTERS (10)**](#category-converters) • [**PDF (9)**](#category-pdf) • [**AUDIO (8)**](#category-audio) • [**DATE-TIME (6)**](#category-date-time) • [**GENERATORS (6)**](#category-generators) • [**PRODUCTIVITY (6)**](#category-productivity) • [**COLOR (5)**](#category-color) • [**BUSINESS (4)**](#category-business) • [**MARKETING (4)**](#category-marketing) • [**EDUCATION (3)**](#category-education) • [**SECURITY (2)**](#category-security)
 
 ---
 
-## <a id="category-image"></a>📁 IMAGE (34 Tools)
+## <a id="category-image"></a>📁 IMAGE (36 Tools)
 
 | Tool Name | Route Slug | Description |
 |:---|:---|:---|
@@ -21,7 +19,9 @@
 | **Aspect Ratio Calculator** | [`/tool/aspect-ratio-calculator`](zevylo/src/tools/image/aspect-ratio-calculator.tsx) | Calculate dimensions and scale images, videos, and screens across standard aspect ratios. |
 | **AVIF to JPG Converter (Ezgif AVIF to JPG)** | [`/tool/avif-to-jpg`](zevylo/src/tools/image/avif-to-jpg.tsx) | Convert next-generation AVIF images into universally compatible JPG / JPEG format. |
 | **BMP to PNG Converter (Ezgif BMP Converter)** | [`/tool/bmp-to-png`](zevylo/src/tools/image/bmp-to-png.tsx) | Convert bitmap BMP images into compressed PNG format with transparency preservation. |
+| **Bulk Image Compressor** | [`/tool/bulk-image-compressor`](zevylo/src/tools/image/bulk-image-compressor.tsx) | Compress hundreds of photos at once and see exactly how many MB you saved. |
 | **Bulk Image Converter (Ezgif Bulk Converters)** | [`/tool/bulk-image-converter`](zevylo/src/tools/image/bulk-image-converter.tsx) | Batch convert hundreds of images between WebP, AVIF, PNG, JPG, and BMP simultaneously. |
+| **Bulk Image Resizer** | [`/tool/bulk-image-resizer`](zevylo/src/tools/image/bulk-image-resizer.tsx) | Resize dozens of images at once to exact pixels or a max width, with aspect lock and format choice. |
 | **Canvas Sketch & Signature Pad** | [`/tool/sketch-canvas`](zevylo/src/tools/image/sketch-canvas.tsx) | Freehand sketching canvas and digital signature pad with transparent PNG export. |
 | **Favicon Generator & HTML Icon Tags** | [`/tool/favicon-generator`](zevylo/src/tools/image/favicon-generator.tsx) | Generate standard multi-size website favicons (16x16, 32x32, 48x48, 180x180) and HTML link tags. |
 | **Free Image Background Remover & Transparent PNG Maker** | [`/tool/image-background-remover`](zevylo/src/tools/image/image-background-remover.tsx) | Remove solid white, black, green screen backgrounds and create transparent PNG photos. |
@@ -87,6 +87,33 @@
 
 ---
 
+## <a id="category-text"></a>📁 TEXT (20 Tools)
+
+| Tool Name | Route Slug | Description |
+|:---|:---|:---|
+| **Bionic Reading Converter** | [`/tool/bionic-reading-converter`](zevylo/src/tools/text/bionic-reading-converter.tsx) | Convert any text into high-focus Bionic Reading format to boost speed and comprehension. |
+| **Bulk Text Case Converter** | [`/tool/bulk-text-case-converter`](zevylo/src/tools/text/bulk-text-case-converter.tsx) | Convert hundreds of lines to UPPER, lower, Title, Sentence, camelCase or snake_case at once. |
+| **Case Converter** | [`/tool/case-converter`](zevylo/src/tools/text/case-converter.tsx) | Convert text between different letter cases. |
+| **Find and Replace Text** | [`/tool/find-replace`](zevylo/src/tools/text/find-replace.tsx) | Find and replace text online with case, whole-word, and regex options. |
+| **Lorem Ipsum Dummy Text Generator** | [`/tool/lorem-ipsum-generator`](zevylo/src/tools/text/lorem-ipsum-generator.tsx) | Generate placeholder dummy text by paragraphs, sentences, words, or HTML lists. |
+| **Markdown Previewer** | [`/tool/markdown-previewer`](zevylo/src/tools/text/markdown-previewer.tsx) | Write Markdown and see the rendered HTML live, side by side, in your browser. |
+| **Markdown Table Generator** | [`/tool/markdown-table-generator`](zevylo/src/tools/text/markdown-table-generator.tsx) | Interactive visual spreadsheet editor to generate clean Markdown and HTML tables. |
+| **Readability Score & Grade Level Calculator** | [`/tool/readability-calculator`](zevylo/src/tools/text/readability-calculator.tsx) | Calculate Flesch Reading Ease, Flesch-Kincaid Grade Level, and reading metrics. |
+| **Remove Duplicate Lines** | [`/tool/remove-duplicate-lines`](zevylo/src/tools/text/remove-duplicate-lines.tsx) | Remove duplicate lines from a list, with case, trim, sort, and keep-first/last options. |
+| **Slug to Title & Heading Converter** | [`/tool/slug-to-title-converter`](zevylo/src/tools/text/slug-to-title-converter.tsx) | Convert URL slugs, snake_case, and kebab-case into clean, grammatical titles. |
+| **Sort Text Lines** | [`/tool/text-sorter`](zevylo/src/tools/text/text-sorter.tsx) | Sort lines alphabetically, numerically, by length, reverse, or shuffle them. |
+| **Stylish Text & Fancy Font Generator** | [`/tool/stylish-text-generator`](zevylo/src/tools/text/stylish-text-generator.tsx) | Convert regular text into 18+ aesthetic Unicode fonts, cursive script, gothic fraktur, and cute bio styles. |
+| **Text Diff Checker** | [`/tool/text-diff`](zevylo/src/tools/text/text-diff.tsx) | Compare two text snippets to find differences. |
+| **Text Extractor (Emails, URLs, Phone Numbers, IPs)** | [`/tool/text-extractor`](zevylo/src/tools/text/text-extractor.tsx) | Extract email addresses, web links, phone numbers, IP addresses, hashtags, and numbers from raw text. |
+| **Text Repeater** | [`/tool/text-repeater`](zevylo/src/tools/text/text-repeater.tsx) | Repeat any text or word multiple times with custom separators and optional numbering. |
+| **Upside Down & Reverse Text Generator** | [`/tool/upside-down-text-generator`](zevylo/src/tools/text/upside-down-text-generator.tsx) | Flip your text upside down (˙ʇxǝʇ uʍop ǝpᴉsdn) or backwards in real-time. |
+| **URL Slug Generator** | [`/tool/slug-generator`](zevylo/src/tools/text/slug-generator.tsx) | Convert article titles and headlines into clean, SEO-friendly kebab-case URL slugs. |
+| **Whitespace & Line Cleaner** | [`/tool/whitespace-cleaner`](zevylo/src/tools/text/whitespace-cleaner.tsx) | Remove extra spaces, blank lines, tabs, and line breaks from messy text. |
+| **Word Counter** | [`/tool/word-counter`](zevylo/src/tools/text/word-counter.tsx) | Count words, characters, sentences, and more. |
+| **Zalgo Glitch & Cursed Text Generator** | [`/tool/zalgo-glitch-text-generator`](zevylo/src/tools/text/zalgo-glitch-text-generator.tsx) | Generate eerie glitch, corrupted, and cursed Zalgo text with chaos controls. |
+
+---
+
 ## <a id="category-calculators"></a>📁 CALCULATORS (19 Tools)
 
 | Tool Name | Route Slug | Description |
@@ -110,32 +137,6 @@
 | **Steps to Miles & Kilometers Calculator** | [`/tool/steps-to-distance`](zevylo/src/tools/calculators/steps-to-distance.tsx) | Convert walking steps to miles, kilometers, calories burned, and estimated walking time. |
 | **TDEE & Calorie Burn Calculator** | [`/tool/tdee-calculator`](zevylo/src/tools/calculators/tdee-calculator.tsx) | Calculate Total Daily Energy Expenditure (TDEE), BMR, and cutting/bulking calories. |
 | **Tip & Bill Split Calculator** | [`/tool/tip-calculator`](zevylo/src/tools/calculators/tip-calculator.tsx) | Calculate restaurant tips and easily split bills evenly among friends. |
-
----
-
-## <a id="category-text"></a>📁 TEXT (19 Tools)
-
-| Tool Name | Route Slug | Description |
-|:---|:---|:---|
-| **Bionic Reading Converter** | [`/tool/bionic-reading-converter`](zevylo/src/tools/text/bionic-reading-converter.tsx) | Convert any text into high-focus Bionic Reading format to boost speed and comprehension. |
-| **Case Converter** | [`/tool/case-converter`](zevylo/src/tools/text/case-converter.tsx) | Convert text between different letter cases. |
-| **Find and Replace Text** | [`/tool/find-replace`](zevylo/src/tools/text/find-replace.tsx) | Find and replace text online with case, whole-word, and regex options. |
-| **Lorem Ipsum Dummy Text Generator** | [`/tool/lorem-ipsum-generator`](zevylo/src/tools/text/lorem-ipsum-generator.tsx) | Generate placeholder dummy text by paragraphs, sentences, words, or HTML lists. |
-| **Markdown Previewer** | [`/tool/markdown-previewer`](zevylo/src/tools/text/markdown-previewer.tsx) | Write Markdown and see the rendered HTML live, side by side, in your browser. |
-| **Markdown Table Generator** | [`/tool/markdown-table-generator`](zevylo/src/tools/text/markdown-table-generator.tsx) | Interactive visual spreadsheet editor to generate clean Markdown and HTML tables. |
-| **Readability Score & Grade Level Calculator** | [`/tool/readability-calculator`](zevylo/src/tools/text/readability-calculator.tsx) | Calculate Flesch Reading Ease, Flesch-Kincaid Grade Level, and reading metrics. |
-| **Remove Duplicate Lines** | [`/tool/remove-duplicate-lines`](zevylo/src/tools/text/remove-duplicate-lines.tsx) | Remove duplicate lines from a list, with case, trim, sort, and keep-first/last options. |
-| **Slug to Title & Heading Converter** | [`/tool/slug-to-title-converter`](zevylo/src/tools/text/slug-to-title-converter.tsx) | Convert URL slugs, snake_case, and kebab-case into clean, grammatical titles. |
-| **Sort Text Lines** | [`/tool/text-sorter`](zevylo/src/tools/text/text-sorter.tsx) | Sort lines alphabetically, numerically, by length, reverse, or shuffle them. |
-| **Stylish Text & Fancy Font Generator** | [`/tool/stylish-text-generator`](zevylo/src/tools/text/stylish-text-generator.tsx) | Convert regular text into 18+ aesthetic Unicode fonts, cursive script, gothic fraktur, and cute bio styles. |
-| **Text Diff Checker** | [`/tool/text-diff`](zevylo/src/tools/text/text-diff.tsx) | Compare two text snippets to find differences. |
-| **Text Extractor (Emails, URLs, Phone Numbers, IPs)** | [`/tool/text-extractor`](zevylo/src/tools/text/text-extractor.tsx) | Extract email addresses, web links, phone numbers, IP addresses, hashtags, and numbers from raw text. |
-| **Text Repeater** | [`/tool/text-repeater`](zevylo/src/tools/text/text-repeater.tsx) | Repeat any text or word multiple times with custom separators and optional numbering. |
-| **Upside Down & Reverse Text Generator** | [`/tool/upside-down-text-generator`](zevylo/src/tools/text/upside-down-text-generator.tsx) | Flip your text upside down (˙ʇxǝʇ uʍop ǝpᴉsdn) or backwards in real-time. |
-| **URL Slug Generator** | [`/tool/slug-generator`](zevylo/src/tools/text/slug-generator.tsx) | Convert article titles and headlines into clean, SEO-friendly kebab-case URL slugs. |
-| **Whitespace & Line Cleaner** | [`/tool/whitespace-cleaner`](zevylo/src/tools/text/whitespace-cleaner.tsx) | Remove extra spaces, blank lines, tabs, and line breaks from messy text. |
-| **Word Counter** | [`/tool/word-counter`](zevylo/src/tools/text/word-counter.tsx) | Count words, characters, sentences, and more. |
-| **Zalgo Glitch & Cursed Text Generator** | [`/tool/zalgo-glitch-text-generator`](zevylo/src/tools/text/zalgo-glitch-text-generator.tsx) | Generate eerie glitch, corrupted, and cursed Zalgo text with chaos controls. |
 
 ---
 
@@ -266,6 +267,19 @@
 
 ---
 
+## <a id="category-generators"></a>📁 GENERATORS (6 Tools)
+
+| Tool Name | Route Slug | Description |
+|:---|:---|:---|
+| **Barcode Generator (Code 128)** | [`/tool/barcode-generator`](zevylo/src/tools/generators/barcode-generator.tsx) | Free online Code 128 barcode generator with instant PNG and SVG vector download. |
+| **Bulk QR Code Generator** | [`/tool/bulk-qr-generator`](zevylo/src/tools/generators/bulk-qr-generator.tsx) | Generate hundreds of QR codes at once — one per line — and download them all. |
+| **Password Generator** | [`/tool/password-generator`](zevylo/src/tools/generators/password-generator.tsx) | Generate secure, random passwords. |
+| **QR Code Generator** | [`/tool/qr-code-generator`](zevylo/src/tools/generators/qr-code-generator.tsx) | Generate custom QR codes for URLs and text. |
+| **Random Number Generator** | [`/tool/random-number-generator`](zevylo/src/tools/generators/random-number-generator.tsx) | Generate random numbers in any range — integers or decimals, unique or repeatable. |
+| **UUID Generator** | [`/tool/uuid-generator`](zevylo/src/tools/generators/uuid-generator.tsx) | Generate universally unique identifiers (UUIDs). |
+
+---
+
 ## <a id="category-productivity"></a>📁 PRODUCTIVITY (6 Tools)
 
 | Tool Name | Route Slug | Description |
@@ -288,18 +302,6 @@
 | **Color Palette Generator (Harmonies & Schemes)** | [`/tool/color-generator`](zevylo/src/tools/color/color-generator.tsx) | Generate harmonious 5-color aesthetic palettes with spacebar randomizer, lock swatches, and CSS/JSON export. |
 | **Color Palette Generator & Harmony Studio** | [`/tool/color-palette-generator`](zevylo/src/tools/color/color-palette-generator.tsx) | Generate harmonic color schemes with HEX, RGB, HSL codes and contrast scores. |
 | **Image Color Palette Extractor** | [`/tool/color-palette-extractor`](zevylo/src/tools/color/color-palette-extractor.tsx) | Extract dominant color palettes and hex codes from any photo or graphic. |
-
----
-
-## <a id="category-generators"></a>📁 GENERATORS (5 Tools)
-
-| Tool Name | Route Slug | Description |
-|:---|:---|:---|
-| **Barcode Generator (Code 128)** | [`/tool/barcode-generator`](zevylo/src/tools/generators/barcode-generator.tsx) | Free online Code 128 barcode generator with instant PNG and SVG vector download. |
-| **Password Generator** | [`/tool/password-generator`](zevylo/src/tools/generators/password-generator.tsx) | Generate secure, random passwords. |
-| **QR Code Generator** | [`/tool/qr-code-generator`](zevylo/src/tools/generators/qr-code-generator.tsx) | Generate custom QR codes for URLs and text. |
-| **Random Number Generator** | [`/tool/random-number-generator`](zevylo/src/tools/generators/random-number-generator.tsx) | Generate random numbers in any range — integers or decimals, unique or repeatable. |
-| **UUID Generator** | [`/tool/uuid-generator`](zevylo/src/tools/generators/uuid-generator.tsx) | Generate universally unique identifiers (UUIDs). |
 
 ---
 

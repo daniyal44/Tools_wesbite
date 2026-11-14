@@ -59,7 +59,7 @@ export function AIArticlesClientHub({ tools }: AIArticlesClientHubProps) {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search 286 AI articles by model name, architecture, company, or country..."
+            placeholder={`Search ${tools.length} AI articles by model name, architecture, company, or country...`}
             className="w-full pl-12 pr-4 py-3.5 rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium text-sm transition-all"
           />
         </div>

@@ -247,7 +247,7 @@ export default function MuteVideo() {
           </div>
 
           {/* Video Player */}
-          <div className="p-4 rounded-2xl bg-gray-100 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 flex items-center justify-center min-h-[320px] overflow-hidden">
+          <div className="p-4 rounded-2xl bg-gray-100 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 flex items-center justify-center min-h-[314px] overflow-hidden">
             <video
               ref={videoRef}
               src={mode === 'mute' && outputUrl ? outputUrl : videoUrl}

@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
 import {
   ChevronRight,
   Sparkles,
@@ -32,43 +33,54 @@ export const metadata: Metadata = {
 
 const FEATURED_POSTS = [
   {
+    title: 'Nano Banana Pro Review: Google’s 4K Image Model That Finally Gets Text Right',
+    slug: 'nano-banana-pro',
+    category: 'AI Image Generation',
+    date: 'November 13, 2026',
+    readTime: '12 min read',
+    excerpt:
+      'We benchmark Nano Banana Pro against Midjourney v7, Flux 2 and Ideogram 3 on in-image typography, infographic layouts, character consistency and 4K detail. Here is where Gemini 3 Pro Image wins — and where it still slips.',
+    tag: 'Model Review',
+    link: '/ai-tools/article/nano-banana-pro',
+  },
+  {
+    title: 'Seedance 1.5 Pro vs Hailuo 2.3 vs Veo 3.1: Native-Audio Video Generation Compared',
+    slug: 'seedance-ai',
+    category: 'AI Video',
+    date: 'November 12, 2026',
+    readTime: '13 min read',
+    excerpt:
+      'Native audio, multi-shot coherence and character identity are the new video-model battleground. We run the same prompts through ByteDance Seedance 1.5 Pro, MiniMax Hailuo 2.3 and Google Veo 3.1 to see which ships usable clips.',
+    tag: 'Benchmark',
+    link: '/ai-tools/article/seedance-ai',
+  },
+  {
     title: 'Manus AI: Inside the Autonomous Agent Executing Real-World Workflows in Sandboxes',
     slug: 'manus-ai',
     category: 'Autonomous Agents',
-    date: 'October 15, 2026',
+    date: 'November 11, 2026',
     readTime: '13 min read',
     excerpt:
-      'How Manus AI is redefining AI automation: spinning up isolated Linux containers, browsing dynamic web applications, solving CAPTCHAs, generating deployable codebases, and executing multi-step tasks from natural language prompts.',
+      'How Manus AI is redefining AI automation: spinning up isolated Linux containers, browsing dynamic web applications, generating deployable codebases, and executing multi-step tasks from natural language prompts.',
     tag: 'Breakthrough',
     link: '/ai-tools/article/manus-ai',
   },
   {
-    title: 'Trae AI vs Cursor AI: ByteDance’s Free Claude 3.5 IDE with Adaptive Builder Mode',
-    slug: 'trae-ai',
+    title: 'OpenAI Codex vs Claude Code vs Trae AI: The 2026 Coding-Agent Shootout',
+    slug: 'openai-codex',
     category: 'AI Coding Tools',
-    date: 'October 15, 2026',
-    readTime: '11 min read',
-    excerpt:
-      'ByteDance has entered the AI editor wars with Trae AI. We benchmark its Builder Agent mode against Cursor Composer, evaluating multi-file generation, terminal execution, and context indexing.',
-    tag: 'IDE Review',
-    link: '/ai-tools/article/trae-ai',
-  },
-  {
-    title: 'Claude 3.7 Opus vs. GPT-5 Orion: Frontier Reasoning & Architecture Breakdown',
-    slug: 'claude-3-7-opus',
-    category: 'Frontier AI Research',
-    date: 'October 14, 2026',
+    date: 'November 10, 2026',
     readTime: '12 min read',
     excerpt:
-      'An exhaustive architectural comparison of Anthropic’s dynamic test-time compute hybrid model versus OpenAI’s next-generation multimodal agentic architecture. We break down token economics, benchmark projections, and developer implications.',
-    tag: 'Deep Dive',
-    link: '/ai-tools/article/claude-3-7-opus',
+      'Cloud agents now open pull requests for you. We compare OpenAI Codex, Claude Code and ByteDance’s free Trae AI on multi-file refactors, test coverage, terminal execution and real repository navigation.',
+    tag: 'IDE Review',
+    link: '/ai-tools/article/openai-codex',
   },
   {
     title: 'OpenClaw: The Local Autonomous Personal AI Assistant Operating via WhatsApp & Desktop',
     slug: 'open-claw',
     category: 'Autonomous Agents',
-    date: 'October 13, 2026',
+    date: 'November 9, 2026',
     readTime: '10 min read',
     excerpt:
       'Why OpenClaw is capturing developer mindshare worldwide: running locally with zero cloud telemetry, orchestrating inboxes, calendar bookings, and flights directly through chat apps without recurring subscription fees.',
@@ -87,7 +99,7 @@ const FEATURED_POSTS = [
     link: '/ai-tools/article/deepseek-ai',
   },
   {
-    title: '100% In-Browser Privacy: How WebAssembly & Web Workers Power 206+ Online Tools with Zero Server Uploads',
+    title: '100% In-Browser Privacy: How WebAssembly & Web Workers Power 210+ Online Tools with Zero Server Uploads',
     slug: 'client-side-architecture',
     category: 'Web Engineering',
     date: 'October 8, 2026',
@@ -122,6 +134,8 @@ const FEATURED_POSTS = [
 ];
 
 export default function BlogHubPage() {
+  const toolCount = AI_TOOLS_DATABASE.length;
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
@@ -172,14 +186,14 @@ export default function BlogHubPage() {
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all shadow-md"
             >
               <Cpu className="w-3.5 h-3.5" />
-              <span>Browse 286 AI Model Reviews</span>
+              <span>Browse {toolCount} AI Model Reviews</span>
             </Link>
             <Link
               href="/articles"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition-all border border-white/20"
             >
               <BookOpen className="w-3.5 h-3.5" />
-              <span>Browse 206 Tool Guides</span>
+              <span>Browse 210 Tool Guides</span>
             </Link>
           </div>
         </div>
@@ -194,13 +208,13 @@ export default function BlogHubPage() {
           <div className="space-y-2">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>286 Dedicated AI Reviews</span>
+              <span>{toolCount} Dedicated AI Reviews</span>
             </div>
             <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
               AI Tools &amp; Model Architecture Articles
             </h2>
             <p className="text-xs text-gray-500 dark:text-gray-400 max-w-md">
-              MMLU/HumanEval benchmarks, context windows, token pricing, and roadmaps for Claude, Codex, Cursor, Grok, Open-Claw &amp; 280+ tools.
+              MMLU/HumanEval benchmarks, context windows, token pricing, and roadmaps for Claude, Codex, Cursor, Grok, Open-Claw &amp; {toolCount}+ tools.
             </p>
           </div>
           <ArrowRight className="w-5 h-5 text-blue-600 dark:text-blue-400 transform group-hover:translate-x-1.5 transition-transform shrink-0 ml-4" />
@@ -213,7 +227,7 @@ export default function BlogHubPage() {
           <div className="space-y-2">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
-              <span>206 Engineering Tutorials</span>
+              <span>210 Engineering Tutorials</span>
             </div>
             <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
               In-Browser Utilities &amp; Privacy Guides

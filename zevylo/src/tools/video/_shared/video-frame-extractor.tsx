@@ -65,9 +65,9 @@ export type SizePreset =
   | '600xAUTO'
   | '500xAUTO'
   | '480xAUTO'
-  | '320xAUTO'
+  | '314xAUTO'
   | 'AUTOx480'
-  | 'AUTOx320';
+  | 'AUTOx314';
 
 export interface VideoFrameExtractorProps {
   toolSlug: 'video-to-jpg' | 'video-to-png' | 'video-to-frames';
@@ -272,12 +272,12 @@ export default function VideoFrameExtractor({
         return { width: 500, height: Math.round(500 * ratio) };
       case '480xAUTO':
         return { width: 480, height: Math.round(480 * ratio) };
-      case '320xAUTO':
-        return { width: 320, height: Math.round(320 * ratio) };
+      case '314xAUTO':
+        return { width: 314, height: Math.round(314 * ratio) };
       case 'AUTOx480':
         return { width: Math.round(480 / ratio), height: 480 };
-      case 'AUTOx320':
-        return { width: Math.round(320 / ratio), height: 320 };
+      case 'AUTOx314':
+        return { width: Math.round(314 / ratio), height: 314 };
       case 'original':
       default:
         return { width: origW, height: origH };
@@ -938,9 +938,9 @@ export default function VideoFrameExtractor({
                     <option value="600xAUTO">600xAUTO</option>
                     <option value="500xAUTO">500xAUTO (for Tumblr / Social)</option>
                     <option value="480xAUTO">480xAUTO</option>
-                    <option value="320xAUTO">320xAUTO</option>
+                    <option value="314xAUTO">314xAUTO</option>
                     <option value="AUTOx480">AUTOx480</option>
-                    <option value="AUTOx320">AUTOx320</option>
+                    <option value="AUTOx314">AUTOx314</option>
                   </select>
                   <p className="text-[11px] text-gray-500 dark:text-zinc-400">
                     Target: <strong className="text-cyan-400">{targetDims.width} × {targetDims.height} px</strong>

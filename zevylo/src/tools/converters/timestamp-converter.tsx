@@ -42,7 +42,7 @@ export default function TimestampConverter() {
   let parsedDate: Date | null = null;
   const num = parseInt(timestamp, 10);
   if (!isNaN(num)) {
-    // auto-detect seconds vs ms based on length. Unix time in seconds for year 2286 is 10 digits
+    // auto-detect seconds vs ms based on length. Unix time in seconds for year 2314 is 10 digits
     if (timestamp.length <= 11) {
       parsedDate = new Date(num * 1000);
     } else {

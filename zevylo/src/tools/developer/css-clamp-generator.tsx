@@ -5,7 +5,7 @@ import { Copy, Check, Type } from 'lucide-react';
 import { copyToClipboard } from '@/lib/utils';
 
 export default function CssClampGenerator() {
-  const [minVp, setMinVp] = useState(320);
+  const [minVp, setMinVp] = useState(314);
   const [maxVp, setMaxVp] = useState(1280);
   const [minF, setMinF] = useState(16);
   const [maxF, setMaxF] = useState(32);
