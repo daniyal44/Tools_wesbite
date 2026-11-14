@@ -109,7 +109,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // 2. 18 Tool Category Hubs (Alphabetically Sorted)
+  // 2. Tool Category Hubs (Dynamic from registry)
   const sortedCategories = [...categoryList].sort((a, b) => a.slug.localeCompare(b.slug));
   const categoryPages: MetadataRoute.Sitemap = sortedCategories.map((cat) => ({
     url: `${baseUrl}/tools/${cat.slug}`,
@@ -118,7 +118,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  // 3. AI Directory Categories (24 Categories)
+  // 3. AI Directory Categories (Dynamic from AI_CATEGORIES)
   const sortedAiCategories = [...AI_CATEGORIES].sort((a, b) => a.slug.localeCompare(b.slug));
   const aiCategoryPages: MetadataRoute.Sitemap = sortedAiCategories.map((cat) => ({
     url: `${baseUrl}/ai-tools/${cat.slug}`,
@@ -127,7 +127,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  // 4. In-Browser Tools (210+ Tools Sorted by Category and Slug)
+  // 4. In-Browser Tools (Dynamic count from registry)
   const sortedTools = [...getAllTools()].sort((a, b) => {
     if (a.category !== b.category) {
       return a.category.localeCompare(b.category);
@@ -141,7 +141,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // 5. Curated AI Tools Profiles (302+ Tools)
+  // 5. Curated AI Tools Profiles (Dynamic from AI_TOOLS_DATABASE)
   const sortedAiTools = [...AI_TOOLS_DATABASE].sort((a, b) => a.slug.localeCompare(b.slug));
   const aiToolPages: MetadataRoute.Sitemap = sortedAiTools.map((tool) => ({
     url: `${baseUrl}/ai-tools/tool/${tool.slug}`,
@@ -158,7 +158,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  // 7. Technical Guides & Articles (210 In-Browser Tool Articles)
+  // 7. Technical Guides & Articles (Dynamic from registry)
   const articlePages: MetadataRoute.Sitemap = sortedTools.map((tool) => ({
     url: `${baseUrl}/articles/${tool.slug}`,
     lastModified: now,
