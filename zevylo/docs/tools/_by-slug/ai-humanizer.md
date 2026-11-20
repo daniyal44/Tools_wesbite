@@ -1,6 +1,6 @@
-# AI Text Humanizer & Bypass Rewriter
+# AI Writing Clarity Editor
 
-> Transform robotic, repetitive AI text into natural, bypass-ready human prose.
+> Rewrite repetitive, cliché-heavy drafting into clearer, more varied prose — entirely in your browser.
 
 | Field | Value |
 | --- | --- |
@@ -23,21 +23,25 @@
 
 ## What it does
 
-Eliminate robotic AI jargon, clichés, uniform sentence structures, and predictable vocabulary. Rewrites ChatGPT and Claude outputs into authentic human tone with natural cadence, conversational rhythm, and improved readability.
+A writing revision aid for drafts produced by AI assistants or by you. It replaces overused phrases, varies sentence length, and adjusts tone so the text reads more naturally. It is an editing assistant, not a detector-bypass service: it does not guarantee any result from AI-detection tools, plagiarism checkers, or academic review.
 
 ## Target keywords
 
-`ai text humanizer` · `bypass ai detector` · `humanize ai text` · `undetectable ai text` · `remove ai tone`
+`ai writing editor` · `clarity editor` · `rewrite ai text` · `reduce repetition` · `improve readability` · `natural sentence flow`
 
 ## FAQ
 
-**How does the client-side humanizer work?**
+**How does the editor change my text?**
 
-It replaces over 80+ notorious AI dead-weight phrases, introduces sentence-length variance (burstiness), adjusts passive voice into active storytelling, and preserves your factual core meaning.
+It replaces a built-in list of overused phrases, varies sentence length, and applies a selected tone. It does not add facts, verify claims, or rewrite an entire argument. Review the output before using it.
 
-**Are my essays or articles uploaded to any server?**
+**Will this make text undetectable by AI detectors?**
 
-Never. All transformation algorithms run locally within your web browser with 100% client-side privacy.
+No. The tool does not claim to defeat AI detectors, and detector results are unreliable in both directions. Use it to improve clarity and repetition, and follow your institution or publisher's disclosure rules.
+
+**Are my drafts uploaded anywhere?**
+
+No. The rewriting runs locally in this browser tab. Your text is not sent to a server, and it is not saved after you close or reload the page.
 
 ## Related tools
 
