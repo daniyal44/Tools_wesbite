@@ -13,7 +13,7 @@ Auto-generated catalog of **213** tools. One file per tool lives in
 - [AI Email Subject Line & Open Rate Scorer](ai/ai-email-subject-line-generator.md) — Generate high-CTR email subject lines with spam trigger audits and open-rate scores.
 - [AI Plain English to Excel & Sheets Formula Copilot](ai/ai-excel-formula-generator.md) — Convert plain English instructions into Excel and Google Sheets formulas with explanations.
 - [AI FAQ & Schema Markup Builder](ai/ai-faq-schema-generator.md) — Generate high-intent FAQs with Google-compliant JSON-LD FAQPage structured data.
-- [AI Text Humanizer & Bypass Rewriter](ai/ai-humanizer.md) — Transform robotic, repetitive AI text into natural, bypass-ready human prose.
+- [AI Writing Clarity Editor](ai/ai-humanizer.md) — Rewrite repetitive, cliché-heavy drafting into clearer, more varied prose — entirely in your browser.
 - [AI Presentation & Pitch Deck Outliner](ai/ai-presentation-generator.md) — Generate comprehensive multi-slide presentation decks with talking points and speaker notes.
 - [AI Prompt Crafter & Midjourney Styler](ai/ai-prompt-generator.md) — Engineer photorealistic prompts for Midjourney v6, DALL-E 3, Stable Diffusion, Flux, and ChatGPT.
 - [AI Viral Hook & Social Post Crafter](ai/ai-social-hook-generator.md) — Generate high-CTR hooks, Twitter/X threads, LinkedIn thought-leadership, and TikTok intros.
@@ -156,7 +156,7 @@ Auto-generated catalog of **213** tools. One file per tool lives in
 - [Free Image Background Remover & Transparent PNG Maker](image/image-background-remover.md) — Remove solid white, black, green screen backgrounds and create transparent PNG photos.
 - [Image Combiner](image/image-combiner.md) — Merge multiple images side-by-side, stacked, or in a grid into one image.
 - [Image Comparator (Before & After Slider)](image/image-comparator.md) — Compare two images side-by-side or with an interactive draggable split slider.
-- [Image Compressor & WebP Converter](image/image-compressor.md) — Compress PNG, JPEG, and WebP images client-side without quality loss.
+- [Image Compressor & WebP Converter](image/image-compressor.md) — Reduce PNG, JPEG, and WebP file size in your browser with adjustable quality and resizing.
 - [Image Cropper Online](image/image-cropper.md) — Crop images online using HTML5 canvas with square, 16:9, and custom aspect ratios.
 - [Image Filters & Photo Studio Online](image/image-filters.md) — Apply brightness, contrast, grayscale, sepia, invert, and blur filters with live preview.
 - [Image Resizer](image/image-resizer.md) — Resize images by pixels or percentage — scale up or down with aspect lock.

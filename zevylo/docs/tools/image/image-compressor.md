@@ -1,6 +1,6 @@
 # Image Compressor & WebP Converter
 
-> Compress PNG, JPEG, and WebP images client-side without quality loss.
+> Reduce PNG, JPEG, and WebP file size in your browser with adjustable quality and resizing.
 
 | Field | Value |
 | --- | --- |
@@ -23,25 +23,29 @@
 
 ## What it does
 
-Reduce image file size directly in your browser using modern WebP and Canvas compression algorithms. Features custom quality sliders, max width/height resizing, live byte savings calculator, and instant zero-upload downloads. The ultimate private Squoosh alternative.
+Re-encode images in your browser with HTML5 Canvas and download the result as WebP, JPEG, or PNG. Adjust the quality level and optional maximum width/height, then compare the original and output file sizes before downloading. JPEG and WebP output is lossy: lower quality settings reduce size but can introduce visible artifacts. PNG output is re-encoded losslessly but may not shrink every image.
 
 ## Target keywords
 
-`image compressor` · `compress image` · `squoosh alternative` · `tinywow alternative` · `convert png to webp` · `reduce image size online`
+`image compressor` · `compress image` · `convert png to webp` · `reduce image size online` · `resize image browser`
 
 ## FAQ
 
-**Are my photos uploaded to any external server?**
+**Are my photos uploaded to a server?**
 
-No! All compression and resizing runs directly in your browser memory using HTML5 Canvas. Your photos never leave your device.
+No. The image is read and re-encoded by JavaScript in the page using HTML5 Canvas. Zevylo has no application server that receives the image.
 
 **Which image formats are supported?**
 
-You can upload PNG, JPEG, and WebP images, and export compressed files in WebP, JPEG, or PNG format.
+You can open PNG, JPEG, and WebP images and export as WebP, JPEG, or PNG. Browser support for WebP encoding varies slightly by browser version.
 
-**How much file size can I expect to save?**
+**Is the compression lossless?**
 
-Converting standard PNGs or high-res JPEGs to optimized WebP often achieves 60% to 85% file size reduction with virtually no noticeable visual loss.
+Not for JPEG or WebP output. Those formats discard visual information to reduce size, and aggressive quality settings can produce visible artifacts. PNG output avoids additional lossy compression but can still be larger than an optimized PNG from a dedicated encoder.
+
+**How much smaller will my file be?**
+
+It depends on the source image, dimensions, format, and quality setting. A photographic JPEG re-encoded to WebP often gets noticeably smaller, while an already-optimized image may barely change or may grow. The tool shows both sizes so you can check before downloading.
 
 ## Related tools
 
