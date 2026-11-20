@@ -12,12 +12,16 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# WebAssembly Multi-Threading & Cross-Origin Isolation Headers
+# Security headers.
+# NOTE: Cross-Origin-Embedder-Policy is intentionally NOT set sitewide.
+# `require-corp` blocks cross-origin advertising resources (Google AdSense is
+# served from pagead2.googlesyndication.com without a CORP header), which made
+# the ad script fail to load. No tool in this project uses SharedArrayBuffer,
+# so cross-origin isolation is not required.
 [[headers]]
   for = "/*"
   [headers.values]
     Cross-Origin-Opener-Policy = "same-origin"
-    Cross-Origin-Embedder-Policy = "require-corp"
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"

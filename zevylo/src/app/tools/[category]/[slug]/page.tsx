@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const canonicalUrl = `/tools/${tool.category}/${tool.slug}`;
   const fullCanonicalUrl = `${baseUrl}${canonicalUrl}`;
   const toolTitle = tool.seo?.title || `${tool.name} — 100% Free Online Browser Utility | Zevylo`;
-  const toolDesc = tool.seo?.description || `${tool.shortDescription} Processed 100% locally in your browser with zero cloud uploads and instant results.`;
+  const toolDesc = tool.seo?.description || `${tool.shortDescription} Runs in your browser with no account required.`;
   const toolKeywords = [
     ...(tool.seo?.keywords || tool.keywords || []),
     'free online tool',
@@ -97,7 +97,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'tool-category': tool.category,
       'author': 'Muhammad Daniyal',
       'creator': 'Muhammad Daniyal',
-      'privacy-model': '100% Client-Side In-Browser (Zero Cloud Uploads)',
+      'privacy-model': 'Tool inputs processed in the browser (no tool-input upload)',
       'distribution': 'Global',
       'rating': 'General',
       'revisit-after': '1 days',

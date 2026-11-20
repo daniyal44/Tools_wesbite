@@ -9,170 +9,62 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.netlify.app';
   const now = new Date();
 
-  // 1. Core Platform & Discovery Hubs
+  // Core platform and discovery pages. Retired auto-generated guide and
+  // review URLs are intentionally absent: they now redirect to real pages.
   const staticPages: MetadataRoute.Sitemap = [
-    {
-      url: baseUrl,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/tools`,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/ai-tools`,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/ai-tools/categories`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/sitemap`,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/categories`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/articles`,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/ai-tools/article`,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/resources`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.75,
-    },
-    {
-      url: `${baseUrl}/llms.txt`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/badges`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/privacy`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/terms`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
+    { url: baseUrl, lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
+    { url: `${baseUrl}/tools`, lastModified: now, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${baseUrl}/categories`, lastModified: now, changeFrequency: 'weekly', priority: 0.85 },
+    { url: `${baseUrl}/ai-tools`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/ai-tools/categories`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/sitemap`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/resources`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: 'yearly', priority: 0.6 },
+    { url: `${baseUrl}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/terms`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
   ];
 
-  // 2. Tool Category Hubs (Dynamic from registry)
   const sortedCategories = [...categoryList].sort((a, b) => a.slug.localeCompare(b.slug));
   const categoryPages: MetadataRoute.Sitemap = sortedCategories.map((cat) => ({
     url: `${baseUrl}/tools/${cat.slug}`,
     lastModified: now,
     changeFrequency: 'weekly',
-    priority: 0.85,
+    priority: 0.8,
   }));
 
-  // 3. AI Directory Categories (Dynamic from AI_CATEGORIES)
   const sortedAiCategories = [...AI_CATEGORIES].sort((a, b) => a.slug.localeCompare(b.slug));
   const aiCategoryPages: MetadataRoute.Sitemap = sortedAiCategories.map((cat) => ({
     url: `${baseUrl}/ai-tools/${cat.slug}`,
     lastModified: now,
-    changeFrequency: 'weekly',
-    priority: 0.85,
+    changeFrequency: 'monthly',
+    priority: 0.7,
   }));
 
-  // 4. In-Browser Tools (Dynamic count from registry)
   const sortedTools = [...getAllTools()].sort((a, b) => {
-    if (a.category !== b.category) {
-      return a.category.localeCompare(b.category);
-    }
+    if (a.category !== b.category) return a.category.localeCompare(b.category);
     return a.slug.localeCompare(b.slug);
   });
   const toolPages: MetadataRoute.Sitemap = sortedTools.map((tool) => ({
     url: `${baseUrl}/tools/${tool.category}/${tool.slug}`,
     lastModified: now,
-    changeFrequency: 'weekly',
-    priority: 0.8,
+    changeFrequency: 'monthly',
+    priority: 0.75,
   }));
 
-  // 5. Curated AI Tools Profiles (Dynamic from AI_TOOLS_DATABASE)
   const sortedAiTools = [...AI_TOOLS_DATABASE].sort((a, b) => a.slug.localeCompare(b.slug));
   const aiToolPages: MetadataRoute.Sitemap = sortedAiTools.map((tool) => ({
     url: `${baseUrl}/ai-tools/tool/${tool.slug}`,
     lastModified: now,
-    changeFrequency: 'weekly',
-    priority: 0.8,
-  }));
-
-  // 6. Dedicated AI Technical Articles (302+ Articles)
-  const aiArticlePages: MetadataRoute.Sitemap = sortedAiTools.map((tool) => ({
-    url: `${baseUrl}/ai-tools/article/${tool.slug}`,
-    lastModified: now,
-    changeFrequency: 'weekly',
-    priority: 0.85,
-  }));
-
-  // 7. Technical Guides & Articles (Dynamic from registry)
-  const articlePages: MetadataRoute.Sitemap = sortedTools.map((tool) => ({
-    url: `${baseUrl}/articles/${tool.slug}`,
-    lastModified: now,
-    changeFrequency: 'weekly',
-    priority: 0.75,
+    changeFrequency: 'monthly',
+    priority: 0.6,
   }));
 
   return [
     ...staticPages,
     ...categoryPages,
-    ...(sortedAiCategories.length ? aiCategoryPages : []),
+    ...aiCategoryPages,
     ...toolPages,
-    ...(sortedAiTools.length ? aiToolPages : []),
-    ...(sortedAiTools.length ? aiArticlePages : []),
-    ...articlePages,
+    ...aiToolPages,
   ];
 }

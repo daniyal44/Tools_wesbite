@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `Best ${category.name} in 2026 — Verified Tools & Reviews | Zevylo`,
-    description: `Explore top-rated ${category.name.toLowerCase()} software, web apps, and utilities. Compare monthly traffic, pricing models, key features, and user ratings.`,
+    description: `Browse ${category.name.toLowerCase()} software and web apps with pricing models, key features, limitations, and official website links. Confirm current details with each vendor.`,
     alternates: {
       canonical: `/ai-tools/${category.slug}`,
     },
@@ -149,7 +149,7 @@ export default async function AICategoryPage({ params }: PageProps) {
               Featured {category.name} ({tools.length})
             </h2>
             <p className="text-xs sm:text-sm text-gray-500 mt-1">
-              Hand-picked and verified artificial intelligence apps with transparent pricing and traffic analytics.
+              Directory entries with pricing models and official links. Details are compiled from public information and can change; verify with each vendor.
             </p>
           </div>
           <Link
@@ -201,11 +201,6 @@ export default async function AICategoryPage({ params }: PageProps) {
                             <h3 className="font-bold text-base text-gray-900 dark:text-gray-100 group-hover:text-blue-600 transition-colors">
                               {tool.name}
                             </h3>
-                            {tool.verified && (
-                              <span title="Verified AI Tool" className="shrink-0">
-                                <CheckCircle2 className="w-4 h-4 text-blue-500" />
-                              </span>
-                            )}
                           </div>
                           <span className="text-[11px] text-gray-400 block font-medium">
                             Subcategory: {tool.subcategory}
@@ -228,14 +223,6 @@ export default async function AICategoryPage({ params }: PageProps) {
                     <div className="flex items-center gap-2 flex-wrap text-[11px]">
                       <span className={`px-2 py-0.5 rounded-full font-bold border ${pricingBadge.color}`}>
                         {pricingBadge.label}
-                      </span>
-                      <span className="px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-medium flex items-center gap-1">
-                        <Eye className="w-3 h-3 text-blue-500" />
-                        <span>{tool.monthlyVisits}/mo</span>
-                      </span>
-                      <span className="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 font-bold flex items-center gap-1 border border-amber-200 dark:border-amber-900">
-                        <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-                        <span>{tool.rating}</span>
                       </span>
                     </div>
 

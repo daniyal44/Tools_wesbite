@@ -25,7 +25,7 @@ export default function AICategoriesPage() {
           All 23 AI Categories (A to Z)
         </h1>
         <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
-          Every niche of the artificial intelligence revolution, organized with verified software listings.
+          Every major area of AI software, organized into browsable categories with links to official product sites.
         </p>
       </div>
 

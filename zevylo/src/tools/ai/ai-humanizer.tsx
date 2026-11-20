@@ -128,7 +128,7 @@ export default function AiHumanizer() {
             onChange={(e) => setAddHumanImperfections(e.target.checked)}
             className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
           />
-          <span>Inject Natural Burstiness &amp; Sentence Variance</span>
+          <span>Vary sentence length and structure</span>
         </label>
       </div>
 
@@ -139,27 +139,27 @@ export default function AiHumanizer() {
           <div className="space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-sm font-bold text-gray-900 dark:text-gray-100 flex items-center gap-2">
-                <span>🤖</span> AI-Generated Text Input
+                <span>📝</span> Draft to Edit
               </span>
               <button
                 type="button"
                 onClick={() => setInputText(SAMPLE_AI_TEXT)}
                 className="text-xs text-blue-600 dark:text-blue-400 hover:underline"
               >
-                Load Sample AI Text
+                Load Sample Draft
               </button>
             </div>
             <textarea
               rows={10}
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
-              placeholder="Paste text from ChatGPT, Claude, or Gemini here..."
+              placeholder="Paste a draft you want to revise for clarity..."
               className="w-full rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-950 p-4 text-xs sm:text-sm text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 leading-relaxed"
             />
           </div>
           <div className="text-xs text-gray-400 flex items-center justify-between pt-2 border-t border-gray-100 dark:border-gray-800">
             <span>{wordsOriginal} words</span>
-            <span>Detects 80+ AI clichés</span>
+            <span>Replaces common overused phrases</span>
           </div>
         </div>
 
@@ -169,7 +169,7 @@ export default function AiHumanizer() {
             <div className="flex items-center justify-between">
               <span className="text-sm font-bold text-emerald-800 dark:text-emerald-300 flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-emerald-500" />
-                Humanized &amp; Natural Output
+                Revised Output
               </span>
               <button
                 type="button"
@@ -182,10 +182,9 @@ export default function AiHumanizer() {
               </button>
             </div>
             <div className="w-full min-h-[240px] rounded-xl border border-emerald-200 dark:border-emerald-900/60 bg-white dark:bg-gray-900 p-4 text-xs sm:text-sm text-gray-800 dark:text-gray-200 leading-relaxed select-all">
-              {humanized || <span className="text-gray-400">Paste text on the left to see the humanized version...</span>}
+              {humanized || <span className="text-gray-400">Paste a draft on the left to see the revised version...</span>}
             </div>
-          </div>
-          <div className="text-xs text-emerald-700 dark:text-emerald-400 flex items-center justify-between pt-2 border-t border-emerald-100 dark:border-emerald-900/50">
+          </div>            <div className="text-xs text-emerald-700 dark:text-emerald-400 flex items-center justify-between pt-2 border-t border-emerald-100 dark:border-emerald-900/50">
             <span>{wordsHumanized} words</span>
             <span className="flex items-center gap-1 font-semibold">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" /> 100% Client-Side Private

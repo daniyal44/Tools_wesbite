@@ -23,10 +23,6 @@ export interface AITool {
   url: string;
   pricing: AIPricing;
   startingPrice: string;
-  monthlyVisits: string;
-  rating: number;
-  reviewCount: number;
-  verified: boolean;
   trending: boolean;
   featured: boolean;
   new?: boolean;
@@ -51,5 +47,5 @@ export interface AISearchFilters {
   pricing?: AIPricing | 'all';
   country?: string | 'all';
   status?: 'launched' | 'beta' | 'upcoming' | 'all';
-  sortBy?: 'traffic' | 'rating' | 'trending' | 'name' | 'newest';
+  sortBy?: 'trending' | 'name' | 'newest';
 }

@@ -63,10 +63,10 @@ export default function HtmlSitemapPage() {
             All Free Tools & Pages Directory
           </h1>
           <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-            Direct HTML index linking every single one of Zevylo&apos;s {allTools.length} free online utilities across all 18 categories. Designed for quick user navigation and search engine crawlability.
+            Direct HTML index linking every one of Zevylo&apos;s {allTools.length} free browser utilities across every category. Built for quick navigation and crawlability.
           </p>
           <div className="flex flex-wrap items-center gap-3 pt-2 text-xs text-gray-500">
-            <span>• Articles & Guides: <Link href="/articles" className="text-blue-600 dark:text-blue-400 underline font-medium">{allTools.length}+ Tool Guides</Link></span>
+            <span>• Usage notes are included on each tool page: <Link href="/tools" className="text-blue-600 dark:text-blue-400 underline font-medium">Browse tools</Link></span>
             <span>• XML Sitemap: <a href="/sitemap.xml" className="text-blue-600 dark:text-blue-400 underline">sitemap.xml</a></span>
             <span>• RSS Feed: <a href="/feed.xml" className="text-blue-600 dark:text-blue-400 underline">feed.xml</a></span>
             <span>• Robots: <a href="/robots.txt" className="text-blue-600 dark:text-blue-400 underline">robots.txt</a></span>

@@ -4,6 +4,7 @@ import '@/tools';
 import { categoryList } from '@/lib/tools/categories';
 import { getToolsByCategory, getAllTools } from '@/lib/tools/registry';
 import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
+import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
 import { UserToolsStrip } from '@/components/tools/user-tools-strip';
 import { ShieldCheck, Zap, Sparkles, ArrowRight, Lock, CheckCircle2 } from 'lucide-react';
 import { ToolIcon } from '@/components/tools/tool-icon';
@@ -11,10 +12,10 @@ import { ToolIcon } from '@/components/tools/tool-icon';
 export const metadata: Metadata = {
   title: 'Zevylo — One Place. Every Useful Tool. (100% Free & Private)',
   description:
-    `${getAllTools().length}+ free online tools across 18 categories. Convert, calculate, generate, analyze, and optimize directly in your browser with 100% client-side privacy.`,
+    `${getAllTools().length} free online tools across ${categoryList.length} categories. Convert, calculate, generate, and analyze in your browser, with no account required.`,
   openGraph: {
     title: 'Zevylo — One Place. Every Useful Tool. (100% Free & In-Browser)',
-    description: `${getAllTools().length}+ free online tools across 18 categories. 100% client-side privacy, zero cloud uploads, zero wait timers.`,
+    description: `${getAllTools().length} free browser tools across ${categoryList.length} categories. Most processing happens on your device, with no account and no queue.`,
     url: 'https://zevylo.netlify.app',
     type: 'website',
     siteName: 'Zevylo',
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
         url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
         width: 1200,
         height: 630,
-        alt: `Zevylo — ${getAllTools().length}+ Free In-Browser Online Tools Suite (100% Client-Side Privacy)`,
+        alt: `Zevylo — ${getAllTools().length} Free In-Browser Online Tools`,
         type: 'image/png',
       },
     ],
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Zevylo — One Place. Every Useful Tool. (100% Free & In-Browser)',
-    description: `${getAllTools().length}+ free online tools across 18 categories. 100% client-side privacy, zero cloud uploads.`,
+    description: `${getAllTools().length} free browser tools across ${categoryList.length} categories. No account required.`,
     images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
     creator: '@zevylo',
   },
@@ -49,8 +50,8 @@ export const metadata: Metadata = {
 
 const popularTools = [
   { name: 'AI Prompt Crafter & Styler', slug: 'ai-prompt-generator', category: 'ai', badge: 'Trending', description: 'Engineer photorealistic prompts for Midjourney v6, Flux, and DALL-E 3' },
-  { name: 'AI Text Humanizer & Rewriter', slug: 'ai-humanizer', category: 'ai', badge: 'Popular', description: 'Transform robotic AI text into natural, bypass-ready human prose' },
-  { name: 'AI Content & Perplexity Detector', slug: 'ai-content-detector', category: 'ai', badge: 'New', description: 'Statistical sentence-level AI probability and burstiness scanner' },
+  { name: 'AI Writing Clarity Editor', slug: 'ai-humanizer', category: 'ai', badge: 'Popular', description: 'Revise repetitive AI-assisted drafts for clearer, more varied prose' },
+  { name: 'Draft Pattern & Readability Inspector', slug: 'ai-content-detector', category: 'ai', badge: 'New', description: 'Surface repetition, sentence variance, and readability signals in a draft' },
   { name: 'AI Code Explainer & Converter', slug: 'ai-code-assistant', category: 'ai', badge: 'New', description: 'Deconstruct algorithms, audit edge-cases, and translate code' },
   { name: 'AI Plain English to SQL & Regex', slug: 'ai-sql-regex-generator', category: 'ai', badge: 'Popular', description: 'Generate PostgreSQL, MySQL, and SQLite queries from natural language' },
   { name: 'AI Article & Blog Outline Generator', slug: 'ai-article-writer', category: 'ai', badge: 'Trending', description: 'Generate high-ranking article outlines, headlines, and hooks' },
@@ -72,7 +73,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-900 mb-6">
             <Sparkles className="w-3.5 h-3.5 text-blue-500" />
-            <span>{totalTools}+ Free Tools Across 18 Categories • 100% Client-Side Privacy</span>
+            <span>{totalTools} free tools across {categoryList.length} categories • No signup required</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 max-w-4xl mx-auto leading-tight">
@@ -80,7 +81,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-6 text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Convert files, calculate finances, edit video frames, generate AI outlines, and build ATS resumes. Zero wait timers, zero cloud uploads, and zero paywalls.
+            Convert files, calculate finances, extract video frames, revise drafts, and build resumes. Most tools run in your browser, with no account and no queue.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -94,7 +95,7 @@ export default function HomePage() {
               href="/categories"
               className="inline-flex items-center justify-center rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-6 py-3.5 text-sm font-bold text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors w-full sm:w-auto"
             >
-              Explore 18 Categories
+              Explore {categoryList.length} Categories
             </Link>
           </div>
 
@@ -102,15 +103,15 @@ export default function HomePage() {
           <div className="mt-12 flex flex-wrap justify-center gap-6 sm:gap-10 text-xs font-semibold text-gray-500 dark:text-gray-400">
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-emerald-500" />
-              <span>100% In-Browser Privacy</span>
+              <span>Browser-local tools</span>
             </div>
             <div className="flex items-center gap-2">
               <Zap className="w-4 h-4 text-amber-500" />
-              <span>Zero Wait Timers</span>
+              <span>No queues</span>
             </div>
             <div className="flex items-center gap-2">
               <Lock className="w-4 h-4 text-sky-500" />
-              <span>No Forced Signup or Credit Cards</span>
+              <span>No signup or card</span>
             </div>
           </div>
         </div>
@@ -128,7 +129,7 @@ export default function HomePage() {
                 Popular & Trending Utilities
               </h2>
               <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                Handpicked high-performance tools searched by thousands of developers and creators
+                Frequently used utilities from across the directory
               </p>
             </div>
             <Link
@@ -187,7 +188,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-gray-100">
-              Browse All 18 Categories
+              Browse All {categoryList.length} Categories
             </h2>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
               Find exactly what you need in seconds with zero clutter
@@ -243,7 +244,7 @@ export default function HomePage() {
                   Explore {AI_TOOLS_DATABASE.length}+ Global AI Tools from A to Z
                 </h2>
                 <p className="text-sm sm:text-base text-blue-100 leading-relaxed">
-                  Discover top artificial intelligence software across 23 specialized categories from USA, China, Japan, UAE, UK, and Europe, with verified traffic stats, pricing filters, and 11 built-in browser tools.
+                  Discover AI software across {AI_CATEGORIES.length} categories, filter by pricing, and jump to official product sites. Listings are compiled from public information and can change; verify details with each vendor.
                 </p>
               </div>
 
@@ -259,7 +260,7 @@ export default function HomePage() {
                   href="/ai-tools/categories"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-indigo-800/80 hover:bg-indigo-700 text-white font-semibold text-sm transition-colors border border-white/20"
                 >
-                  <span>23 AI Categories</span>
+                  <span>{AI_CATEGORIES.length} AI Categories</span>
                 </Link>
               </div>
             </div>
@@ -292,10 +293,10 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-gray-100">
-              Why Users Choose Zevylo Over Legacy Tool Sites
+              How Zevylo Is Different
             </h2>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              Built on modern browser standards without the dark patterns of competitors
+              What the tools do, and what they do not claim
             </p>
           </div>
 
@@ -305,13 +306,13 @@ export default function HomePage() {
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-gray-900 dark:text-gray-100">
-                100% Client-Side Privacy
+                Browser-Local Tools
               </h3>
               <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                Unlike TinyWow or Smallpdf, your files and confidential data never touch remote servers. Everything runs entirely inside your browser memory.
+                Your tool inputs are read and processed in the page. Zevylo has no application server that receives your files or pasted text.
               </p>
               <div className="pt-2 flex items-center gap-1.5 text-xs text-emerald-600 dark:text-emerald-400 font-semibold">
-                <CheckCircle2 className="w-3.5 h-3.5" /> No server storage or leaks
+                <CheckCircle2 className="w-3.5 h-3.5" /> No tool-input uploads
               </div>
             </div>
 
@@ -320,13 +321,13 @@ export default function HomePage() {
                 <Zap className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-gray-900 dark:text-gray-100">
-                Sub-Second Zero-Latency
+                No Queue or Account
               </h3>
               <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                No 15-minute wait queues, captchas, or upload bottlenecks. Instantaneous results powered by WebAssembly, HTML5 Canvas, and modern web APIs.
+                No upload queue, wait timer, or forced sign-up. Processing time depends on the file and your device, not on a remote server.
               </p>
               <div className="pt-2 flex items-center gap-1.5 text-xs text-amber-600 dark:text-amber-400 font-semibold">
-                <CheckCircle2 className="w-3.5 h-3.5" /> Instant local rendering
+                <CheckCircle2 className="w-3.5 h-3.5" /> Runs on your device
               </div>
             </div>
 
@@ -335,13 +336,13 @@ export default function HomePage() {
                 <Sparkles className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-gray-900 dark:text-gray-100">
-                Zero Ads, Zero Subscriptions
+                Free, With Advertising
               </h3>
               <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                No intrusive banner ads, no credit caps, and no forced logins. Enjoy a clean, distraction-free interface built for pure focus and productivity.
+                No subscription and no credit card. The site is supported by clearly separated advertising, kept apart from tool controls.
               </p>
               <div className="pt-2 flex items-center gap-1.5 text-xs text-blue-600 dark:text-blue-400 font-semibold">
-                <CheckCircle2 className="w-3.5 h-3.5" /> Completely free forever
+                <CheckCircle2 className="w-3.5 h-3.5" /> No paywall
               </div>
             </div>
           </div>
@@ -361,12 +362,12 @@ export default function HomePage() {
                 More Tools Added in Future on Demand &amp; User Requirements
               </h2>
               <p className="text-sm sm:text-base text-blue-100 leading-relaxed">
-                Missing a specific file converter, PDF utility, calculator, or developer generator for your workflow? We continuously expand Zevylo based on what our users need. Tell us your requirements, and our team will build and publish it directly in your browser.
+                Missing a specific file converter, PDF utility, calculator, or developer generator? Tell us what you need and it will be considered for the roadmap. New tools are published when they work, not to inflate the counter.
               </p>
               <div className="flex flex-wrap items-center gap-4 text-xs text-blue-200 pt-1">
                 <span>✓ User-requested features prioritized</span>
-                <span>✓ 100% Client-side privacy guaranteed</span>
-                <span>✓ Free forever for everyone</span>
+                <span>✓ Tool inputs stay in your browser</span>
+                <span>✓ No account required</span>
               </div>
             </div>
 
@@ -379,10 +380,10 @@ export default function HomePage() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                href="/articles"
+                href="/tools"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-blue-700/80 hover:bg-blue-700 text-white font-semibold text-sm transition-colors border border-white/20"
               >
-                <span>Browse All {getAllTools().length}+ Tool Guides</span>
+                <span>Browse All {totalTools} Tools</span>
               </Link>
             </div>
           </div>

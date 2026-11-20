@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'All Tools Directory — Free Online Utilities | Zevylo',
-    description: `Browse the full catalog of ${getAllTools().length}+ free browser tools on Zevylo with 100% client-side privacy.`,
+    description: `Browse the full catalog of ${getAllTools().length} free browser tools on Zevylo. Tool inputs are processed in your browser, with no account required.`,
     url: '/tools',
     type: 'website',
     siteName: 'Zevylo',
@@ -90,10 +90,10 @@ export default function ToolsDirectoryPage() {
             <span>Continuous Expansion</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-            More Tools Added in Future on Demand &amp; Requirements
+            Tool Requests Shape the Roadmap
           </h2>
           <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
-            Need a tool that isn&apos;t in our catalog yet? We build and release new 100% private, client-side tools based directly on user feedback and workflow requirements. Submit your idea, and our team will build it for you for free.
+            Need a tool that isn&apos;t in our catalog yet? New browser tools are prioritised from user feedback and workflow requirements. Submit your idea and it will be considered for the roadmap.
           </p>
         </div>
         <Link

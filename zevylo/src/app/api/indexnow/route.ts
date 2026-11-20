@@ -14,20 +14,15 @@ export async function POST() {
     baseUrl,
     `${baseUrl}/tools`,
     `${baseUrl}/categories`,
-    `${baseUrl}/articles`,
-    `${baseUrl}/blog`,
     `${baseUrl}/ai-tools`,
-    `${baseUrl}/ai-tools/article`,
     `${baseUrl}/sitemap`,
     `${baseUrl}/badges`,
     `${baseUrl}/resources`,
     `${baseUrl}/llms.txt`,
     ...categoryList.map((c) => `${baseUrl}/tools/${c.slug}`),
     ...tools.map((t) => `${baseUrl}/tools/${t.category}/${t.slug}`),
-    ...tools.map((t) => `${baseUrl}/articles/${t.slug}`),
     ...AI_CATEGORIES.map((c) => `${baseUrl}/ai-tools/${c.slug}`),
     ...AI_TOOLS_DATABASE.map((t) => `${baseUrl}/ai-tools/tool/${t.slug}`),
-    ...AI_TOOLS_DATABASE.map((t) => `${baseUrl}/ai-tools/article/${t.slug}`),
   ];
 
   const payload = {

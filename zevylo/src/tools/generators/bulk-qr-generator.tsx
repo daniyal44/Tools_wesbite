@@ -12,7 +12,7 @@ interface GeneratedQr {
 
 const SAMPLE = `https://zevylo.netlify.app
 https://zevylo.netlify.app/ai-tools
-https://zevylo.netlify.app/articles`;
+https://zevylo.netlify.app/tools`;
 
 export default function BulkQrGenerator() {
   const [input, setInput] = useState('');

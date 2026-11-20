@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ShieldCheck, FolderTree, ExternalLink, Code2, Rss } from "lucide-react";
 import { getAllTools } from "@/lib/tools/registry";
 import { AI_TOOLS_DATABASE } from "@/lib/ai-directory/database";
+import { AI_CATEGORIES } from "@/lib/ai-directory/categories";
 import "@/tools";
 
 export function Footer() {
@@ -30,10 +31,10 @@ export function Footer() {
             </p>
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 text-xs font-medium border border-emerald-200 dark:border-emerald-800">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>100% Client-Side Privacy</span>
+              <span>Browser-Local Tools</span>
             </div>
             <div className="text-[11px] text-gray-400 leading-normal">
-              Zero cloud uploads • Zero wait queues • Zero hidden watermarks
+              No account • No upload queue • No watermarks
             </div>
           </div>
 
@@ -66,8 +67,8 @@ export function Footer() {
               <li><Link href="/tools/business" className="hover:text-blue-600 dark:hover:text-blue-400">Business & Resume Builder</Link></li>
               <li><Link href="/tools/marketing" className="hover:text-blue-600 dark:hover:text-blue-400">Marketing & Outreach</Link></li>
               <li><Link href="/ai-tools" className="font-bold text-indigo-600 hover:underline dark:text-indigo-400 flex items-center gap-1"><span>✨ AI Directory (A to Z)</span></Link></li>
-              <li><Link href="/tools/ai" className="hover:text-blue-600 dark:hover:text-blue-400">Built-in AI Utilities (11 Tools)</Link></li>
-              <li><Link href="/ai-tools/categories" className="hover:text-blue-600 dark:hover:text-blue-400">18 AI Categories Taxonomy</Link></li>
+              <li><Link href="/tools/ai" className="hover:text-blue-600 dark:hover:text-blue-400">Built-in AI Utilities</Link></li>
+              <li><Link href="/ai-tools/categories" className="hover:text-blue-600 dark:hover:text-blue-400">{AI_CATEGORIES.length} AI Categories</Link></li>
               <li><Link href="/tools/color" className="hover:text-blue-600 dark:hover:text-blue-400">Color Palette & Pickers</Link></li>
               <li><Link href="/tools/date-time" className="hover:text-blue-600 dark:hover:text-blue-400">Date, Time & Alarms</Link></li>
               <li><Link href="/tools/education" className="hover:text-blue-600 dark:hover:text-blue-400">Education & Science</Link></li>
@@ -107,15 +108,15 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/articles" className="flex items-center gap-1.5 font-medium text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
+                <Link href="/tools" className="flex items-center gap-1.5 font-medium text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
                   <ExternalLink className="w-3.5 h-3.5 text-blue-500" />
-                  <span>Articles &amp; Blog Hub (500+ Deep Dives)</span>
+                  <span>All Tools &amp; Usage Notes</span>
                 </Link>
               </li>
               <li>
-                <Link href="/ai-tools/article" className="flex items-center gap-1.5 font-medium text-indigo-600 dark:text-indigo-400 hover:underline">
+                <Link href="/ai-tools" className="flex items-center gap-1.5 font-medium text-indigo-600 dark:text-indigo-400 hover:underline">
                   <ExternalLink className="w-3.5 h-3.5" />
-                  <span>AI Model Reviews &amp; Articles ({AI_TOOLS_DATABASE.length} Tools)</span>
+                  <span>AI Directory ({AI_TOOLS_DATABASE.length} Listings)</span>
                 </Link>
               </li>
               <li>

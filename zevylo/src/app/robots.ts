@@ -10,33 +10,8 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/'],
       },
-      // Traditional Search Crawlers
       {
-        userAgent: ['Googlebot', 'Bingbot', 'Applebot', 'DuckDuckBot', 'YandexBot', 'Baiduspider', 'Sogou'],
-        allow: '/',
-        disallow: ['/api/'],
-      },
-      // AI & Generative Search Crawlers (GEO / AEO)
-      {
-        userAgent: [
-          'GPTBot',
-          'ChatGPT-User',
-          'PerplexityBot',
-          'ClaudeBot',
-          'Claude-Web',
-          'anthropic-ai',
-          'Google-Extended',
-          'Applebot-Extended',
-          'CCBot',
-          'cohere-ai',
-          'Bytespider',
-          'Diffbot',
-        ],
-        allow: '/',
-        disallow: ['/api/'],
-      },
-      {
-        userAgent: ['Googlebot-Image'],
+        userAgent: 'Googlebot-Image',
         allow: ['/images/', '/badge.svg', '/icon.png'],
       },
     ],

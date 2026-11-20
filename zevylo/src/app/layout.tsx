@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   // Plain string (no template) — child pages already include "| Zevylo" in their own titles.
   title: 'Zevylo — One Place. Every Useful Tool. (100% Free & In-Browser)',
   description:
-    `Convert, calculate, generate, analyze, optimize, and create with ${TOOL_COUNT}+ free online browser utilities. 100% client-side privacy, zero cloud uploads, and zero paywalls.`,
+    `Convert, calculate, generate, and analyze with ${TOOL_COUNT} free browser utilities. Tool inputs are processed locally, with no account required.`,
   keywords: [
     'online tools',
     'free tools',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     'heic to jpg',
     'developer utilities',
     'SEO tools',
-    '100% client side tools',
+    'browser tools',
   ],
   authors: [{ name: 'Muhammad Daniyal', url: 'https://github.com/daniyal44' }],
   creator: 'Muhammad Daniyal',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     siteName: 'Zevylo',
     title: 'Zevylo — One Place. Every Useful Tool. (100% Free & Private)',
     description:
-      `${TOOL_COUNT}+ free online tools across 18 categories. Convert files, calculate finances, edit video frames, and build resumes with 100% in-browser privacy.`,
+      `${TOOL_COUNT} free browser tools across 18 categories. Convert files, calculate finances, extract video frames, and build resumes with no account required.`,
     images: [
       {
         url: '/images/Zevylo_logo.png',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Zevylo — One Place. Every Useful Tool.',
     description:
-      `${TOOL_COUNT}+ free online browser utilities across 18 categories. 100% private, zero server uploads.`,
+      `${TOOL_COUNT} free browser utilities across 18 categories. Tool inputs stay on your device.`,
     images: ['/images/Zevylo_logo.png'],
     creator: '@zevylo',
   },
@@ -101,7 +101,7 @@ export const metadata: Metadata = {
     'distribution': 'Global',
     'revisit-after': '1 days',
     'target-audience': 'Global Web Users, Developers, Creators, Students, Businesses',
-    'privacy-architecture': '100% Client-Side In-Browser (Zero Cloud Uploads)',
+    'privacy-architecture': 'Tool inputs processed in the browser (no tool-input upload)',
   },
   icons: {
     icon: [

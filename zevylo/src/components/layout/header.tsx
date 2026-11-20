@@ -46,8 +46,8 @@ export function Header({ toolCount }: { toolCount: number }) {
           <Link href="/" className="flex items-center gap-2 shrink-0 group" aria-label={`Zevylo Home — ${toolCount}+ Free In-Browser Online Utilities`}>
             <Image
               src="/images/Zevylo_logo.png"
-              alt={`Zevylo — ${toolCount}+ Free Client-Side Online Browser Utilities (Zero Cloud Uploads)`}
-              title={`Zevylo — ${toolCount}+ Free Online Browser Tools (100% Client-Side Privacy)`}
+              alt={`Zevylo — ${toolCount} Free Online Browser Tools`}
+              title={`Zevylo — ${toolCount} Free Online Browser Tools`}
               width={122}
               height={31}
               style={{ height: "30px", width: "auto" }}
@@ -87,13 +87,13 @@ export function Header({ toolCount }: { toolCount: number }) {
               Categories
             </Link>
 
-            {/* Articles & Blog */}
+            {/* Resources */}
             <Link
-              href="/articles"
+              href="/resources"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100/70 dark:text-gray-300 dark:hover:text-blue-400 dark:hover:bg-gray-800/50 transition-colors"
             >
               <BookOpen className="w-3.5 h-3.5 text-blue-500" />
-              <span>Articles &amp; Blog</span>
+              <span>Resources</span>
             </Link>
 
             {/* More Dropdown (Directory, Badges, About, Contact) */}
@@ -117,14 +117,6 @@ export function Header({ toolCount }: { toolCount: number }) {
                   <div className="text-[10px] font-bold uppercase tracking-wider text-gray-400 dark:text-gray-500 px-3 py-1">
                     Resources & Info
                   </div>
-                  <Link
-                    href="/articles"
-                    onClick={() => setIsMoreOpen(false)}
-                    className="flex lg:hidden items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
-                  >
-                    <BookOpen className="w-4 h-4 text-blue-500" />
-                    <span>Articles & Guides</span>
-                  </Link>
                   <Link
                     href="/sitemap"
                     onClick={() => setIsMoreOpen(false)}
@@ -247,12 +239,12 @@ export function Header({ toolCount }: { toolCount: number }) {
               Resources & Info
             </div>
             <Link
-              href="/articles"
+              href="/resources"
               className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-900"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <BookOpen className="w-4 h-4 text-blue-500" />
-              <span>Articles &amp; Blog Hub</span>
+              <span>Resources &amp; Standards</span>
             </Link>
             <Link
               href="/sitemap"

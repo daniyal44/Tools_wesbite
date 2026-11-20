@@ -47,7 +47,7 @@ The graph below visualizes how requests route from the client browser through th
 
 <!-- BEGIN_DYNAMIC_CODEBASE_GRAPH -->
 ```mermaid
-%% Dynamic Codebase Graph — Generated on 2026-11-14 (213 tools across 18 categories)
+%% Dynamic Codebase Graph — Generated on 2026-11-20 (213 tools across 18 categories)
 flowchart TB
     subgraph ClientLayer["Client-Side Browser Execution (Zero-Upload Privacy Sandbox)"]
         UserBrowser["🌐 User Web Browser"]

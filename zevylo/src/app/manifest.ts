@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Zevylo — Every Useful Tool',
     short_name: 'Zevylo',
-    description: `${getAllTools().length}+ free online tools for developers, creators, and professionals with 100% client-side privacy.`,
+    description: `${getAllTools().length} free browser tools for developers, creators, and professionals. Tool inputs are processed locally.`,
     start_url: '/',
     display: 'standalone',
     background_color: '#09090b',

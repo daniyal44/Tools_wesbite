@@ -46,8 +46,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${tool.name} Review, Pricing & Alternatives (2026) | Zevylo`,
-    description: `${tool.tagline}. Read ${tool.name} verified features, pricing (${tool.startingPrice}), user rating (${tool.rating}/5), monthly traffic (${tool.monthlyVisits}), pros & cons, and top alternatives.`,
+    title: `${tool.name} — Profile, Pricing & Official Link | Zevylo`,
+    description: `${tool.tagline}. Directory profile for ${tool.name} with pricing model, features, limitations, and a link to the official site. Confirm current pricing and features with the vendor.`,
     alternates: {
       canonical: `/ai-tools/tool/${tool.slug}`,
     },
@@ -107,13 +107,6 @@ export default async function AIToolDetailPage({ params }: PageProps) {
     description: tool.description,
     applicationCategory: tool.categoryName,
     operatingSystem: 'Web, Cloud',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: tool.rating,
-      reviewCount: tool.reviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
     offers: {
       '@type': 'Offer',
       price: tool.startingPrice,
@@ -189,12 +182,6 @@ export default async function AIToolDetailPage({ params }: PageProps) {
                     <span className="capitalize">{tool.status}</span>
                   </span>
                 )}
-                {tool.verified && (
-                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
-                    <CheckCircle2 className="w-3.5 h-3.5" />
-                    <span>Verified</span>
-                  </span>
-                )}
                 {tool.trending && (
                   <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 border border-rose-200 dark:border-rose-800">
                     <TrendingUp className="w-3.5 h-3.5" />
@@ -227,13 +214,6 @@ export default async function AIToolDetailPage({ params }: PageProps) {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto shrink-0">
-            <Link
-              href={`/ai-tools/article/${tool.slug}`}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-indigo-50 dark:bg-indigo-950/50 hover:bg-indigo-100 text-indigo-700 dark:text-indigo-300 font-bold text-xs sm:text-sm border border-indigo-200 dark:border-indigo-800 transition-colors shadow-xs"
-            >
-              <BookOpen className="w-4 h-4" />
-              <span>Read Full Article</span>
-            </Link>
             <a
               href={tool.url}
               target="_blank"
@@ -247,7 +227,7 @@ export default async function AIToolDetailPage({ params }: PageProps) {
         </div>
 
         {/* Quick Stats Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-gray-100 dark:border-gray-800">
           <div className="p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/60 border border-gray-200/70 dark:border-gray-800">
             <span className="text-[11px] font-bold uppercase tracking-wider text-gray-400 block mb-1">
               Pricing Model
@@ -268,21 +248,10 @@ export default async function AIToolDetailPage({ params }: PageProps) {
 
           <div className="p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/60 border border-gray-200/70 dark:border-gray-800">
             <span className="text-[11px] font-bold uppercase tracking-wider text-gray-400 block mb-1">
-              Monthly Traffic
+              Listing type
             </span>
-            <span className="text-sm sm:text-base font-black text-blue-600 dark:text-blue-400 flex items-center gap-1">
-              <Eye className="w-4 h-4" />
-              <span>{tool.monthlyVisits} visits</span>
-            </span>
-          </div>
-
-          <div className="p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/60 border border-gray-200/70 dark:border-gray-800">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-gray-400 block mb-1">
-              User Rating
-            </span>
-            <span className="text-sm sm:text-base font-black text-amber-500 flex items-center gap-1">
-              <Star className="w-4 h-4 fill-amber-400" />
-              <span>{tool.rating} ({tool.reviewCount.toLocaleString()} reviews)</span>
+            <span className="text-sm text-gray-800 dark:text-gray-200 font-semibold">
+              Directory entry with link to the official site
             </span>
           </div>
         </div>
@@ -299,6 +268,12 @@ export default async function AIToolDetailPage({ params }: PageProps) {
             <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
               {tool.description}
             </p>
+            <p className="text-xs text-gray-500 dark:text-gray-400 border-t border-gray-100 dark:border-gray-800 pt-3 leading-relaxed">
+              Listing details are compiled from public product information and may be out of date.
+              Zevylo does not rank, score, or independently benchmark third-party AI products, and
+              this page is not a paid endorsement. Confirm current pricing, availability, and
+              capabilities on the official website before relying on them.
+            </p>
 
             {/* Tags */}
             <div className="flex items-center gap-2 flex-wrap pt-2">
@@ -310,31 +285,6 @@ export default async function AIToolDetailPage({ params }: PageProps) {
                   #{tag}
                 </span>
               ))}
-            </div>
-          </div>
-
-          {/* In-Depth Technical Review & Editorial Guide Banner */}
-          <div className="rounded-3xl border border-indigo-200 dark:border-indigo-800/80 bg-gradient-to-br from-indigo-50/60 to-blue-50/60 dark:from-indigo-950/20 dark:to-blue-950/20 p-6 sm:p-8 space-y-4 shadow-xs">
-            <div className="flex items-center justify-between flex-wrap gap-3">
-              <div className="flex items-center gap-2 text-indigo-900 dark:text-indigo-300 font-black text-lg">
-                <BookOpen className="w-5 h-5 text-indigo-600" />
-                <span>In-Depth Technical Review &amp; Architecture Guide</span>
-              </div>
-              <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/60 text-indigo-800 dark:text-indigo-200">
-                2,000+ Words • Verified 2026
-              </span>
-            </div>
-            <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-              Dive into our comprehensive engineering deep dive covering {tool.name}&apos;s underlying neural architecture in {tool.country || 'global ecosystem'}, independent MMLU and HumanEval benchmark evaluations, full token economics breakdown, step-by-step implementation workflows, and upcoming 2026 version roadmaps.
-            </p>
-            <div className="pt-2">
-              <Link
-                href={`/ai-tools/article/${tool.slug}`}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs sm:text-sm transition-colors shadow-md shadow-indigo-600/20"
-              >
-                <span>Read Full Technical Article &amp; Guide</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
             </div>
           </div>
 
@@ -439,7 +389,7 @@ export default async function AIToolDetailPage({ params }: PageProps) {
                 href="/tools/ai/ai-humanizer"
                 className="block p-3 rounded-xl bg-gray-50 dark:bg-gray-800/60 hover:bg-blue-50 dark:hover:bg-blue-950/40 border border-gray-200 dark:border-gray-700 text-xs font-bold text-gray-800 dark:text-gray-200 transition-colors"
               >
-                👤 AI Text Humanizer &amp; Bypass Rewriter
+                📝 AI Writing Clarity Editor
               </Link>
               <Link
                 href="/tools/ai/ai-presentation-generator"
@@ -476,10 +426,6 @@ export default async function AIToolDetailPage({ params }: PageProps) {
                           {rel.name}
                         </h4>
                       </div>
-                      <span className="text-[10px] font-bold text-amber-500 flex items-center gap-0.5">
-                        <Star className="w-3 h-3 fill-amber-400" />
-                        {rel.rating}
-                      </span>
                     </div>
                     <p className="text-[11px] text-gray-500 truncate mt-1">
                       {rel.tagline}
