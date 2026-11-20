@@ -5,11 +5,12 @@ import { getAllTools } from '@/lib/tools/registry';
 import { categoryList } from '@/lib/tools/categories';
 import { ToolsDirectoryClient } from './tools-client';
 import { Sparkles, Lightbulb, ArrowRight } from 'lucide-react';
+import { clampDescription } from '@/lib/seo/meta';
 
 export const metadata: Metadata = {
   title: 'All Tools Directory — Free Online Utilities | Zevylo',
   description:
-    `Browse the full catalog of ${getAllTools().length}+ free online tools on Zevylo. Fast, private, browser-based utilities for text, development, SEO, calculation, conversion, and generation.`,
+    clampDescription(`Browse all ${getAllTools().length} free browser-based tools on Zevylo for text, development, SEO, calculations, conversions, and generation.`),
   alternates: {
     canonical: '/tools',
   },
@@ -34,7 +35,6 @@ export const metadata: Metadata = {
     title: 'All Tools Directory — Free Online Utilities | Zevylo',
     description: `Browse the full catalog of ${getAllTools().length}+ free browser tools on Zevylo.`,
     images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
-    creator: '@zevylo',
   },
   other: {
     'image': 'https://zevylo.netlify.app/images/Zevylo_logo.png',

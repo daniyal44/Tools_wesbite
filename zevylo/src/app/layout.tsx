@@ -23,7 +23,7 @@ const TOOL_COUNT = getAllTools().length;
 
 export const metadata: Metadata = {
   // Plain string (no template) — child pages already include "| Zevylo" in their own titles.
-  title: 'Zevylo — One Place. Every Useful Tool. (100% Free & In-Browser)',
+  title: 'Zevylo — Free Online Tools That Run in Your Browser',
   description:
     `Convert, calculate, generate, and analyze with ${TOOL_COUNT} free browser utilities. Tool inputs are processed locally, with no account required.`,
   keywords: [
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: baseUrl,
     siteName: 'Zevylo',
-    title: 'Zevylo — One Place. Every Useful Tool. (100% Free & Private)',
+    title: 'Zevylo — Free Online Tools That Run in Your Browser',
     description:
       `${TOOL_COUNT} free browser tools across 18 categories. Convert files, calculate finances, extract video frames, and build resumes with no account required.`,
     images: [
@@ -72,7 +72,6 @@ export const metadata: Metadata = {
     description:
       `${TOOL_COUNT} free browser utilities across 18 categories. Tool inputs stay on your device.`,
     images: ['/images/Zevylo_logo.png'],
-    creator: '@zevylo',
   },
   robots: {
     index: true,
@@ -137,16 +136,13 @@ const globalGraphSchema = {
         '@type': 'ImageObject',
         url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
       },
-      sameAs: [
-        'https://github.com/zevylo',
-        'https://twitter.com/zevylo',
-      ],
+      sameAs: ['https://github.com/daniyal44'],
       founder: {
         '@type': 'Person',
         name: 'Muhammad Daniyal',
         url: 'https://github.com/daniyal44',
       },
-      description: `Zevylo provides ${TOOL_COUNT}+ free online client-side browser utilities across 18 categories with zero server uploads and 100% privacy.`,
+      description: `Zevylo provides ${TOOL_COUNT} browser-based utilities. Tool inputs are processed in the page, and no account is required.`,
       knowsAbout: [
         'WebAssembly Browser Utilities',
         'Client-Side PDF Processing',

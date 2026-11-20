@@ -10,11 +10,11 @@ import { ShieldCheck, Zap, Sparkles, ArrowRight, Lock, CheckCircle2 } from 'luci
 import { ToolIcon } from '@/components/tools/tool-icon';
 
 export const metadata: Metadata = {
-  title: 'Zevylo — One Place. Every Useful Tool. (100% Free & Private)',
+  title: 'Zevylo — Free Online Tools That Run in Your Browser',
   description:
     `${getAllTools().length} free online tools across ${categoryList.length} categories. Convert, calculate, generate, and analyze in your browser, with no account required.`,
   openGraph: {
-    title: 'Zevylo — One Place. Every Useful Tool. (100% Free & In-Browser)',
+    title: 'Zevylo — Free Online Tools That Run in Your Browser',
     description: `${getAllTools().length} free browser tools across ${categoryList.length} categories. Most processing happens on your device, with no account and no queue.`,
     url: 'https://zevylo.netlify.app',
     type: 'website',
@@ -31,10 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Zevylo — One Place. Every Useful Tool. (100% Free & In-Browser)',
+    title: 'Zevylo — Free Online Tools That Run in Your Browser',
     description: `${getAllTools().length} free browser tools across ${categoryList.length} categories. No account required.`,
     images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
-    creator: '@zevylo',
   },
   verification: {
     google: 'Q-Zq3sa2VtEBVvj8sRF0IafUtF7MqAUbl8JoG_q_H3Q',

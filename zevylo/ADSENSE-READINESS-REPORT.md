@@ -13,7 +13,7 @@ Google decides whether to approve a publisher account. Nothing in this report is
 The project is a Next.js 16 / React 19 site (`zevylo/`), deployed to Netlify, with:
 
 - 213 registered browser tools across 18 categories (all `executionMode: 'client'`).
-- 305 AI directory listings across 23 AI categories.
+- 301 AI directory listings across 23 AI categories (305 before removing four duplicate product entries).
 - A site-wide Google AdSense script (`ca-pub-5869892726772309`) and a verification meta tag.
 - No `ads.txt`, no rendered ad units, and no analytics package.
 - `netlify.toml` set `Cross-Origin-Embedder-Policy: require-corp` on every route.
@@ -82,7 +82,7 @@ The project is a Next.js 16 / React 19 site (`zevylo/`), deployed to Netlify, wi
 
 - Removed site-wide `Cross-Origin-Embedder-Policy` (no tool uses `SharedArrayBuffer`); kept COOP, nosniff, frame options and referrer policy.
 - Added `public/ads.txt` with the publisher ID already present in the repository (`pub-5869892726772309`).
-- Rewrote `sitemap.ts` to include only canonical pages: 570 URLs (11 static, 18 tool categories, 23 AI categories, 213 tool pages, 305 AI profiles). No retired guide/review URLs.
+- Rewrote `sitemap.ts` to include only canonical pages: 566 URLs (11 static, 18 tool categories, 23 AI categories, 213 tool pages, 301 AI profiles). No retired guide/review URLs.
 - Removed stale `public/robots.txt` / `public/robot.txt` duplicates; the dynamic `robots.ts` route is now authoritative and returns 200.
 - Removed hardcoded/stale marketing counts in the footer, badges page and AI directory copy; counts now come from the registries.
 
@@ -92,7 +92,7 @@ The project is a Next.js 16 / React 19 site (`zevylo/`), deployed to Netlify, wi
 |---|---|
 | `npm run build` (clean `.next`) | **Pass** — TypeScript clean, 585 prerendered pages |
 | Key routes (`/`, `/tools`, tool page, `/ai-tools`, AI profile, `/about`, `/contact`, `/privacy`, `/terms`, `/sitemap`, `/sitemap.xml`, `/robots.txt`, `/ads.txt`, `/manifest.webmanifest`, `/feed.xml`, `/api/health`) | **Pass** — all HTTP 200 |
-| Every URL in `sitemap.xml` (570) | **Pass** — all HTTP 200 |
+| Every URL in `sitemap.xml` (566) | **Pass** — all HTTP 200 |
 | Retired-route behaviour | **Pass** — 308 to `/tools`, `/ai-tools`, `/ai-tools/tool/:slug`, `/resources` |
 | Fabricated markers (`Monthly Traffic`, `User Rating`, `aggregateRating`, `Verified`, `2,000+ Words`) | **Absent** from homepage and AI profile |
 | False homepage claims (`Zero Ads`, `Sub-Second`, `bypass-ready`, `verified traffic`, `Completely free forever`) | **Absent** |
@@ -151,3 +151,43 @@ The project is a Next.js 16 / React 19 site (`zevylo/`), deployed to Netlify, wi
 - `src/lib/ai-directory/database.ts` — removed invented traffic/rating/review/verified fields and sort logic
 - `src/lib/ai-directory/types.ts` — removed corresponding fields
 - Deleted: `src/app/articles/`, `src/lib/articles/`, `src/components/articles/`, `src/app/ai-tools/article/`, `src/lib/ai-articles/`, `src/components/ai/ai-articles-client-hub.tsx`, `src/app/blog/`
+
+## 8. SEO / AEO / GEO audit — 20 November 2026
+
+Source: Google Search Console coverage export dated 2026-11-16 (`Chart.csv`, `Critical issues.csv`): **842 indexed, 233 not indexed** (232 "Discovered – currently not indexed", 1 "Crawled – currently not indexed"), with roughly 800–1,350 impressions/day.
+
+### Findings on the deployed site
+
+- The deployed sitemap still listed **1,093 URLs**, including 214 `/articles/*` guides and 305 `/ai-tools/article/*` reviews that are retired in the codebase but not yet deployed.
+- `/ads.txt` returned **404**; the AdSense seller record existed only locally.
+- Sampled 230 pages: **198 titles over 60 characters**, **149 over 70**, and 148 descriptions over 160 characters. AI review titles reached 115 characters.
+- Organization schema declared `sameAs` profiles at `github.com/zevylo` (**404**) and `twitter.com/zevylo` (ownership unverified).
+- `llms.txt` (1,327 lines) claimed **22 categories**, **12 UI languages**, "zero bytes leave the device", "GDPR/HIPAA safe", "lossless exports", and linked to **158 retired `/articles/` URLs**.
+- All 23 AI category pages were titled "… — Verified Tools & Reviews".
+- Four products were listed twice (FinChat, Ollama, SlidesAI, Vidyo.ai), producing duplicate titles.
+- `/sitemap` and `/resources` inherited the homepage canonical.
+
+### Fixes applied
+
+- Removed fake/unverified `sameAs` and `@zevylo` Twitter attribution; the Organization now points only to the real GitHub profile.
+- Added `src/lib/seo/meta.ts` (`clampDescription`, 150 chars) and applied it to tool pages, AI profiles, hubs, categories, resources and the HTML sitemap.
+- Shortened homepage, AI hub, AI profile and AI category titles; removed "Verified Tools & Reviews".
+- Added self-canonicals to `/sitemap` and `/resources`.
+- Deduplicated AI listings by product name (305 → 301) and updated `llms.txt` / `llms-full.txt` with accurate counts, privacy limits and zero retired links.
+- Sitemap now contains **566 canonical URLs**.
+
+### Verification after the changes (local production build)
+
+- 566/566 sitemap URLs return HTTP 200.
+- 0 duplicate title groups, 0 canonical mismatches, 0 missing descriptions, exactly one H1 per page, no `noindex` pages in the sitemap.
+- 0 descriptions over 160 characters (max 153).
+- 301 AI profiles; retired routes redirect with 308.
+
+### Still open (owner/deployment actions)
+
+- **Deploy the build.** None of these corrections are live yet; the coverage report describes the previous deployment.
+- Request re-indexing in Search Console after deploy and let Google recrawl before judging the 233.
+- Off-page authority: the domain is new and has no meaningful backlink profile. This cannot be fixed in code.
+- Enable Google's consent message in AdSense and re-check `ads.txt` after deploy.
+- 208 titles remain over 60 characters, mostly per-tool `seo.title` values in tool definitions; these are content-level edits, not template bugs.
+

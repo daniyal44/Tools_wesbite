@@ -4,11 +4,15 @@ import '@/tools';
 import { getAllTools, getToolsByCategory } from '@/lib/tools/registry';
 import { categoryList } from '@/lib/tools/categories';
 import { ChevronRight, FolderTree } from 'lucide-react';
+import { clampDescription } from '@/lib/seo/meta';
 
 export const metadata: Metadata = {
   title: 'Complete Tools Directory & HTML Sitemap | Zevylo',
   description:
-    `Complete index and directory of all ${getAllTools().length}+ free online utilities across 18 categories on Zevylo. Fast crawl directory for users and search engines.`,
+    clampDescription(`Complete index of all ${getAllTools().length} free utilities across ${categoryList.length} categories on Zevylo.`),
+  alternates: {
+    canonical: '/sitemap',
+  },
   openGraph: {
     title: 'Complete Tools Directory & HTML Sitemap | Zevylo',
     description: `Browse all ${getAllTools().length}+ free browser tools across 18 categories with one-click access.`,

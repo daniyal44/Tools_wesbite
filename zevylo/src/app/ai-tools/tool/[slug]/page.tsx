@@ -24,6 +24,7 @@ import {
 import { AI_TOOLS_DATABASE, getAIToolBySlug, getRelatedAITools } from '@/lib/ai-directory/database';
 import { AIPricing } from '@/lib/ai-directory/types';
 import { AIToolLogo } from '@/components/ai/ai-tool-logo';
+import { clampDescription } from '@/lib/seo/meta';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -46,13 +47,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${tool.name} — Profile, Pricing & Official Link | Zevylo`,
-    description: `${tool.tagline}. Directory profile for ${tool.name} with pricing model, features, limitations, and a link to the official site. Confirm current pricing and features with the vendor.`,
+    title: `${tool.name} — Pricing & Official Site | Zevylo`,
+    description: clampDescription(`
+      ${tool.tagline}. Directory profile for ${tool.name} with pricing model, features, limitations, and a link to the official site. Confirm current pricing and features with the vendor.
+    `),
     alternates: {
       canonical: `/ai-tools/tool/${tool.slug}`,
     },
     openGraph: {
-      title: `${tool.name} Review & Pricing — Zevylo AI Directory`,
+      title: `${tool.name} — Profile & Pricing | Zevylo`,
       description: tool.description,
       url: `/ai-tools/tool/${tool.slug}`,
       type: 'article',
@@ -72,7 +75,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: `${tool.name} Review & Pricing | Zevylo`,
       description: tool.tagline,
       images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
-      creator: '@zevylo',
     },
     other: {
       'image': 'https://zevylo.netlify.app/images/Zevylo_logo.png',

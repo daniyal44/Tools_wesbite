@@ -3,11 +3,15 @@ import Link from 'next/link';
 import { ChevronRight, ExternalLink, Globe, BookOpen, Shield, Code, Sparkles, Mail, CheckCircle2 } from 'lucide-react';
 import '@/tools';
 import { getAllTools } from '@/lib/tools/registry';
+import { clampDescription } from '@/lib/seo/meta';
 
 export const metadata: Metadata = {
   title: 'Web Standards & Developer Resources Directory | Zevylo',
   description:
-    'Curated directory of authoritative web standards, developer documentation, security guidelines, and open-source utility partnerships. Connect and exchange backlinks with Zevylo.',
+    clampDescription('Curated directory of authoritative web standards, developer documentation, security guidelines, and open-source utilities.'),
+  alternates: {
+    canonical: '/resources',
+  },
   openGraph: {
     title: 'Developer Resources & Backlink Directory | Zevylo',
     description: 'Authoritative web specifications, developer references, and partner link directory.',

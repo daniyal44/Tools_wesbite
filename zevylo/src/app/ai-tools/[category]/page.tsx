@@ -19,6 +19,7 @@ import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
 import { AI_TOOLS_DATABASE, getAIToolsByCategory } from '@/lib/ai-directory/database';
 import { AIPricing } from '@/lib/ai-directory/types';
 import { AIToolLogo } from '@/components/ai/ai-tool-logo';
+import { clampDescription } from '@/lib/seo/meta';
 
 interface PageProps {
   params: Promise<{ category: string }>;
@@ -41,8 +42,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Best ${category.name} in 2026 — Verified Tools & Reviews | Zevylo`,
-    description: `Browse ${category.name.toLowerCase()} software and web apps with pricing models, key features, limitations, and official website links. Confirm current details with each vendor.`,
+    title: `${category.name} — AI Tools & Pricing | Zevylo`,
+    description: clampDescription(`Browse ${category.name.toLowerCase()} tools with pricing models, key features, limitations, and official website links. Confirm current details with each vendor.`),
     alternates: {
       canonical: `/ai-tools/${category.slug}`,
     },
@@ -166,7 +167,7 @@ export default async function AICategoryPage({ params }: PageProps) {
             <Layers className="w-8 h-8 text-gray-400 mx-auto" />
             <h3 className="text-base font-bold text-gray-800 dark:text-gray-200">Tools coming soon to this category</h3>
             <p className="text-xs text-gray-500 max-w-sm mx-auto">
-              Our team is verifying new entries. Browse our global directory of 100+ tools.
+              New entries are reviewed before they are listed. Browse the full AI directory.
             </p>
             <Link
               href="/ai-tools"

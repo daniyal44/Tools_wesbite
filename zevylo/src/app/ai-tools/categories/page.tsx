@@ -3,11 +3,12 @@ import Link from 'next/link';
 import { Sparkles, ArrowRight, Layers } from 'lucide-react';
 import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
 import { getAIToolsByCategory } from '@/lib/ai-directory/database';
+import { clampDescription } from '@/lib/seo/meta';
 
 export const metadata: Metadata = {
-  title: 'AI Tool Categories (A to Z) — Explore All 23 AI Niches | Zevylo',
+  title: `AI Tool Categories — ${AI_CATEGORIES.length} AI Niches | Zevylo`,
   description:
-    'Browse all 23 AI categories from writing, image generation, video production, coding, SEO to spreadsheets and presentations. Discover the best tools in each niche.',
+    clampDescription(`Browse all ${AI_CATEGORIES.length} AI categories: writing, image generation, video, coding, SEO, spreadsheets, presentations and more.`),
   alternates: {
     canonical: '/ai-tools/categories',
   },
@@ -22,7 +23,7 @@ export default function AICategoriesPage() {
           <span>Complete AI Taxonomy</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
-          All 23 AI Categories (A to Z)
+          All {AI_CATEGORIES.length} AI Categories (A to Z)
         </h1>
         <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
           Every major area of AI software, organized into browsable categories with links to official product sites.
@@ -43,7 +44,7 @@ export default function AICategoriesPage() {
                     <Layers className="w-5 h-5" />
                   </div>
                   <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-900">
-                    {tools.length} indexed tools
+                    {tools.length} listed tools
                   </span>
                 </div>
 

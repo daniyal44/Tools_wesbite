@@ -60,8 +60,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: `${cat.name} — Free Online Utilities | Zevylo`,
       description: cat.description,
       images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
-      creator: '@zevylo',
-    },
+      },
     other: {
       'image': 'https://zevylo.netlify.app/images/Zevylo_logo.png',
       'target-audience': 'Global Web Users',

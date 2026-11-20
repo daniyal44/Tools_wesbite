@@ -4,6 +4,7 @@ import '@/tools';
 import { getAllTools, getToolBySlug } from '@/lib/tools/registry';
 import { ToolPage } from '@/components/tools/tool-page';
 import { ToolRenderer } from '@/components/tools/tool-renderer';
+import { clampDescription } from '@/lib/seo/meta';
 
 interface PageProps {
   params: Promise<{
@@ -33,22 +34,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const baseUrl = 'https://zevylo.netlify.app';
   const canonicalUrl = `/tools/${tool.category}/${tool.slug}`;
   const fullCanonicalUrl = `${baseUrl}${canonicalUrl}`;
-  const toolTitle = tool.seo?.title || `${tool.name} — 100% Free Online Browser Utility | Zevylo`;
-  const toolDesc = tool.seo?.description || `${tool.shortDescription} Runs in your browser with no account required.`;
+  const toolTitle = tool.seo?.title || `${tool.name} — Free Browser Tool | Zevylo`;
+  const toolDesc = clampDescription(
+    tool.seo?.description || `${tool.shortDescription} Runs in your browser with no account required.`
+  );
   const toolKeywords = [
     ...(tool.seo?.keywords || tool.keywords || []),
     'free online tool',
-    'no upload utility',
     'client side tool',
-    'private web tool',
+    'browser tool',
     `${tool.category} utility`,
     `free ${tool.name.toLowerCase()}`,
     `${tool.name.toLowerCase()} no upload`,
     `${tool.name.toLowerCase()} online`,
-    'herramienta gratis online',
-    'outil gratuit en ligne',
-    'kostenloses online tool',
-    'ferramenta gratis online',
   ];
 
   return {
@@ -73,7 +71,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: `${baseUrl}/images/Zevylo_logo.png`,
           width: 1200,
           height: 630,
-          alt: `${tool.name} — 100% Free Online Browser Utility | Zevylo`,
+          alt: `${tool.name} — Free Browser Tool | Zevylo`,
           type: 'image/png',
         },
       ],
@@ -87,10 +85,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: `${baseUrl}/images/Zevylo_logo.png`,
           width: 1200,
           height: 630,
-          alt: `${tool.name} — 100% Free Online Browser Utility | Zevylo`,
+          alt: `${tool.name} — Free Browser Tool | Zevylo`,
         },
       ],
-      creator: '@zevylo',
     },
     other: {
       'application-name': tool.name,

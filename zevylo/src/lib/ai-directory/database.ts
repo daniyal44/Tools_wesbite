@@ -1,6 +1,6 @@
 import { AITool } from './types';
 
-export const AI_TOOLS_DATABASE: AITool[] = [
+const AI_TOOLS_RAW: AITool[] = [
   // --- A ---
   {
     id: 'anthropic-claude',
@@ -8113,3 +8113,7 @@ export function searchAITools(
 
   return results;
 }
+
+export const AI_TOOLS_DATABASE: AITool[] = AI_TOOLS_RAW.filter(
+  (tool, index, all) => all.findIndex((t) => t.name === tool.name) === index
+);

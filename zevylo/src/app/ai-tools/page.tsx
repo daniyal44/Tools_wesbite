@@ -2,17 +2,19 @@ import { Metadata } from 'next';
 import { AIToolsClient } from './ai-tools-client';
 import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
 import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
+import { clampDescription } from '@/lib/seo/meta';
 
 export const metadata: Metadata = {
-  title: `AI Tools Directory — Explore ${AI_TOOLS_DATABASE.length}+ Best AI Tools from A to Z (Updated November 2026) | Zevylo`,
+  title: `AI Tools Directory — ${AI_TOOLS_DATABASE.length} AI Tools & Pricing | Zevylo`,
   description:
-    `Discover ${AI_TOOLS_DATABASE.length}+ top AI tools across writing, video, audio, coding, image generation, business, and marketing — updated with the latest November 2026 models. Filter by Free, Freemium or Paid pricing, compare monthly traffic, and run 16 free browser AI utilities.`,
+    clampDescription(`Browse ${AI_TOOLS_DATABASE.length} AI tools across ${AI_CATEGORIES.length} categories. Compare pricing models, features and limitations, and open each vendor's official site.`),
   alternates: {
     canonical: '/ai-tools',
   },
   openGraph: {
-    title: 'AI Tools Directory — Best AI Tools from A to Z | Zevylo',      description:
-        `Search ${AI_TOOLS_DATABASE.length}+ top artificial intelligence tools and run browser-based generative AI utilities with zero wait timers and 100% privacy.`,
+    title: 'AI Tools Directory — AI Tools & Pricing | Zevylo',
+    description:
+        clampDescription(`Browse ${AI_TOOLS_DATABASE.length} AI products with pricing, features and limitations. Listing details are compiled from public information; confirm them with the vendor.`),
     url: '/ai-tools',
     type: 'website',
     siteName: 'Zevylo',
@@ -21,17 +23,16 @@ export const metadata: Metadata = {
         url: 'https://zevylo.netlify.app/images/Zevylo_logo.png',
         width: 1200,
         height: 630,
-        alt: 'Zevylo AI Tools Directory — 100+ Top AI Tools & In-Browser Utilities',
+        alt: `Zevylo AI Tools Directory — ${AI_TOOLS_DATABASE.length} AI Tools`,
         type: 'image/png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Tools Directory — Best AI Tools from A to Z | Zevylo',
-    description: 'Discover 100+ top artificial intelligence tools and free in-browser AI utilities.',
+    title: 'AI Tools Directory — AI Tools & Pricing | Zevylo',
+    description: `${AI_TOOLS_DATABASE.length} AI tools with pricing, features and limitations.`,
     images: ['https://zevylo.netlify.app/images/Zevylo_logo.png'],
-    creator: '@zevylo',
   },
   other: {
     'image': 'https://zevylo.netlify.app/images/Zevylo_logo.png',
