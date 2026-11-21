@@ -1,36 +1,45 @@
-User-Agent: *
+# ==============================================================================
+# ROBOTS.TXT - ZEVYLO (https://zevylo.netlify.app)
+# Standards: RFC 9309 Compliant | Optimized for Search Engines & AI Crawlers
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. GLOBAL RULES (All Search Engines & Web Crawlers)
+# ------------------------------------------------------------------------------
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# ------------------------------------------------------------------------------
+# 2. AI SEARCH & LLM CRAWLERS (GEO / AI Visibility)
+# Separate block taake future mein AI indexing ko easily control kiya ja sake
+# ------------------------------------------------------------------------------
+User-agent: OAI-SearchBot
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: cohere-ai
+User-agent: Diffbot
 Allow: /
 Disallow: /api/
 
-User-Agent: Googlebot
-User-Agent: Bingbot
-User-Agent: Applebot
-User-Agent: DuckDuckBot
-User-Agent: YandexBot
-User-Agent: Baiduspider
-User-Agent: Sogou
-Allow: /
-Disallow: /api/
-
-User-Agent: GPTBot
-User-Agent: ChatGPT-User
-User-Agent: PerplexityBot
-User-Agent: ClaudeBot
-User-Agent: Claude-Web
-User-Agent: anthropic-ai
-User-Agent: Google-Extended
-User-Agent: Applebot-Extended
-User-Agent: CCBot
-User-Agent: cohere-ai
-User-Agent: Bytespider
-User-Agent: Diffbot
-Allow: /
-Disallow: /api/
-
-User-Agent: Googlebot-Image
+# ------------------------------------------------------------------------------
+# 3. MEDIA & STATIC ASSETS (Googlebot-Image)
+# ------------------------------------------------------------------------------
+User-agent: Googlebot-Image
 Allow: /images/
 Allow: /badge.svg
 Allow: /icon.png
 
+# ------------------------------------------------------------------------------
+# 4. SITEMAPS & FEEDS
+# ------------------------------------------------------------------------------
 Sitemap: https://zevylo.netlify.app/sitemap.xml
 Sitemap: https://zevylo.netlify.app/feed.xml
