@@ -20,6 +20,7 @@ export interface AITool {
   category: string;
   categoryName: string;
   subcategory: string;
+  company: 'OpenAI' | 'Google' | 'Anthropic' | 'Meta' | 'Microsoft' | 'Adobe' | 'Black Forest Labs' | 'Baidu' | 'ByteDance' | 'Tencent' | 'Kuaishou' | 'Samsung' | 'Canva' | 'Baichuan' | 'Zhipu' | string;
   url: string;
   pricing: AIPricing;
   startingPrice: string;

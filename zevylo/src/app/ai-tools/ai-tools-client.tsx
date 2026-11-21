@@ -577,7 +577,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
                               )}
                             </div>
                             <span className="text-[11px] text-gray-400 block font-medium">
-                              {tool.categoryName}
+                              {tool.categoryName} {tool.company}
                             </span>
                           </div>
                         </Link>
