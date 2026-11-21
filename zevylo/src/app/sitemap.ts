@@ -1,5 +1,4 @@
 import { MetadataRoute } from 'next';
-import '@/tools';
 import { getAllTools } from '@/lib/tools/registry';
 import { categoryList } from '@/lib/tools/categories';
 import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
@@ -9,8 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://zevylo.netlify.app';
   const now = new Date();
 
-  // Core platform and discovery pages. Retired auto-generated guide and
-  // review URLs are intentionally absent: they now redirect to real pages.
+  // ── 1️⃣ Static platform pages ─────────────────────────────
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${baseUrl}/tools`, lastModified: now, changeFrequency: 'weekly', priority: 0.95 },
@@ -25,41 +23,54 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/terms`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
   ];
 
-  const sortedCategories = [...categoryList].sort((a, b) => a.slug.localeCompare(b.slug));
-  const categoryPages: MetadataRoute.Sitemap = sortedCategories.map((cat) => ({
-    url: `${baseUrl}/tools/${cat.slug}`,
-    lastModified: now,
-    changeFrequency: 'weekly',
-    priority: 0.8,
-  }));
+  // ── 2️⃣ Tools category hub pages ───────────────────────────
+  // One entry per tool-category pair (18 categories → 18 URLs)
+  const categoryPages: MetadataRoute.Sitemap = [...categoryList]
+    .sort((a, b) => a.slug.localeCompare(b.slug))
+    .map((cat) => ({
+      url: `${baseUrl}/tools/${cat.slug}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    }));
 
-  const sortedAiCategories = [...AI_CATEGORIES].sort((a, b) => a.slug.localeCompare(b.slug));
-  const aiCategoryPages: MetadataRoute.Sitemap = sortedAiCategories.map((cat) => ({
-    url: `${baseUrl}/ai-tools/${cat.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  }));
+  // ── 3️⃣ AI category hub pages ─────────────────────────────
+  // One entry per AI niche (23 niches → 23 URLs)
+  const aiCategoryPages: MetadataRoute.Sitemap = [...AI_CATEGORIES]
+    .sort((a, b) => a.slug.localeCompare(b.slug))
+    .map((cat) => ({
+      url: `${baseUrl}/ai-tools/${cat.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    }));
 
-  const sortedTools = [...getAllTools()].sort((a, b) => {
-    if (a.category !== b.category) return a.category.localeCompare(b.category);
-    return a.slug.localeCompare(b.slug);
-  });
-  const toolPages: MetadataRoute.Sitemap = sortedTools.map((tool) => ({
-    url: `${baseUrl}/tools/${tool.category}/${tool.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly',
-    priority: 0.75,
-  }));
+  // ── 4️⃣ Individual tool pages ─────────────────────────────
+  // All public, non‑disabled tools from the registry (sorted by category then slug)
+  const toolPages: MetadataRoute.Sitemap = [...getAllTools()]
+    .sort((a, b) => {
+      if (a.category !== b.category) return a.category.localeCompare(b.category);
+      return a.slug.localeCompare(b.slug);
+    })
+    .map((tool) => ({
+      url: `${baseUrl}/tools/${tool.category}/${tool.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    }));
 
-  const sortedAiTools = [...AI_TOOLS_DATABASE].sort((a, b) => a.slug.localeCompare(b.slug));
-  const aiToolPages: MetadataRoute.Sitemap = sortedAiTools.map((tool) => ({
-    url: `${baseUrl}/ai-tools/tool/${tool.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly',
-    priority: 0.6,
-  }));
+  // ── 5️⃣ Individual AI tool pages ──────────────────────────
+  // All AI listings from the database, deduplicated by name (301 entries)
+  const aiToolPages: MetadataRoute.Sitemap = [...AI_TOOLS_DATABASE]
+    .sort((a, b) => a.slug.localeCompare(b.slug))
+    .map((tool) => ({
+      url: `${baseUrl}/ai-tools/tool/${tool.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    }));
 
+  // ── 6️⃣ Compose final sitemap ─────────────────────────────
   return [
     ...staticPages,
     ...categoryPages,
@@ -68,3 +79,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...aiToolPages,
   ];
 }
+

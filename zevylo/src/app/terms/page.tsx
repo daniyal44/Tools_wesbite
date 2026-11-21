@@ -110,11 +110,28 @@ export default function TermsPage() {
         </section>
 
         <section className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 sm:p-8 space-y-4">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">8. Advertising</h2>
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">8. Advertising and Affiliate Disclosure</h2>
           <p>
-            The site is supported by advertising served through Google AdSense. Ads are labelled as
-            advertising and are not part of a tool&apos;s controls. Do not click ads in order to
-            support the site; doing so is prohibited by advertising networks and can harm the site.
+            The site is supported by advertising served through Google AdSense (publisher ID:
+            <code>ca-pub-5869892726772309</code>). Ads are labelled as "Sponsored" or "Ad" and are
+            not part of a tool&apos;s controls. Do not click ads in order to support the site; doing
+            so is prohibited by advertising networks and can harm the site.
+          </p>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>
+              Zevylo does not participate in any affiliate marketing programs, sponsored tool
+                reviews, or paid placements in the AI directory. Listings are based on public
+                information only.
+            </li>
+            <li>
+              Google&apos;s advertising cookies may be used to serve ads based on your visit
+                history. You can opt out via Google Ads Settings or the About Ads portal.
+            </li>
+          </ul>
+          <p>
+            This disclosure is provided to meet AdSense program requirements and FTC guidelines
+            for transparent advertising and affiliate relationships. Google reviews this information
+            during the AdSense approval and compliance process.
           </p>
         </section>
 

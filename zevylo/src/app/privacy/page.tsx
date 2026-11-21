@@ -4,7 +4,7 @@ import { ShieldCheck } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Privacy Policy — Zevylo',
   description:
-    'How Zevylo handles data: browser-local tool processing, local storage, contact form submissions, hosting logs, and Google AdSense advertising cookies.',
+    'How Zevylo handles data: browser-local tool processing, local storage, contact form submissions, hosting logs, and Google AdSense advertising cookies. Updated for AdSense compliance and transparent data practices.',
   alternates: {
     canonical: '/privacy',
   },
@@ -224,7 +224,41 @@ export default function PrivacyPage() {
         </section>
 
         <section className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 sm:p-8 space-y-4">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">9. Children and Families</h2>
+          <p>
+            Zevylo is a general-audience utility site and is not directed at children under 13. We
+            do not knowingly collect personal information from children. If you believe a child
+            submitted personal information through the contact form, contact us and we will delete
+            it immediately. For families: Zevylo does not offer any paid subscription or
+            membership, and all tools remain free forever with no account required.
+          </p>
+        </section>
+
+        <section className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 sm:p-8 space-y-4">
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">10. Your choices and rights</h2>
+          <p>
+            Depending on where you live, you may have the right to access, correct, delete, or
+            object to processing of personal data, and to lodge a complaint with a supervisory
+            authority. Because we hold almost no personal data, most requests will concern contact
+            form submissions or advertising cookies. Write to{' '}
+            <a
+              href="mailto:m.daniyalkhan490@gmail.com"
+              className="text-blue-600 dark:text-blue-400 underline"
+            >
+              m.daniyalkhan490@gmail.com
+            </a>{' '}
+            and we will respond within a reasonable period.
+          </p>
+          <p>
+            <strong>AdSense disclosure:</strong> Zevylo participates in the Google AdSense program
+            (publisher ID: ca-pub-5869892726772309) to support the project as an independent developer.
+            Google may display ads based on your interests and visit history. Ads are clearly labeled
+            as "Sponsored" or "Ad" and are kept separate from tool interfaces and results. Zevylo does
+            not participate in affiliate marketing, sponsored reviews, or paid placements. This
+            disclosure is provided to meet AdSense program requirements for transparent advertising
+            relationships.
+          </p>
+        </section>
           <p>
             Depending on where you live, you may have the right to access, correct, delete, or
             object to processing of personal data, and to lodge a complaint with a supervisory

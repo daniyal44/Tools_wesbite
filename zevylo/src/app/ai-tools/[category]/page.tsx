@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: `/ai-tools/${category.slug}`,
     },
     openGraph: {
-      title: `Best ${category.name} | Zevylo AI Directory`,
+      title: `${category.name} — AI Tools & Pricing | Zevylo`,
       description: category.description,
       url: `/ai-tools/${category.slug}`,
       type: 'website',
