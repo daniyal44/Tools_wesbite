@@ -8122,7 +8122,7 @@ export const AI_TOOLS_DATABASE: AITool[] = AI_TOOLS_RAW.filter(
 
 // --- OpenAI Sub-models ---
 {
-    company: 'OpenAI'
+    company: 'OpenAI',
     id: 'openai-gpt4o',
     name: 'GPT-4o',
     slug: 'openai-gpt4o',

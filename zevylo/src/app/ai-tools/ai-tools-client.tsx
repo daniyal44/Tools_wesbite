@@ -40,6 +40,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
   const [selectedCountry, setSelectedCountry] = useState<string>('all');
   const [selectedStatus, setSelectedStatus] = useState<string>('all');
   const [selectedLetter, setSelectedLetter] = useState<string>('all');
+  const [selectedCompany, setSelectedCompany] = useState<string>('all');
   const [sortBy, setSortBy] = useState<'name' | 'trending'>('name');
   const [viewTab, setViewTab] = useState<'directory' | 'built-in'>('directory');
   const [savedTools, setSavedTools] = useState<string[]>([]);
@@ -110,6 +111,10 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
 
     if (selectedCategory !== 'all') {
       list = list.filter((t) => t.category === selectedCategory);
+    }
+
+    if (selectedCompany !== 'all') {
+      list = list.filter((t) => t.company === selectedCompany);
     }
 
     if (selectedPricing !== 'all') {
@@ -447,18 +452,18 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
               >
                 All AI Tools ({AI_TOOLS_DATABASE.length})
               </button>
-              {categories.map((comp) => (
+              {['all', 'OpenAI', 'Google', 'Anthropic', 'Meta', 'Microsoft'].map((comp) => (
                 <button
-                  key={comp.id}
+                  key={comp}
                   type="button"
-                  onClick={() => setSelectedCategory(comp.id)}
+                  onClick={() => setSelectedCompany(comp)}
                   className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
-                    selectedCategory === comp.id
+                    selectedCompany === comp
                       ? 'bg-blue-600 text-white shadow-sm'
-                      : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200'
+                    : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200'
                   }`}
                 >
-                  {comp.name}
+                  {comp === 'all' ? 'All Companies' : comp}
                 </button>
               ))}
             </div>
@@ -549,6 +554,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
                 onClick={() => {
                   setSearchQuery('');
                   setSelectedCategory('all');
+                  setSelectedCompany('all');
                   setSelectedPricing('all');
                   setSelectedLetter('all');
                 }}
