@@ -51,7 +51,7 @@ Every tool entry must have:
 - `status`: Launch status (`launched`, `beta`, `upcoming`)
 
 ### 6. Company Field
-- New entries must include `company: 'OpenAI' | 'Google' | 'Anthropic' | 'Meta' | other known AI company`
+- New entries must include `company: 'OpenAI' | 'Google' | 'Anthropic' | 'Meta' | 'Microsoft' | other known AI company`
 - Used for grouping and filtering in the UI
 
 ### 7. Blog & Article Automation
@@ -70,10 +70,30 @@ Every tool entry must have:
 - /ai-tools page should have complete coverage
 - Missing tools should be flagged
 - Orphaned tools (no category) should be reviewed
-- 232 pages index target must be met or exceeded
+- 328 pages index target must be met or exceeded
 
 ### 10. Quality Guidelines
 - Minimum 2 features per tool
 - Maximum 3 alternatives listed
 - At least 1 pro and 1 con per tool
 - Pricing must be clearly stated (free, freemium, or paid)
+
+### 11. Open-Source Classification
+- Clearly distinguish between open-source software, open-weight models, source-available models, and proprietary hosted models
+- Do not incorrectly label every downloadable or open-weight model as fully open source
+- Use stable unique IDs for all entries
+
+### 12. Duplicate Prevention
+- Deduplication must consider: normalized product names, company ownership, official domain, product aliases, existing URLs, product identity
+- A model must not become a duplicate product merely because it has a different version number
+- Preserve version history where useful
+
+### 13. Category Coverage
+- All 36+ AI categories must have representative tools
+- Categories without tools should be flagged for research and addition
+- Regular gap analysis against competitor directories
+
+### 14. Update Sitemap
+- Update the sitemap when eligible public URLs change
+- Ensure all eligible canonical, indexable URLs are included
+- Exclude redirecting URLs, duplicate URLs, non-canonical URLs, private pages, admin pages, internal search result URLs, thin or empty pages, noindex pages, broken pages
