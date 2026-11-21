@@ -1,0 +1,31 @@
+name: Zevylo Blog Generation
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  generate-blog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Generate blog posts
+        run: npm run blog
+      
+      - name: Commit blog changes
+        run: |
+          git config user.name "Codebuff"
+          git config user.email "noreply@codebuff.com"
+          git add public/blog/
+          git commit -m "chore: regenerate AI tools blog posts [skip ci]" || exit 0
+          git push
