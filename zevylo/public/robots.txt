@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://zevylo.netlify.app/sitemap.xml
+
+# Disallow administrative and internal search pages
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow all AI tool discovery pages
+Allow: /ai-tools/
+Allow: /tools/
+Allow: /resources/
+
+# Block AI detector and sensitive pages
+Disallow: /ai-detection/
+Disallow: /ai-detection*

@@ -354,6 +354,7 @@ const AI_TOOLS_RAW: AITool[] = [
   // --- G ---
   {
     id: 'google-gemini',
+    company: 'Google',
     name: 'Google Gemini',
     slug: 'google-gemini',
     tagline: 'Google’s next-generation multimodal AI with 2M token context',
@@ -8149,6 +8150,7 @@ export const AI_TOOLS_DATABASE: AITool[] = AI_TOOLS_RAW.filter(
   },
   {
     id: 'openai-dall-e-3',
+    company: 'OpenAI',
     name: 'DALL-E 3',
     slug: 'openai-dall-e-3',
     tagline: 'Hyper-detailed AI image generator with exact prompt fidelity',
@@ -8175,6 +8177,7 @@ export const AI_TOOLS_DATABASE: AITool[] = AI_TOOLS_RAW.filter(
   },
   {
     id: 'openai-whisper',
+    company: 'OpenAI',
     name: 'Whisper',
     slug: 'openai-whisper',
     tagline: 'Speech-to-text transcription model',
@@ -8201,6 +8204,7 @@ export const AI_TOOLS_DATABASE: AITool[] = AI_TOOLS_RAW.filter(
   },
   {
     id: 'openai-sora',
+    company: 'OpenAI',
     name: 'Sora',
     slug: 'openai-sora',
     tagline: 'Text-to-video generation model',
@@ -8256,6 +8260,7 @@ export const AI_TOOLS_DATABASE: AITool[] = AI_TOOLS_RAW.filter(
   },
   {
     id: 'google-gemini-flash',
+    company: 'Google',
     name: 'Gemini 1.5 Flash',
     slug: 'google-gemini-flash',
     tagline: 'Google's fastest and most cost-efficient model',
@@ -8282,6 +8287,7 @@ export const AI_TOOLS_DATABASE: AITool[] = AI_TOOLS_RAW.filter(
   },
   {
     id: 'google-gemini-pro',
+    company: 'Google',
     name: 'Gemini 1.5 Pro',
     slug: 'google-gemini-pro',
     tagline: 'Google's most capable model for complex tasks',
@@ -8312,3 +8318,5 @@ export const AI_TOOLS_DATABASE: AITool[] = AI_TOOLS_RAW.filter(
     slug: 'google-notebooklm',
     tagline: 'Personalized AI research notebook with viral Audio Overviews',
     description: 'Ground your notes in your uploaded PDFs, Google Docs, and YouTube URLs. NotebookLM synt
+
+

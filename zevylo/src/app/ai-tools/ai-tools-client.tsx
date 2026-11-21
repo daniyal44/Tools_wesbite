@@ -430,6 +430,40 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
             </div>
           </div>
 
+          {/* Company Filter Pills */}
+          <div className="space-y-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-gray-400 block">
+              Filter by Company:
+            </span>
+            <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+              <button
+                type="button"
+                onClick={() => setSelectedCategory('all')}
+                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+                  selectedCategory === 'all'
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200'
+                }`}
+              >
+                All AI Tools ({AI_TOOLS_DATABASE.length})
+              </button>
+              {categories.map((comp) => (
+                <button
+                  key={comp.id}
+                  type="button"
+                  onClick={() => setSelectedCategory(comp.id)}
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+                    selectedCategory === comp.id
+                      ? 'bg-blue-600 text-white shadow-sm'
+                      : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200'
+                  }`}
+                >
+                  {comp.name}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* Pricing Filter Pills */}
           <div className="flex items-center justify-between flex-wrap gap-4 pt-1">
             <div className="flex items-center gap-2 flex-wrap">
