@@ -97,3 +97,116 @@ Every tool entry must have:
 - Update the sitemap when eligible public URLs change
 - Ensure all eligible canonical, indexable URLs are included
 - Exclude redirecting URLs, duplicate URLs, non-canonical URLs, private pages, admin pages, internal search result URLs, thin or empty pages, noindex pages, broken pages
+
+### 15. Internal Linking Architecture
+- Every valuable public page should be reachable through relevant internal links
+- Implement breadcrumbs on all directory and tool pages
+- Add related tools, related categories, and similar products sections
+- Avoid orphan pages and circular links
+- Cross-link relevant products across both `/tools` and `/ai-tools` directories
+
+### 16. Keyword Research and SEO Strategy
+- Build a real keyword database for both directories
+- Research search demand and identify search intent
+- Group keywords by topic and map each keyword to the most appropriate page
+- Identify cannibalization and create new pages only when justified
+- Improve existing pages where appropriate
+- Track ranking and impressions when Search Console data is available
+- Every indexable page must have: unique title, unique meta description, correct H1, logical H2/H3 structure, canonical URL, appropriate robots directive, relevant internal links, image alt text, structured data where eligible, original useful content, and clear search intent
+- Do not generate hundreds of near-identical keyword landing pages
+
+### 17. AEO (Answer Engine Optimization)
+- Make important content easy to understand and extract
+- Use direct answers, definitions, product specifications, comparison tables
+- Include frequently asked questions, accurate feature descriptions, source citations
+- Use clear headings and structured data where eligible
+
+### 18. GEO (Generative Engine Optimization)
+- Improve entity clarity and source credibility
+- Use consistent brand and product names, company-product relationships
+- Include original research, trustworthy sources, transparent updates
+- Clear product specifications and relevant contextual links
+- Do not promise specific Google or AI answer-engine rankings
+
+### 19. Backlink Strategy
+- Build a sustainable backlink and digital PR strategy
+- Research opportunities: relevant software directories, startup directories, product launch platforms
+- Developer communities, open-source communities, industry publications
+- Create linkable original research, useful free tools, comparison resources
+- Industry statistics with sources, tool discovery reports
+- Maintain a backlink opportunity register tracking: domain, relevant page, contact method, relevance, link status, destination page, follow-up status
+- Rules: No paid link schemes, no automated spam submissions, no private blog network links
+- No fake profiles, no irrelevant directories, no unauthorized link insertion
+- No fabricated partnerships, no misleading anchor text
+- Prioritize genuine editorial links and relevant referrals
+
+### 20. Sitemap and Robots.txt
+- Audit both directories and the entire website
+- Sitemap: Include every eligible canonical public page, exclude redirects, duplicate URLs, non-canonical pages, noindex pages, private pages, admin pages, thin or empty pages, internal search results
+- Ensure valid XML, HTTPS URLs, correct canonical URLs, accurate lastmod dates, sitemap index where appropriate, accessible sitemap URL
+- Robots.txt: Review existing rules, do not accidentally block `/tools/` and `/ai-tools/`, public product pages, public categories, public articles, necessary CSS and JavaScript assets
+- Protect private routes and administrative endpoints
+- Include the correct sitemap declaration
+- Remember: robots.txt does not directly index pages; it controls crawler access
+
+### 21. 232-Page Indexing Investigation
+- Treat as a critical standalone project
+- Identify exactly which 232 URLs are affected
+- Use Google Search Console if access is available
+- Classify: Discovered but not indexed, Crawled but not indexed, Duplicate pages, Incorrect canonical, Google-selected canonical mismatch, Noindex, Robots blocked, Soft 404, Actual 404, Redirect, Server error, Thin content, Other reported causes
+- For every affected URL: inspect the page, check HTTP status, check canonical, check robots directives, check content quality, check internal links, check rendering, identify root cause, implement an appropriate fix
+- Prioritize high-value `/ai-tools` and `/tools` pages
+- Do not remove valuable pages merely to reduce the number of unindexed URLs
+- Do not request indexing for every URL indiscriminately
+- Submit updated sitemaps and monitor results
+- Google controls final indexing decisions
+
+### 22. Automatic Update Engine
+- Build a reliable recurring update system
+- Recommended schedule:
+  - Daily: AI launches, new general tools, official announcements, newly released open-source projects, broken link detection, pricing and availability changes
+  - Weekly: Competitor gap research, product verification, tool database updates, new articles, trending collections
+  - Monthly: Full duplicate audit, SEO audit, indexing review, content quality review, competitor comparison, database integrity checks
+- Implement using supported scheduled infrastructure, such as GitHub Actions or the existing backend
+- Include: Logging, error handling, retry mechanisms, source verification, duplicate detection, change history, failed-job reporting, safe updates
+- Do not claim automated updates work until the scheduled workflow has actually been configured and tested
+
+### 23. Database and Data Quality
+- Use a normalized, maintainable database
+- Entities: Companies, Tools, Products, Models, Features, Categories, Pricing, Official links, Documentation, Articles, Sources, Comparisons, Product updates
+- Each record should have: Stable ID, Normalized name, Official URL, Category, Description, Status, Pricing classification, Verification date, Source references
+- Use: Unique constraints, Alias matching, URL normalization, Duplicate detection, Safe migrations, Audit logs, Version history
+- One product must not appear as multiple unrelated records just because competitors use different names or categories
+
+---
+
+## Definition of Done
+
+The project is complete only when:
+
+- Both directories have been audited
+- Old valuable data is preserved
+- Competitor gaps have been researched
+- Verified AI tools have been added
+- Verified general tools have been added
+- Free and paid classifications are accurate
+- On-demand tools are discoverable
+- Company/product/model hierarchy works
+- Search and filters work
+- Users can discover recommended tools
+- Related pages are connected
+- Duplicate prevention works
+- Article discovery workflow works
+- SEO/AEO/GEO improvements are tested
+- Keyword mapping exists
+- Backlink opportunities are documented
+- Sitemap is validated
+- Robots rules are verified
+- The 232-page issue has been investigated
+- memory.md and rules.md are updated
+- Production build and applicable tests pass
+- GitHub changes are pushed, when authorized
+- Deployment is verified where possible
+- Final reports exist in the repository
+
+Use real numbers only.

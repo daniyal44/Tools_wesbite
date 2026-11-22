@@ -272,7 +272,6 @@ export default function PrivacyPage() {
             </a>{' '}
             and we will respond within a reasonable period.
           </p>
-        </section>
 
         <section className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 sm:p-8 space-y-4">
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">11. Changes to this policy</h2>
