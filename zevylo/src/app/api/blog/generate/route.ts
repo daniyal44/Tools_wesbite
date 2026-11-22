@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
 import type { AITool, AIPricing } from '@/lib/ai-directory/types';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
@@ -7,6 +6,18 @@ import { join } from 'node:path';
 const ROOT = process.cwd();
 const DB_PATH = join(ROOT, 'src', 'lib', 'ai-directory', 'database.ts');
 const BLOG_DIR = join(ROOT, 'public', 'blog');
+
+// Blog generation writes into public/blog, which is not possible on Netlify's
+// read-only function filesystem. Keep the endpoint disabled in production
+// unless it is explicitly opted into (for example when self-hosting with a
+// writable disk).
+export const dynamic = 'force-dynamic';
+
+const BLOG_GENERATION_ENABLED = process.env.BLOG_GENERATION_ENABLED === 'true';
+
+function isBlogGenerationEnabled() {
+  return process.env.NODE_ENV !== 'production' || BLOG_GENERATION_ENABLED;
+}
 
 /** Extract tool data from the database file using regex */
 function parseDatabase() {
@@ -26,7 +37,7 @@ function parseDatabase() {
     if (!id || !name || !slug) continue;
     
     // Find the tool object content
-    let objStart = src.indexOf('{', match.index);
+    const objStart = src.indexOf('{', match.index);
     if (objStart === -1) continue;
     
     let braceCount = 0;
@@ -175,6 +186,10 @@ function generateBlogPost(tool: AITool) {
 }
 
 export async function POST() {
+  if (!isBlogGenerationEnabled()) {
+    return NextResponse.json({ success: false, error: 'Not found' }, { status: 404 });
+  }
+
   try {
     // Parse tools from database
     const tools = parseDatabase();
@@ -235,10 +250,11 @@ export async function POST() {
       message: `Blog generation complete: ${generated} new posts generated`,
       totalTools: tools.length
     });
-  } catch (error: any) {
+  } catch (error) {
     console.error('Blog generation error:', error);
+    const message = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { success: false, error: error.message },
+      { success: false, error: message },
       { status: 500 }
     );
   }
