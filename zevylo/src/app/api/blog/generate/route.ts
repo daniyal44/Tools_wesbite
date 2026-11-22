@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
+import type { AITool, AIPricing } from '@/lib/ai-directory/types';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, dirname, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -69,13 +70,30 @@ function parseDatabase() {
       id,
       name,
       slug,
-      company: company,
+      company: company || 'Unknown',
       category: extractField('category') || 'Uncategorized',
+      categoryName: extractField('categoryName') || '',
+      subcategory: extractField('subcategory') || '',
+      url: extractField('url') || '',
+      pricing: (extractField('pricing') || 'freemium') as AIPricing,
+      startingPrice: extractField('startingPrice') || '$0',
+      trending: false,
+      featured: false,
+      new: false,
       tagline: extractField('tagline') || '',
       description: extractField('description') || '',
-      pricing: extractField('pricing') || 'freemium',
-      status: extractField('status') || 'launched',
-      tags: []
+      tags: (extractField('tags') || '').split(',').map(t => t.replace(/['"]/g, '').trim()).filter(t => t.length > 0),
+      keyFeatures: [],
+      pros: [],
+      cons: [],
+      alternatives: [],
+      launchYear: new Date().getFullYear(),
+      logoUrl: undefined,
+      country: undefined,
+      countryCode: undefined,
+      flagEmoji: undefined,
+      status: (extractField('status') || 'launched') as 'launched' | 'beta' | 'upcoming',
+      roadmapInfo: extractField('roadmapInfo') || ''
     });
   }
   
@@ -94,8 +112,8 @@ function generateBlogPost(tool: AITool) {
     `title: "${tool.name} - AI Tool Review"`,
     `date: "${formattedDate}"`,
     `slug: "${tool.slug}"`,
-    `company: "${tool.company}"`,
-    `categories: ["AI", "${tool.category.toLowerCase().replace(/\s+/g, '-')}", "${tool.company.toLowerCase().replace(/\s+/g, '-')}"]`,
+    `company: "${tool.company || 'Unknown'}"`,
+    `categories: ["AI", "${tool.category.toLowerCase().replace(/\s+/g, '-')}", "${(tool.company || 'Unknown').toLowerCase().replace(/\s+/g, '-')}"]`,
     `tags: [${tagsHtml}]`,
     `featured: true`,
     `---`,
