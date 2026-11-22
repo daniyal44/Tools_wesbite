@@ -6,11 +6,7 @@ import {
   Copy,
   Check,
   Download,
-  Layers,
-  ChevronRight,
-  RefreshCw,
   Lightbulb,
-  FileText,
   Volume2,
 } from 'lucide-react';
 

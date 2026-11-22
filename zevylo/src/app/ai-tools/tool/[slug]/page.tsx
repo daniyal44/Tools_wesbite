@@ -2,24 +2,13 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import {
-  Sparkles,
   ExternalLink,
-  Star,
-  Eye,
   CheckCircle2,
-  ArrowRight,
   ChevronRight,
   TrendingUp,
-  Tag,
-  ShieldCheck,
-  Zap,
-  Layers,
   Wand2,
-  Calendar,
-  DollarSign,
   ThumbsUp,
   AlertTriangle,
-  BookOpen,
 } from 'lucide-react';
 import { AI_TOOLS_DATABASE, getAIToolBySlug, getRelatedAITools } from '@/lib/ai-directory/database';
 import { AIPricing } from '@/lib/ai-directory/types';

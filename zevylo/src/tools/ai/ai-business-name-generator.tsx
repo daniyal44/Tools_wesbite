@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Briefcase, Copy, Check, Sparkles, Globe, Target, Lightbulb } from 'lucide-react';
+import { Briefcase, Copy, Check, Sparkles, Globe, Lightbulb } from 'lucide-react';
 
 export default function AiBusinessNameGenerator() {
   const [industry, setIndustry] = useState('AI Automation & Workflow SaaS');
@@ -130,7 +130,7 @@ export default function AiBusinessNameGenerator() {
                     {brand.name}
                   </h4>
                   <p className="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-0.5">
-                    "{brand.tagline}"
+                    &quot;{brand.tagline}&quot;
                   </p>
                 </div>
 

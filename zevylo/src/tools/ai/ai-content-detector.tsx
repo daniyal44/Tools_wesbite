@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { ShieldAlert, AlertTriangle, CheckCircle, Info, Sparkles, RefreshCw } from 'lucide-react';
+import { Info, Sparkles } from 'lucide-react';
 
 const AI_MARKERS = [
   'delve', 'testament', 'tapestry', 'furthermore', 'moreover', 'vital role',
@@ -189,7 +189,7 @@ export default function AiContentDetector() {
                   <span className="text-gray-400">Detected clichés:</span>
                   {s.matches.map((m, mIdx) => (
                     <span key={mIdx} className="px-1.5 py-0.5 rounded bg-red-100 dark:bg-red-900/40 text-red-700 dark:text-red-300 font-mono">
-                      "{m}"
+                      &quot;{m}&quot;
                     </span>
                   ))}
                 </div>

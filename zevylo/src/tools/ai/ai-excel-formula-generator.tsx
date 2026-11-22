@@ -6,11 +6,7 @@ import {
   Copy,
   Check,
   Table,
-  HelpCircle,
   Lightbulb,
-  ArrowRight,
-  Code2,
-  Layers,
   BookOpen,
 } from 'lucide-react';
 

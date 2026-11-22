@@ -5,10 +5,6 @@ import {
   Sparkles,
   Copy,
   Check,
-  User,
-  Briefcase,
-  Layers,
-  ArrowRight,
 } from 'lucide-react';
 
 const TwitterIcon = () => (
@@ -53,7 +49,6 @@ export default function AIBioGenerator() {
   const [passion, setPassion] = useState('Open source, cycling, clean architecture');
   const [cta, setCta] = useState('Building next-gen developer tools');
   const [platform, setPlatform] = useState<'twitter' | 'linkedin' | 'github' | 'instagram'>('twitter');
-  const [tone, setTone] = useState<'authority' | 'minimalist' | 'creative' | 'casual'>('authority');
   const [results, setResults] = useState<BioVariation[]>([]);
   const [copiedId, setCopiedId] = useState<string | null>(null);
 

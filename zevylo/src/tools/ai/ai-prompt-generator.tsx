@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Sparkles, Copy, Check, RefreshCw, Wand2, Sliders, Layers } from 'lucide-react';
+import { Sparkles, Copy, Check, Wand2, Sliders, Layers } from 'lucide-react';
 
 const STYLES = [
   { id: 'photorealistic', label: 'Photorealistic / 8K', modifier: 'hyper-realistic photography, 8k resolution, shot on 35mm lens, high fidelity skin textures, award-winning national geographic style' },

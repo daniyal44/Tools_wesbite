@@ -5,12 +5,8 @@ import {
   Sparkles,
   Copy,
   Check,
-  HelpCircle,
   Plus,
   Trash2,
-  Code2,
-  FileCode,
-  Layers,
   ChevronDown,
   ShieldCheck,
 } from 'lucide-react';

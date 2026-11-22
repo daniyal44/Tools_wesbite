@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { UserCheck, Copy, Check, ArrowRight, ShieldCheck, Sparkles, RefreshCw } from 'lucide-react';
+import { Copy, Check, ShieldCheck, Sparkles } from 'lucide-react';
 
 const AI_CLICHES: Record<string, string[]> = {
   'delve into': ['explore', 'dig into', 'examine', 'look at'],
@@ -44,11 +44,9 @@ export default function AiHumanizer() {
     if (!text) return '';
 
     // Replace known AI cliché phrases
-    let replacedCount = 0;
     Object.entries(AI_CLICHES).forEach(([cliche, replacements]) => {
       const regex = new RegExp(`\\b${cliche}\\b`, 'gi');
       if (regex.test(text)) {
-        replacedCount++;
         text = text.replace(regex, () => {
           const rep = replacements[Math.floor(Math.random() * replacements.length)];
           return rep;

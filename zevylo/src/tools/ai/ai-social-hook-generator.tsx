@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Megaphone, Copy, Check, Sparkles, TrendingUp, Share2, Flame } from 'lucide-react';
+import { Copy, Check, Sparkles, TrendingUp, Flame } from 'lucide-react';
 
 export default function AiSocialHookGenerator() {
   const [topic, setTopic] = useState('How I scaled my side project from $0 to $10,000/month in 90 days without ads');

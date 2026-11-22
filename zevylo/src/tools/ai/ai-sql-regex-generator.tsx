@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Database, Code, Copy, Check, Sparkles, Filter, Terminal } from 'lucide-react';
+import { Database, Code, Copy, Check, Sparkles, Terminal } from 'lucide-react';
 
 const SQL_PRESETS = [
   {

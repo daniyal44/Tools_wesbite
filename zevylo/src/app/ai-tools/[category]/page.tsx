@@ -4,19 +4,12 @@ import { notFound } from 'next/navigation';
 import {
   Sparkles,
   ExternalLink,
-  Star,
-  Eye,
-  CheckCircle2,
   ArrowRight,
   Layers,
   ChevronRight,
-  TrendingUp,
-  Tag,
-  ShieldCheck,
-  Zap,
 } from 'lucide-react';
 import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
-import { AI_TOOLS_DATABASE, getAIToolsByCategory } from '@/lib/ai-directory/database';
+import { getAIToolsByCategory } from '@/lib/ai-directory/database';
 import { AIPricing } from '@/lib/ai-directory/types';
 import { AIToolLogo } from '@/components/ai/ai-tool-logo';
 import { clampDescription } from '@/lib/seo/meta';

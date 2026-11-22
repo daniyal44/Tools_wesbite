@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { BookOpen, Copy, Check, Sparkles, Feather, Bookmark, Compass } from 'lucide-react';
+import { Copy, Check, Sparkles, Feather, Compass } from 'lucide-react';
 
 const GENRES = [
   { id: 'sci-fi', label: 'Hard Sci-Fi / Space Opera' },
@@ -18,7 +18,6 @@ export default function AiStoryGenerator() {
   const [copied, setCopied] = useState(false);
 
   const story = useMemo(() => {
-    const p = premise.trim() || 'A lone wanderer enters a sealed forbidden zone';
     const genreObj = GENRES.find((g) => g.id === selectedGenre) || GENRES[0];
 
     const title = `The Echo of Fractured Glass`;
@@ -56,7 +55,7 @@ export default function AiStoryGenerator() {
       plotTwist,
       openingScene,
     };
-  }, [premise, selectedGenre, protagonistRole]);
+  }, [selectedGenre, protagonistRole]);
 
   const fullMarkdown = useMemo(() => {
     return `# ${story.title}

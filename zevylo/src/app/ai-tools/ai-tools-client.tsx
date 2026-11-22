@@ -1,32 +1,65 @@
 'use client';
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import {
   Sparkles,
   Search,
-  SlidersHorizontal,
   ExternalLink,
-  Star,
-  Eye,
   CheckCircle2,
-  TrendingUp,
   Bookmark,
-  Share2,
   PlusCircle,
   X,
-  Filter,
-  Flame,
   ArrowRight,
   Layers,
   Wand2,
-  BookOpen,
   Globe,
 } from 'lucide-react';
 import { AITool, AICategory, AIPricing } from '@/lib/ai-directory/types';
-import { AI_CATEGORIES } from '@/lib/ai-directory/categories';
 import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
 import { AIToolLogo } from '@/components/ai/ai-tool-logo';
+
+const SAVED_TOOLS_KEY = 'zevylo_saved_ai_tools';
+const EMPTY_SAVED_TOOLS: string[] = [];
+const savedToolsListeners = new Set<() => void>();
+let savedToolsCache: { raw: string | null; value: string[] } | null = null;
+
+function readSavedTools(): string[] {
+  let raw: string | null = null;
+  try {
+    raw = localStorage.getItem(SAVED_TOOLS_KEY);
+  } catch {
+    raw = null;
+  }
+  if (savedToolsCache && savedToolsCache.raw === raw) return savedToolsCache.value;
+  let value = EMPTY_SAVED_TOOLS;
+  if (raw) {
+    try {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) value = parsed.filter((v): v is string => typeof v === 'string');
+    } catch {
+      value = EMPTY_SAVED_TOOLS;
+    }
+  }
+  savedToolsCache = { raw, value };
+  return value;
+}
+
+function subscribeToSavedTools(listener: () => void) {
+  savedToolsListeners.add(listener);
+  const onStorage = (event: StorageEvent) => {
+    if (event.key === SAVED_TOOLS_KEY || event.key === null) listener();
+  };
+  window.addEventListener('storage', onStorage);
+  return () => {
+    savedToolsListeners.delete(listener);
+    window.removeEventListener('storage', onStorage);
+  };
+}
+
+function getSavedToolsServerSnapshot(): string[] {
+  return EMPTY_SAVED_TOOLS;
+}
 
 interface AIToolsClientProps {
   initialTools: AITool[];
@@ -43,42 +76,26 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
   const [selectedCompany, setSelectedCompany] = useState<string>('all');
   const [sortBy, setSortBy] = useState<'name' | 'trending'>('name');
   const [viewTab, setViewTab] = useState<'directory' | 'built-in'>('directory');
-  const [savedTools, setSavedTools] = useState<string[]>([]);
   const [isSubmitOpen, setIsSubmitOpen] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [previewTool, setPreviewTool] = useState<AITool | null>(null);
 
-  // Load saved bookmarks from localStorage
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem('zevylo_saved_ai_tools');
-      if (stored) setSavedTools(JSON.parse(stored));
-    } catch {
-      // ignore
-    }
-  }, []);
+  const savedTools = useSyncExternalStore(
+    subscribeToSavedTools,
+    readSavedTools,
+    getSavedToolsServerSnapshot
+  );
 
   const toggleBookmark = (id: string) => {
-    let next: string[];
-    if (savedTools.includes(id)) {
-      next = savedTools.filter((t) => t !== id);
-    } else {
-      next = [...savedTools, id];
-    }
-    setSavedTools(next);
+    const next = savedTools.includes(id)
+      ? savedTools.filter((t) => t !== id)
+      : [...savedTools, id];
     try {
-      localStorage.setItem('zevylo_saved_ai_tools', JSON.stringify(next));
+      localStorage.setItem(SAVED_TOOLS_KEY, JSON.stringify(next));
     } catch {
       // ignore
     }
-  };
-
-  const parseTraffic = (str: string): number => {
-    const clean = str.trim().toUpperCase();
-    if (clean.endsWith('B')) return parseFloat(clean) * 1_000_000_000;
-    if (clean.endsWith('M')) return parseFloat(clean) * 1_000_000;
-    if (clean.endsWith('K')) return parseFloat(clean) * 1_000;
-    return parseFloat(clean) || 0;
+    savedToolsListeners.forEach((listener) => listener());
   };
 
   const alphabetLetters = [
@@ -159,7 +176,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
     }
 
     return list;
-  }, [initialTools, selectedCategory, selectedPricing, selectedCountry, selectedStatus, selectedLetter, searchQuery, sortBy]);
+  }, [initialTools, selectedCategory, selectedPricing, selectedCountry, selectedCompany, selectedStatus, selectedLetter, searchQuery, sortBy]);
 
   const pricingBadges: Record<AIPricing, { label: string; color: string }> = {
     free: { label: '100% Free', color: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border-emerald-200' },
@@ -201,7 +218,7 @@ export function AIToolsClient({ initialTools, categories }: AIToolsClientProps) 
             Discover Global AI Tools &amp; Utilities from A to Z
           </h1>
           <p className="text-sm sm:text-base text-blue-100 leading-relaxed max-w-2xl">
-            Explore {initialTools.length} AI listings across {categories.length} categories, or run one of {builtInUtilities.length} built-in browser tools that process your text locally. Every listing is labelled Free, Freemium, Paid, Free Trial or Open Source, and links to the vendor's official site.
+            Explore {initialTools.length} AI listings across {categories.length} categories, or run one of {builtInUtilities.length} built-in browser tools that process your text locally. Every listing is labelled Free, Freemium, Paid, Free Trial or Open Source, and links to the vendor&apos;s official site.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">

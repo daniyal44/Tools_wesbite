@@ -5,13 +5,8 @@ import {
   Sparkles,
   Copy,
   Check,
-  Mail,
   ShieldCheck,
   Smartphone,
-  TrendingUp,
-  AlertCircle,
-  HelpCircle,
-  Layers,
 } from 'lucide-react';
 
 interface SubjectLineItem {

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Code2, Bug, Clock, ArrowRightLeft, Copy, Check, Sparkles, Terminal } from 'lucide-react';
+import { Bug, ArrowRightLeft, Copy, Check, Sparkles, Terminal } from 'lucide-react';
 
 const SAMPLE_CODE = `function findLongestSubstring(s: string): number {
   let maxLength = 0;
@@ -22,7 +22,6 @@ const SAMPLE_CODE = `function findLongestSubstring(s: string): number {
 
 export default function AiCodeAssistant() {
   const [code, setCode] = useState(SAMPLE_CODE);
-  const [sourceLang, setSourceLang] = useState('TypeScript');
   const [targetLang, setTargetLang] = useState('Python');
   const [activeTab, setActiveTab] = useState<'explanation' | 'conversion' | 'audit'>('explanation');
   const [copied, setCopied] = useState(false);
