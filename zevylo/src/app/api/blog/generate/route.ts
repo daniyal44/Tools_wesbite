@@ -9,14 +9,28 @@ const ROOT = join(__dirname, '..');
 const DB_PATH = join(ROOT, 'src', 'lib', 'ai-directory', 'database.ts');
 const BLOG_DIR = join(ROOT, 'public', 'blog');
 
+/** Tool fields extracted from the database source for blog generation */
+interface BlogTool {
+  id: string;
+  name: string;
+  slug: string;
+  company: string;
+  category: string;
+  tagline: string;
+  description: string;
+  pricing: string;
+  status: string;
+  tags: string[];
+}
+
 /** Extract tool data from the database file using regex */
-function parseDatabase() {
+function parseDatabase(): BlogTool[] {
   const src = readFileSync(DB_PATH, 'utf8');
   
   // Match individual tool objects using the proven pattern
   const toolRegex = /\{\s*id\s*:\s*['\"]([^'\"]+)['\"],\s*name\s*:\s*['\"]([^'\"]+)['\"],\s*slug\s*:\s*['\"]([^'\"]+)['\"]/g;
   
-  const tools = [];
+  const tools: BlogTool[] = [];
   let match;
   
   while ((match = toolRegex.exec(src)) !== null) {
@@ -83,7 +97,7 @@ function parseDatabase() {
 }
 
 /** Generate a Markdown blog post for a single tool */
-function generateBlogPost(tool: AITool) {
+function generateBlogPost(tool: BlogTool) {
   const date = new Date();
   const formattedDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
   

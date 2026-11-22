@@ -36,15 +36,17 @@ export function ContactFormClient() {
     setErrorMessage('');
 
     try {
+      const honeypot = (e.currentTarget.elements.namedItem('bot-field') as HTMLInputElement | null)?.value ?? '';
       const body = new URLSearchParams({
         'form-name': 'contact',
+        'bot-field': honeypot,
         topic,
         name: name.trim(),
         email: email.trim(),
         message: trimmedMessage,
       });
 
-      const response = await fetch('/', {
+      const response = await fetch('/__forms.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: body.toString(),
@@ -95,8 +97,6 @@ export function ContactFormClient() {
     <form
       name="contact"
       method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
       className="space-y-6"
     >

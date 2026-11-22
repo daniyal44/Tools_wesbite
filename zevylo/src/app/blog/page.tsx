@@ -12,7 +12,8 @@ interface BlogPost {
   category: string;
   tagline: string;
   description: string;
-  readingTime?: string;
+  readingTime?: number;
+  mdxSource?: ReturnType<typeof serialize>;
 }
 
 interface Metadata {
