@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Zevylo form declarations</title>
+  </head>
+  <body>
+    <!--
+      Static declaration of the contact form for Netlify Forms.
+
+      The real form is rendered client-side by React (src/app/contact), but the
+      Netlify Next.js runtime (@netlify/plugin-nextjs v5) requires every form to
+      be declared in an HTML file under public/ so Netlify can detect it at
+      deploy time. The React form submits URL-encoded data to this file.
+
+      Keep the field names below in sync with the React form.
+    -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="topic" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>
