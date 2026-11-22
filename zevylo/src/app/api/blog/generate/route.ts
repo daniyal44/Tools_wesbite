@@ -48,7 +48,7 @@ function parseDatabase() {
     const objContent = src.substring(objStart, objEnd + 1);
     
     // Extract fields
-    const extractField = (fieldName) => {
+    const extractField = (fieldName: string) => {
       const regex = new RegExp(`${fieldName}\\s*:\\s*['\"]([^'\"]+)['\"]`, 'g');
       const m = objContent.match(regex);
       return m ? m[1] : null;
@@ -83,11 +83,11 @@ function parseDatabase() {
 }
 
 /** Generate a Markdown blog post for a single tool */
-function generateBlogPost(tool) {
+function generateBlogPost(tool: AITool) {
   const date = new Date();
   const formattedDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
   
-  const tagsHtml = tool.tags?.length ? tool.tags.slice(0, 5).map(tag => `<code>#${tag}</code>`).join(' ') : '<code>#AI</code>';
+  const tagsHtml = tool.tags?.length ? tool.tags.slice(0, 5).map((tag: string) => `<code>#${tag}</code>`).join(' ') : '<code>#AI</code>';
   
   return [
     `---`,
@@ -117,7 +117,7 @@ function generateBlogPost(tool) {
     `- **Pricing**: ${tool.pricing}`,
     `- **Status**: ${tool.status}`,
     `- **Company**: ${tool.company}`,
-    ...(tool.tags?.length ? [`- **Tags**: ${tool.tags.slice(0, 5).map(t => `\`${t}\``).join(', ')}`] : []),
+    ...(tool.tags?.length ? [`- **Tags**: ${tool.tags.slice(0, 5).map((t: string) => `\`${t}\``).join(', ')}`] : []),
     ``,
     '## Categories & Sub-models',
     ``,
