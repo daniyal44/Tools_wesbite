@@ -85,7 +85,7 @@ export default function TextSorter() {
 
   const setModeMaybeShuffle = (m: SortMode) => {
     setMode(m);
-    if (m === 'shuffle') setShuffleSeed(Date.now() & 0x7fffffff);
+    if (m === 'shuffle') setShuffleSeed((prev) => (prev + 1) & 0x7fffffff);
   };
 
   const toggleClass = (active: boolean) =>

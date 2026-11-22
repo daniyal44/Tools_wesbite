@@ -2,11 +2,9 @@ import { NextResponse } from 'next/server';
 import { AI_TOOLS_DATABASE } from '@/lib/ai-directory/database';
 import type { AITool, AIPricing } from '@/lib/ai-directory/types';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
-import { join, dirname, relative } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(__dirname, '..');
+const ROOT = process.cwd();
 const DB_PATH = join(ROOT, 'src', 'lib', 'ai-directory', 'database.ts');
 const BLOG_DIR = join(ROOT, 'public', 'blog');
 

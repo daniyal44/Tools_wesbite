@@ -253,7 +253,7 @@ export default function PrivacyPage() {
             <strong>AdSense disclosure:</strong> Zevylo participates in the Google AdSense program
             (publisher ID: ca-pub-5869892726772309) to support the project as an independent developer.
             Google may display ads based on your interests and visit history. Ads are clearly labeled
-            as "Sponsored" or "Ad" and are kept separate from tool interfaces and results. Zevylo does
+            as &quot;Sponsored&quot; or &quot;Ad&quot; and are kept separate from tool interfaces and results. Zevylo does
             not participate in affiliate marketing, sponsored reviews, or paid placements. This
             disclosure is provided to meet AdSense program requirements for transparent advertising
             relationships.

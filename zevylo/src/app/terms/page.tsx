@@ -113,7 +113,7 @@ export default function TermsPage() {
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">8. Advertising and Affiliate Disclosure</h2>
           <p>
             The site is supported by advertising served through Google AdSense (publisher ID:
-            <code>ca-pub-5869892726772309</code>). Ads are labelled as "Sponsored" or "Ad" and are
+            <code>ca-pub-5869892726772309</code>). Ads are labelled as &quot;Sponsored&quot; or &quot;Ad&quot; and are
             not part of a tool&apos;s controls. Do not click ads in order to support the site; doing
             so is prohibited by advertising networks and can harm the site.
           </p>

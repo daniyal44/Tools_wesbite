@@ -275,7 +275,7 @@ export function ToolPage({ tool, children }: ToolPageProps) {
 
         {/* Featured Snippet Quick Answer Box */}
         <div className="p-3.5 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/60 text-xs sm:text-sm text-blue-900 dark:text-blue-200 leading-relaxed">
-          <span className="font-bold">Quick Answer:</span> To use <span className="font-semibold">{tool.name}</span>, provide your input in the interface above, adjust the available settings, and export the result. The tool processes your input in this browser tab and does not send it to a Zevylo server. Large inputs may be limited by your device's memory.
+          <span className="font-bold">Quick Answer:</span> To use <span className="font-semibold">{tool.name}</span>, provide your input in the interface above, adjust the available settings, and export the result. The tool processes your input in this browser tab and does not send it to a Zevylo server. Large inputs may be limited by your device&apos;s memory.
         </div>
 
         <ol className="grid grid-cols-1 sm:grid-cols-3 gap-4 list-none p-0 m-0">

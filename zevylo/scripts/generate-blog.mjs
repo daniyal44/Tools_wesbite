@@ -13,7 +13,7 @@
  * -------------------------------------------------------------
  */
 
-import { readFileSync, writeFileSync, mkdirSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, statSync, readdirSync } from 'node:fs';
 import { join, dirname, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -250,7 +250,7 @@ async function submitIndexNow() {
   // Add blog URLs that were just generated
   let blogUrls = new Set();
   try {
-    const blogFiles = require('fs').readdirSync(BLOG_DIR).filter(f => f.endsWith('.md'));
+    const blogFiles = readdirSync(BLOG_DIR).filter(f => f.endsWith('.md'));
     blogFiles.forEach(f => {
       blogUrls.add(`https://zevylo.netlify.app/blog/${f.replace('.md', '')}`);
     });
