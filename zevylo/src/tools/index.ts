@@ -17,5 +17,52 @@ import './business';
 import './education';
 import './date-time';
 
+// PHASE 3: Expanded category imports (50+ categories)
+import './website';
+import './website_development';
+import './website_optimization';
+import './seo_tools';
+import './aeo_tools';
+import './geo_tools';
+import './keyword_research';
+import './backlink_analysis';
+import './website_auditing';
+import './technical_seo';
+import './content_writing';
+import './content_optimization';
+import './grammar_proofreading';
+import './pdf_tools';
+import './image_editing';
+import './image_compression';
+import './background_removal';
+import './video_editing';
+import './audio_tools';
+import './file_conversion';
+import './calculators_advanced';
+import './productivity_advanced';
+import './project_management';
+import './developer_tools';
+import './api_testing';
+import './code_formatting';
+import './database_tools';
+import './cybersecurity';
+import './marketing_social';
+import './email_marketing';
+import './lead_generation';
+import './analytics_advanced';
+import './business_management';
+import './design';
+import './ui_ux';
+import './presentations';
+import './research';
+import './education_advanced';
+import './translation';
+import './automation';
+import './ecommerce';
+import './finance';
+import './data_analysis';
+import './cloud_infrastructure';
+import './ai_powered_utilities';
+
 // Importing these modules automatically runs their registerTools calls
 // This file serves as the main entry point to ensure all tools are registered.
